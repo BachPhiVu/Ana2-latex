@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) {\textbf{#1}};
+	}%
+}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	
+	\Large
+	
+	
+	\noindent{\bf Teil 1: Differentialgleichung im $\mathbb{R}$}
+	
+	
+	
+	\medskip\hrule\medskip
+	\underline{an1: Der $\mathbb{R}^n$ als normierter Vektorraum}\\
+	\underline{Stichworte}: $\mathbb{R}^n$ mit Normen $||\cdot||_{\infty}, ||\cdot||_2$, (Folgen)Konvergenz , GWSätze, Projektionen\\
+	\medskip\hrule\medskip
+	\underline{Literatur: [Hoff], Kapitel 9.1}\\
+	hier  und im gesamten Skript steht [Hoff] für das Buch\\
+	\underline{Dieter Hoffmann: Analysis für Wirtschaftswissenschaftler und Ingenieure},\\
+	Siehe auch die Literaturangaben auf der Website der Vorlesung zur \href{https://www.math.uni-duesseldorf.de/~internet/Ana2_SoSe25/#veranstaltungen}{Analysis II}\\
+	in diesem Buch finden Sie bestimmte Skript teile ausführlicher aufgeschrieben.\\
+	\medskip\hrule\medskip
+	1.1. \underline{Bedingungsanleitung} der Vorlesung "Analysis II" (wie schon in "Analysis I"):\\
+	-vor jedem Termin erscheint auf der Website Kurzfristig ein neues Kurz-Skriptteil zur nächsten Vorlesungssitung. Sie können einen Vorab-Blick hineinwerfen.\\
+	-Besuchen Die unbedingt die Vorlesungstermine! Das Skript wird dort ausführlich erklärt, erläutert , entwickelt und veranschaulicht. Der Stoff ist ohne den zugehörigen mündlichen Ergänzungen nicht zu erfassen.\\
+	-Lesne Die zusätzlich ergänzende \underline{Literatur} im Selbststudium, etwa die angegebene Literatur, was gier Häufig das Buch [Hoff] ist.\\
+	Überlegen Sie selbstständig die angegebenen Übungsvorschläge, die mit dem Übungssmiley \redcircle{Ü} markiert sind. Sprechen Sie mit anderen darüber.\\
+	-Besuchen Die regelmäßig das Tutotium/Ihre Übungsgruppe, um weitere Beispiele Kennenzulerenen und fleißig zu üben.
+	-Das Skript enthält einen Farbcode: \setulcolor{yellow}\ul{Gelb} für Notationen/Bezeichnungen,\\
+	\setulcolor{red}\ul{rot unterstrichen} werden Begriffdefinitionen und Namen wichtiger Sätze,\\
+	\setulcolor{blue}\ul{blau unterstrichen} werden Referenznummern und Zitierungen,\\
+	\setulcolor{grün unterstrichen} werden Behauptungen/Sätze/Lemmas/Korollare,\\
+	\setulcolor{orange}\ul{orange unterstrichen} werden wesentliche Beweisideen.\\
+	In Analysis II geht es in erster Linie um die  \underline{mehrdimensionale} Analysis.
+	Es wird davon ausgegangen, dass Sie die grundlegendsten Begriffe der \setulcolor{red} \ul{Linearen Algebra I} und \ul{Analysis I} beherrschen oder parappep zur veranstaltung "Analysis II" aneignen.
+	Im Anhang dieses Kapitels finden Sie eine Kurzzusammenfassung der für uns wichtigsten Inhalte der LAI (andere werden bei Bedarf später dargestellt).\\\\
+	1.2\underline{Einleitung:} wir stellen einige Arbeitsdefinitionen(insbesondere Normen) in diesem Kapitel bereit, die als Grundlage für Funktionen, die von mehr als nur einer Variablen abhängen, dienen. Für grenzwerte müssen wir "Abstände" zwischen Argumenten und FUnktionswerten messen können, wofür Normen eingeführt werden, Viele Überlegngen der eindimensionalen Analysis können so fast wörtlich auf die mehrdimensionale Situaltion übertragen werden.\\\\
+	1.3 \underline{Vereinbarung:} wir wollen Abbildungen von Teilmenden des $\mathbb{R}^n$ in den $\mathbb{R}^m$ betrachten, m,n$\in \mathbb{N}$.\\
+	Haben:\\
+	\begin{align}
+		\{\mathbb{R}^m &= \begin{pmatrix} 
+			\alpha_{1} \\				 
+			\vdots \\
+			\alpha_{m}
+		\end{pmatrix}, \alpha_x \in \mathbb{R}\},\text{ schreiben auch oft } (\alpha_1,...,\alpha_m)
+	\end{align}
+	Zu $\mathbb{R}^m \rightarrow x =(\xi_1,...,\xi_m)^T, y=(\eta_1,...,\eta_m)^T \in \mathbb{R}^m$ setze das\\
+	(Standard-)\ul{Skalarprodukt} \setulcolor{yellow}
+	\ul{$\textless x,y\textgreater$}:=$\textless x|y\textgreater$:=$\sum_{j=1}^{m}\xi_j\eta_j$.\\ \\
+	\underline{1.4 Def}
+	\begin{align}
+		\text{Für } x = (\xi_1, \dots, \xi_m)^T \in \mathbb{R}^m \text{ sei} \quad 
+		\left\lVert x \right\rVert := \quad 
+		\left\lVert x \right\rVert_{\infty} :&= \max \{ |\xi_j| \mid j \in \{1, \dots, m\} \}\nonumber\\ 
+		&= \underset{1\in j\in m}{\text{max}} |\xi_j|\nonumber
+	\end{align}
+	\\
+	1.5\underline{Bem.:} $||\cdot||_\infty$ ist eine \setulcolor{red}\ul{Norm} im $\mathbb{R}^m$, d.h. die \ul{Maximumsnorm} $||\cdot||_\infty:\mathbb{R}\rightarrow[0,\infty[$\\
+	mit\begin{align}
+		&(N1) x \neq0\Rightarrow||x||_\infty\neq0 &(definitheit)\nonumber\\
+		&(N2) ||\alpha x||_\infty= |\alpha|\cdot||x||_\infty\nonumber\\
+		&(N3) ||x+y||_\infty \leq || x ||_\infty + ||y||_\infty & (Dreiecksungleichung)\nonumber
+	\end{align} 
+	Für alle $\alpha \in \mathbb{R}$, x, y $\in \mathbb{R}^m$.\\
+	\underline{Bew.:}  im $||\cdot||$ $\subseteq [0,\infty[$ und \setulcolor{orange}(\ul{$N_1$}) ist an \setulcolor{blue} \ul{Def. 1.4} ablesbar. \setulcolor{orange} (\ul{N3}): Für jedes j $\in$ \{1,...,m\} ist $|\xi_j + y_j| \leq|\xi_j|+y_j|\leq
+		
+	
+\end{document} 
