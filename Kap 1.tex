@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
 
 \usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{xcolor}
@@ -145,15 +146,60 @@
 	\underline{Bew.:} Gilt Konvergenz $x_k\xrightarrow{h\rightarrow\infty} a$ 
 	bzgl. $||\cdot||_\infty$, so folgt\\
 	$\forall\epsilon > 0 \exists m_0 \forall k \geq m_0: || x_k -a||_2 \leq 
-	\setulcolor{blue} (\ul{1.7}) \sqrt{m} \cdot||x_k-a||_\infty < \sqrt{m} 
+	\setulcolor{blue} ($\ul{1.7}$) \sqrt{m} \cdot||x_k-a||_\infty < \sqrt{m} 
 	\frac{\epsilon}{\sqrt{m}} = \epsilon$,\\
 	und es gilt Konvergenz bzgl. $||\cdot||_2$, so folgt analog\\
 	$\forall \epsilon > 0 \exists m_0 \forall k\geq m_0: ||x_k-a||_\infty \leq 
-	(\ul{1.7}) ||x_k-a||_2<\epsilon.\square$\\
+	($\ul{1.7}$) ||x_k-a||_2<\epsilon.\square$\\
 	\underline{Bem.:} Aufgrund dieser Beh. sagt man, dass $||\cdot||_2$ und 
 	$||\cdot||_\infty$ (zueinander) \setulcolor{red} \ul{äquvalente Normen} 
 	sind, was mit \setulcolor{blue} \ul{1.7} ausgedrückt wird.\\
 	Wortwörtlich ergeben sich die Grundeigenschaften für Konvergenz wie in 
-	Analysis I:\\
-
+	\ul{Analysis I}:\\
+	1.10 \underline{Bem.:}\\
+	(1) \setulcolor{green} \ul{$x_k \rightarrow a, x_k \rightarrow b 
+	\Rightarrow a = b$} \setulcolor{red} (\ul{Eindeutigkeit des GWes}, 
+	vgl.\setulcolor{blue}\ul{an5,18(1)})\\
+	(2)\setulcolor{green} \ul{$x_k \rightarrow a, \alpha \in \mathbb{R}
+	\Rightarrow \alpha x_k\rightarrow \alpha a$} \setulcolor{red} 
+	(\ul{Grenzwertsätze}, vgl.\setulcolor{blue}\ul{an5,26})\\
+	(3)\setulcolor{green} \ul{$x_k \rightarrow a, y_k \rightarrow b 
+	\Rightarrow x_k + y_k \rightarrow a + b$} \setulcolor{red} 
+	(\ul{Grenzwertsätze}, vgl.\setulcolor{blue}\ul{an5,26})\\
+	\underline{Bew.:} (1): $0\leq||a-b||=||a-x_k+x_k+b|| \leq ($\ul{N3, 
+	Dreiecksungleichung}$) ||a-x_k||+||x-b|| 
+	\xleftarrow{k\rightarrow\infty}0+0=0\\
+	\Rightarrow||a-b||=0 \xRightarrow[]{N1} a = b$.\\
+	(2): $||\alpha x_k-\alpha a|| = (N2) |\alpha|\cdot||x_k-a||\rightarrow0.$\\
+	(3): $||(x_k+y_k)-(a+b)\leq (dreiecksungleichung) 
+	||x_k-a||+||y_k-b||\rightarrow0+0=0$\\.  \hfill$\square$\\
+1.11.\underline{Def.:} Die Abblidung $pr_j=\pi_j : 
+\mathbb{R}^n\rightarrow\mathbb{R}$, 
+\setulcolor{red}\ul{$pr_j(x):=\xi_j$} heißt (j-te) \ul{Projektion/ Projektion 
+auf} die j-te \ul{Koordinate/Komponente} des Vektors $x\in\mathbb{R}^n$.\\
+\begin{figure}[h]
+	\includegraphics[width=5cm,height=3cm]{Veranschaulichung}
+\end{figure}\\
+\underline{Bem.:}$\bullet$ Die Abb. $pr_j$ ist eine Lineare Abb.\\
+$\bullet$ Bei $x_k\rightarrow a$ erspart uns die Notation $pr_j (x_k)$ die 
+benutzung von Doppelindezes "$\xi_{kj}$". Konvergenz im $\mathbb{R}^n$ gilt 
+Komponentenweise, d.h für \underline{jede} Koordinate einzeln:\\
+1.12\underline{Bem.:} Im $\mathbb{R}^n$ gilt: \setulcolor{green}\ul{$x_k 
+\xrightarrow{k\rightarrow \infty} a \Leftrightarrow \forall_j \in {1,...,n}: 
+pr_j(x_k)\rightarrow pr_j(a)$}.\\
+\underline{Bew.:} Für j steht fest und alle k ist $|pr_j(x_k) - pr_j(a)| \leq 
+||x_k-a||\infty$,\\
+was "$\Rightarrow$" zeigt. Wegen $||x_k-a||_\infty = \underset{1\leq j \leq 
+n}{max}{pr_j (x_k)-pr_j(a)}$ folgt "$\Leftarrow$".\hfill$\square$\\
+\\
+1.13. \underline{Bem.:} Aus der Linearen Algebra I/II ist bekannt (vgl Anhang 
+Nr.6.), dass es neben dem (euklidischen) Standardskalarprodukt noch mehr 
+Skalarprodukte $\textless,\textgreater$ gibt, die dann gemäß der Setzung 
+$||x||:=\textless x,x\textgreater$ noch andere Normen induzieren, Ob und wie 
+sich das auswirkt, untersuchen wir in Teil 2 Dieser Vorlesung, wo wir 
+allgemeinr normierte Vektorräume und Metrische Räume zulassen und deren 
+Analysis erarbeiten werden. In diesen teil 1 beschränken wir uns zunächst auf 
+den Fall $\mathbb{R}^n$, in Teil 2 wird also der "höhere Standpunkt" 
+untersucht. Teil 3 der Vorlesung behandelt dann gewöhnliche 
+Differentialgleichungen.
 \end{document} 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.10)  8 MAY 2025 21:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.10)  15 MAY 2025 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -101,14 +101,43 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
-y
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
+))
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
 )
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count280
+\calc@Bcount=\count281
+\calc@Adimen=\dimen151
+\calc@Bdimen=\dimen152
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count282
+\calc@Cskip=\skip56
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count283
+\l_MT_multwidth_dim=\dimen153
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen154
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen155
+\l_MT_above_intertext_sep=\dimen156
+\l_MT_below_intertext_sep=\dimen157
+\l_MT_above_shortintertext_sep=\dimen158
+\l_MT_below_shortintertext_sep=\dimen159
+\xmathstrut@box=\box54
+\xmathstrut@dim=\dimen160
+) (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
@@ -124,8 +153,8 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen151
-\Gin@req@width=\dimen152
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
@@ -135,12 +164,12 @@ y
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
 \pgfutil@everybye=\toks23
-\pgfutil@tempdima=\dimen153
-\pgfutil@tempdimb=\dimen154
+\pgfutil@tempdima=\dimen163
+\pgfutil@tempdimb=\dimen164
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box54
+\pgfutil@abb=\box55
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
@@ -166,26 +195,26 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 libraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks26
 ))
-\pgf@x=\dimen155
-\pgf@y=\dimen156
-\pgf@xa=\dimen157
-\pgf@ya=\dimen158
-\pgf@xb=\dimen159
-\pgf@yb=\dimen160
-\pgf@xc=\dimen161
-\pgf@yc=\dimen162
-\pgf@xd=\dimen163
-\pgf@yd=\dimen164
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\pgf@xd=\dimen173
+\pgf@yd=\dimen174
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count280
-\c@pgf@countb=\count281
-\c@pgf@countc=\count282
-\c@pgf@countd=\count283
+\c@pgf@counta=\count284
+\c@pgf@countb=\count285
+\c@pgf@countc=\count286
+\c@pgf@countd=\count287
 \t@pgf@toka=\toks27
 \t@pgf@tokb=\toks28
 \t@pgf@tokc=\toks29
-\pgf@sys@id@count=\count284
+\pgf@sys@id@count=\count288
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -204,8 +233,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count285
-\pgfsyssoftpath@bigbuffer@items=\count286
+\pgfsyssoftpath@smallbuffer@items=\count289
+\pgfsyssoftpath@bigbuffer@items=\count290
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -239,9 +268,9 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 code.tex)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen165
-\pgfmath@count=\count287
-\pgfmath@box=\box55
+\pgfmath@dimen=\dimen175
+\pgfmath@count=\count291
+\pgfmath@box=\box56
 \pgfmath@toks=\toks30
 \pgfmath@stack@operand=\toks31
 \pgfmath@stack@operation=\toks32
@@ -268,59 +297,59 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count288
+\c@pgfmathroundto@lastzeros=\count292
 ))
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen166
-\pgf@picmaxx=\dimen167
-\pgf@picminy=\dimen168
-\pgf@picmaxy=\dimen169
-\pgf@pathminx=\dimen170
-\pgf@pathmaxx=\dimen171
-\pgf@pathminy=\dimen172
-\pgf@pathmaxy=\dimen173
-\pgf@xx=\dimen174
-\pgf@xy=\dimen175
-\pgf@yx=\dimen176
-\pgf@yy=\dimen177
-\pgf@zx=\dimen178
-\pgf@zy=\dimen179
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen180
-\pgf@path@lasty=\dimen181
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen182
-\pgf@shorten@start@additional=\dimen183
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count289
+\pgfpic=\box57
+\pgf@hbox=\box58
+\pgf@layerbox@main=\box59
+\pgf@picture@serial@count=\count293
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen184
+\pgflinewidth=\dimen194
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen185
-\pgf@pt@y=\dimen186
-\pgf@pt@temp=\dimen187
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
@@ -337,14 +366,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen188
+\pgfarrowsep=\dimen198
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen189
-\pgf@sys@shading@range@num=\count290
-\pgf@shadingcount=\count291
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -353,7 +382,7 @@ File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box59
+\pgfexternal@startupbox=\box60
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
@@ -374,7 +403,7 @@ File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box60
+\pgfnodeparttextbox=\box61
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
@@ -383,8 +412,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen190
-\pgf@nodesepend=\dimen191
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
@@ -402,8 +431,8 @@ ty
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen192
-\pgffor@skip=\dimen193
+\pgffor@iter=\dimen258
+\pgffor@skip=\dimen259
 \pgffor@stack=\toks33
 \pgffor@toks=\toks34
 ))
@@ -414,34 +443,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count292
-\pgfplotmarksize=\dimen194
+\pgf@plot@mark@count=\count296
+\pgfplotmarksize=\dimen260
 )
-\tikz@lastx=\dimen195
-\tikz@lasty=\dimen196
-\tikz@lastxsaved=\dimen197
-\tikz@lastysaved=\dimen198
-\tikz@lastmovetox=\dimen199
-\tikz@lastmovetoy=\dimen256
-\tikzleveldistance=\dimen257
-\tikzsiblingdistance=\dimen258
-\tikz@figbox=\box61
-\tikz@figbox@bg=\box62
-\tikz@tempbox=\box63
-\tikz@tempbox@bg=\box64
-\tikztreelevel=\count293
-\tikznumberofchildren=\count294
-\tikznumberofcurrentchild=\count295
-\tikz@fig@count=\count296
+\tikz@lastx=\dimen261
+\tikz@lasty=\dimen262
+\tikz@lastxsaved=\dimen263
+\tikz@lastysaved=\dimen264
+\tikz@lastmovetox=\dimen265
+\tikz@lastmovetoy=\dimen266
+\tikzleveldistance=\dimen267
+\tikzsiblingdistance=\dimen268
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
+\tikztreelevel=\count297
+\tikznumberofchildren=\count298
+\tikznumberofcurrentchild=\count299
+\tikz@fig@count=\count300
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count297
-\pgfmatrixcurrentcolumn=\count298
-\pgf@matrix@numberofcolumns=\count299
+\pgfmatrixcurrentrow=\count301
+\pgfmatrixcurrentcolumn=\count302
+\pgf@matrix@numberofcolumns=\count303
 )
-\tikz@expandcount=\count300
+\tikz@expandcount=\count304
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -458,20 +487,20 @@ Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
 \SOUL@cmds=\toks38
 \SOUL@buffer=\toks39
 \SOUL@token=\toks40
-\SOUL@syllgoal=\dimen259
-\SOUL@syllwidth=\dimen260
-\SOUL@charkern=\dimen261
-\SOUL@hyphkern=\dimen262
-\SOUL@dimen=\dimen263
-\SOUL@dimeni=\dimen264
-\SOUL@minus=\count301
-\SOUL@comma=\count302
-\SOUL@apo=\count303
-\SOUL@grave=\count304
-\SOUL@spaceskip=\skip54
-\SOUL@ttwidth=\dimen265
-\SOUL@uldp=\dimen266
-\SOUL@ulht=\dimen267
+\SOUL@syllgoal=\dimen269
+\SOUL@syllwidth=\dimen270
+\SOUL@charkern=\dimen271
+\SOUL@hyphkern=\dimen272
+\SOUL@dimen=\dimen273
+\SOUL@dimeni=\dimen274
+\SOUL@minus=\count305
+\SOUL@comma=\count306
+\SOUL@apo=\count307
+\SOUL@grave=\count308
+\SOUL@spaceskip=\skip58
+\SOUL@ttwidth=\dimen275
+\SOUL@uldp=\dimen276
+\SOUL@ulht=\dimen277
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
 ty
@@ -523,20 +552,20 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count305
+\c@section@level=\count309
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count306
+\etb@tempcnta=\count310
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
 ty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen268
-\Hy@linkcounter=\count307
-\Hy@pagecounter=\count308
+\@linkdim=\dimen278
+\Hy@linkcounter=\count311
+\Hy@pagecounter=\count312
  (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2024-05-23 v7.01i Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -544,7 +573,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count309
+\Hy@SavedSpaceFactor=\count313
  (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2024-05-23 v7.01i Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -557,14 +586,14 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count310
+\c@Hy@tempcnt=\count314
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen269
+\XeTeXLinkMargin=\dimen279
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -574,9 +603,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count311
-\Field@Width=\dimen270
-\Fld@charsize=\dimen271
+\Fld@menulength=\count315
+\Field@Width=\dimen280
+\Fld@charsize=\dimen281
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -589,9 +618,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count312
-\c@Item=\count313
-\c@Hfootnote=\count314
+\Hy@abspage=\count316
+\c@Item=\count317
+\c@Hfootnote=\count318
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -602,8 +631,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count315
-\c@bookmark@seq@number=\count316
+\Fld@listcount=\count319
+\c@bookmark@seq@number=\count320
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -616,50 +645,50 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip55
+\Hy@SectionHShift=\skip59
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 16.
+Package hyperref Info: Option `colorlinks' set `true' on input line 17.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count317
-\l__pdf_internal_box=\box65
+\l__color_backend_stack_int=\count321
+\l__pdf_internal_box=\box66
 ) (Kap 1.aux)
 \openout1 = `"Kap 1.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count318
-\scratchdimen=\dimen272
-\scratchbox=\box66
-\nofMPsegments=\count319
-\nofMParguments=\count320
+\scratchcounter=\count322
+\scratchdimen=\dimen282
+\scratchbox=\box67
+\nofMPsegments=\count323
+\nofMParguments=\count324
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count321
-\MPscratchDim=\dimen273
-\MPnumerator=\count322
-\makeMPintoPDFobject=\count323
+\MPscratchCnt=\count325
+\MPscratchDim=\dimen283
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
 \everyMPtoPDFconversion=\toks42
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -672,64 +701,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 28.
+Package hyperref Info: Link coloring ON on input line 29.
  (Kap 1.out) (Kap 1.out)
 \@outlinefile=\write4
 \openout4 = `"Kap 1.out"'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
 
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
 
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (1.3271pt too wide) in paragraph at lines 47--64
+Overfull \hbox (1.3271pt too wide) in paragraph at lines 48--65
 \OT1/cmr/m/n/14.4 -Besuchen Die unbe-d-ingt die Vor-lesung-ster-mine! Das Skrip
 t wird dort ausf^^?uhrlich
  []
 
 
-Overfull \hbox (21.70345pt too wide) in paragraph at lines 47--64
+Overfull \hbox (21.70345pt too wide) in paragraph at lines 48--65
 \OT1/cmr/m/n/14.4 erkl^^?art, erl^^?autert , en-twick-elt und ve-r-an-schaulich
 t. Der Stoff ist ohne den zugeh^^?origen
  []
 
 
-Overfull \hbox (4.43927pt too wide) in paragraph at lines 47--64
+Overfull \hbox (4.43927pt too wide) in paragraph at lines 48--65
 \OT1/cmr/m/n/14.4 -Lesne Die zus^^?atzlich erg^^?anzende $[]$ im Selb-st-studiu
 m, etwa die angegebene
  []
 
 
-Overfull \hbox (3.64603pt too wide) in paragraph at lines 47--64
+Overfull \hbox (3.64603pt too wide) in paragraph at lines 48--65
 \OT1/cmr/m/n/14.4 -Besuchen Die regelm^^?a^^Yig das Tu-totium/Ihre []Ubungsgrup
 pe, um weit-ere Beispiele
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--64
+Underfull \hbox (badness 10000) in paragraph at lines 48--65
 
  []
 
 
-Overfull \hbox (4.35107pt too wide) in paragraph at lines 47--64
+Overfull \hbox (4.35107pt too wide) in paragraph at lines 48--65
 \OT1/cmr/m/n/14.4 chen Ar-gu-menten und FUnk-tion-swerten messen k^^?onnen, wof
 ^^?ur Nor-men eingef^^?uhrt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--64
+Underfull \hbox (badness 10000) in paragraph at lines 48--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--64
+Underfull \hbox (badness 10000) in paragraph at lines 48--65
 
  []
 
@@ -739,117 +768,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--64
 
 {C:/Users/Phi-v/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 7
-3.
+4.
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 73.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 73.
+LaTeX Warning: Command \textless invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 73.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 74.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--75
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 9
-1.
+2.
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 105.
+LaTeX Warning: Command \textless invalid in math mode on input line 106.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 105.
+LaTeX Warning: Command \textless invalid in math mode on input line 106.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 105.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 106.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 105.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 106.
 
 
-Overfull \hbox (18.9538pt too wide) in paragraph at lines 87--135
+Overfull \hbox (18.9538pt too wide) in paragraph at lines 88--136
 \OT1/cmr/m/n/14.4 1.6$[]$ F^^?ur x = ($\OML/cmm/m/it/14.4 ^^X[]; :::; ^^X[]\OT1
 /cmr/m/n/14.4 )[] \OMS/cmsy/m/n/14.4 2 \U/msb/m/n/14.4 R[]$ \OT1/cmr/m/n/14.4 s
 ei $\OMS/cmsy/m/n/14.4 jj\OML/cmm/m/it/14.4 x\OMS/cmsy/m/n/14.4 jj[]$ \OT1/cmr/
@@ -857,41 +886,79 @@ m/n/14.4 :=$[]\OML/cmm/m/it/14.4 x; x[][]$\OT1/cmr/m/n/14.4 = $[][] = [][]$
  []
 
 
-Overfull \hbox (19.34569pt too wide) in paragraph at lines 87--135
+Overfull \hbox (19.34569pt too wide) in paragraph at lines 88--136
 \OT1/cmr/m/n/14.4 fol-gen-der Tat-sache macht es f^^?ur die Gren-zw-ert-bil-dun
 g/Stetigkeit/Differenzierbarkeit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--135
+Underfull \hbox (badness 10000) in paragraph at lines 88--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--135
+Underfull \hbox (badness 10000) in paragraph at lines 88--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--135
+Underfull \hbox (badness 10000) in paragraph at lines 88--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--135
+Underfull \hbox (badness 10000) in paragraph at lines 88--136
 
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 136--148
+<Veranschaulichung.png, id=26, 237.13594pt x 86.57344pt>
+File: Veranschaulichung.png Graphic file (type png)
+<use Veranschaulichung.png>
+Package pdftex.def Info: Veranschaulichung.png  used on input line 181.
+(pdftex.def)             Requested size: 142.26817pt x 85.36052pt.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 197.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 197.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 197.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 197.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 198.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 198.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--205
 
  []
 
 
 
-[3] (Kap 1.aux)
+[3]
+
+[4 <./Veranschaulichung.png>] (Kap 1.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -900,10 +967,10 @@ Package rerunfilecheck Info: File `"Kap 1".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20408 strings out of 473904
- 380751 string characters out of 5726600
- 1945908 words of memory out of 5000000
- 42949 multiletter control sequences out of 15000+600000
+ 21051 strings out of 473904
+ 392800 string characters out of 5726600
+ 1953908 words of memory out of 5000000
+ 43580 multiletter control sequences out of 15000+600000
  561588 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,93p,494b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -919,9 +986,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
 /Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10
 .pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb>
-Output written on "Kap 1.pdf" (3 pages, 129610 bytes).
+Output written on "Kap 1.pdf" (4 pages, 144278 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
