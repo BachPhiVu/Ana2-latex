@@ -7,6 +7,7 @@
 \usepackage{xcolor}
 \usepackage{soul}
 \usepackage{hyperref}
+\usepackage{tipa}
 \hypersetup{
 	colorlinks=true,
 	linkcolor=blue,
@@ -79,11 +80,81 @@ Sei \setulcolor{yellow} $H_{c,a}:={x\in\mathbb{R}^n|\textless x,c\textgreater =
 \alpha}$ für $c \in \mathbb{R}^n, c\neq 0,$ und $\alpha \in \mathbb{R}.$\\
 Sei $p\in H_{c,\alpha}$ irgenein Punkt dieser Menge, d.h. es gelte $\textless 
 p,c \textgreater = \alpha$.\\
-Dann ist $H_{c,\alpha} = p+U$ mit einem Untervektorraum  
-\begin{abstract}
-\section{}
-\end{abstract}
+Dann ist $H_{c,\alpha} = p+U$ mit einem Untervektorraum $U\subseteq  \mathbb{R}^n$, für den dim U = n-1 ist, denn: $U=ker f$ für die Lineare Abb. $f:\mathbb{R}^n \rightarrow \mathbb{R}, x \rightarrow\textless x,c\textgreater\\
+\textopencorner x \in H_{c,\alpha}\Leftrightarrow \textless x,c \textgreater = \alpha \Leftrightarrow\textless x-p,c \textgreater = \alpha - \textless \underbrace{\textless p,c \textgreater}_{\alpha} \Leftrightarrow x = p+n$ mit $ n \in ker f \textcorner$\\
+dabei ist  $imf=\mathbb{R}$, also $dim U= dim ker f = n - dim imf =n-1$\\
+Mit U = ker f $={u \in \mathbb{R}; \textless u,c \textgreater = 0} =: {c}^{\bot}$ folgt, dass die $u\in U$ genau die Vektoren im $\mathbb{R}^n$ sind, die senktrecht auf c stehen, bzw. wir haben \setulcolor{green} \ul{$U^{\bot}=\mathbb{R}c$}.\redcircle{Ü}\\
+Da c senkrecht zu jedem Punkt von U ist, heißt c \setulcolor{red}\ul{Normalenvektor} von $H_{c,\alpha}$.
+Denn eine Gerade $p+\mathbb{R}c\subseteq \mathbb{R}^n$
+ heißt \ul{Normale} von $H_{c,\alpha}$ und steht senkrecht auf $H_{c,a}$.\\\\
+ 2.5 $\bullet$ Ein Spezialfall der Normalendarstellung ist die \ul{Hessesche Normalform:} $H_{c,\alpha}$ mit \ul{$||c|| = 1$} (wo der Normalenvektor auf 1 normiert ist).\\
+ Die Formel in \setulcolor{blue} \ul{2.8 und 2.9} werden dann noch einfacher.\\\\
+ 2.6 \underline{Bsp. zur normalendarstellung:} Eine Ebene E im Raum $\mathbb{R}^3$ kann in der Form $E = {\begin{pmatrix} 
+ 		\xi_1\\
+ 		\xi_2\\
+ 		\xi_3
+ \end{pmatrix}; \underbrace{\gamma_1\xi_1+\gamma_2\xi_2+\gamma_3\xi_3}_{=\textless x,c \textgreater}= \alpha}$ dargestellt werden; c= 
+$\begin{pmatrix} 
+	\xi_1\\
+	\xi_2\\
+	\xi_3
+\end{pmatrix}$ ist darin der Normalenvektor, d.h. c $\bot$ E.\\
+Die Eben $E = {\begin{pmatrix} 
+		x\\
+		y\\
+		z
+\end{pmatrix}\in \mathbb{R}^3; 3x-2y-z=2}$ z.b. steht senkrecht auf c= $\begin{pmatrix} 
+3\\
+-2\\
+-1\\
+\end{pmatrix}$.\\
+In dieser Form nennt man die Normalendarstellung auch oft \ul{Koordinatendarstellung} von E. Anderes Bsp.  $E = {\begin{pmatrix} 
+		x\\
+		y\\
+		z
+	\end{pmatrix}\in \mathbb{R}^3; x=0}$ ist die y-z-Ebene, und  $E = {(w,x,y,z)\in \mathbb{R}^4; w-3x-y+4z=10}$ ist die (3-dim) Hyperevene im $\mathbb{R}^4$, die senkrechte zu $\begin{pmatrix}
+	1\\
+	-3\\
+	-1\\
+	4
+\end{pmatrix}$ ist.\\
+\\
+2.7\underline{Schul bsp. zur Normalendarstellung:} Eine Gerade g in der Ebene $\mathbb{R}^2$ ist auch eine "Hyperebene" im $\mathbb{R}^2$, da dim g =1=2-1 gilt.\\
+Eine Normalendarstellung lautet dann $g={\begin{pmatrix}
+		x\\
+		y
+\end{pmatrix} ;\textless \begin{pmatrix}
+x\\
+y
+\end{pmatrix} ,
+\begin{pmatrix}
+	\gamma_1\\
+	\gamma_2
+\end{pmatrix}  \textgreater = \alpha}$ für $\gamma_1, \gamma_2, \alpha \in \mathbb{R}$, d.h. wird beschrieben durch die Gleichung $\gamma_1 x+ \gamma_2 y = \alpha \Leftrightarrow (\gamma_2 \neq 0) y = -\frac{\gamma_1}{\gamma_2}x + \frac{\alpha}{\gamma_2} \leftarrow$ Geradengleichung der Schule mit Steigung m = $\frac{\gamma_1}{\gamma_2}$, und c =$\frac{\alpha}{\gamma}$ als y-Achsenabschnitt.\\
+Sogar an eine "Schulglg." $1\cdot y=mx+c$
+ für eine Gerade kann man also den Normalenvektor $\begin{pmatrix}
+ 	-m\\
+ 	1
+ \end{pmatrix}$ ablesen, der senkrecht auf der Geraden g (mit Richtungsvektor $\begin{pmatrix}
+ m\\
+ 1
+ \end{pmatrix}$) steht: $\textless \begin{pmatrix}
+ -m\\
+ 1
+ \end{pmatrix}\begin{pmatrix}
+ 1\\
+ m
+ \end{pmatrix} \textgreater = -m +m =0$.\\
+ \newpage
+ 2.8 \underline{Rechen mit der Hesseschen Normalform:}
+ Sei $E= H_{c,\alpha}\subseteq \mathbb{R}^n$ geg., so ist der Abstand von 0 zu $H_{c,\alpha}$ gegeben als $dist(0,H_{c,\alpha})=\frac{|\alpha|}{||c||}$.\\
+ $\bullet$ Ist außerdem $||c||=1$, ist dieser Abstand also =$|\alpha|$.\\
+ \underline{Bew.:} Sei $x\in H_{c,\alpha}$ beliebig.
+ Der gesuchte Abstand ist die Länge von p(x,c), also $dist(0, H_{c,\alpha})=||p(x,c)||=||\frac{|\textless x,c\textgreater|}{||c||}=\frac{|\alpha|}{||c||}. \square$
+ \begin{figure}[h]
+ 	\includegraphics[width=5cm,height=5cm]{Beispiel 2.8}
+ \end{figure}\\
+\underline{Bsp.:} H()
 
-\section{}
 
 \end{document}
