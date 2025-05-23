@@ -1,0 +1,85 @@
+\documentclass[]{scrartcl}
+\title{Vorlesung Analysis II}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{hyperref}
+\usepackage{tipa}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\maketitle
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\textbf{9.13\setulcolor{red}\ul{Satz über implizite Funktionen:}} $l,k \in \mathbb{R}^{j+k}, f\in l^1(D,\mathbb{R}^k)$\\
+	\underline{Vor.:} $w\in D,F(w)=0, det(\frac{\delta f}{\delta y}(w))\neq 0 (w=(a,b)\in\mathbb{R}^lx\mathbb{R}^k).\\$
+	\underline{Beh.:} $\exists U,V$ \setulcolor{green} \ul{$w\in U x V c \mathbb{R}^lx\mathbb{R}^k$} mit: \\
+	\ul{$l:U\rightarrow V, x\rightarrow y \in V$ mit f(x,y)=0 ist eine Abbildung} und zwar 
+	\ul{$l \in l^1 (U,\mathbb{R}^k)$.}\\
+	Die Abbildung von l ist \ul{$l'(x)=*-(\frac{\delta f}{\delta y}\begin{pmatrix}x\\l(x)
+		\end{pmatrix})^{-1}\frac{\delta f}{\delta x}\begin{pmatrix}
+		x\\l(x)
+	\end{pmatrix}$} $\in \mathbb{R}^{kxl}$.\\
+	1.\underline{Bem.:} \ul{$f\in l^r$} $\xRightarrow{vollst. Ind}$ \ul{$l\in l^r$}.\\
+	2.\underline{Bem.:} Bemerkenswert ist an diesem Satz, dass u.U. l nur schwierig berechnet werden kann, sehr wohl aber die Ableitung l'(x) nach der Formel (ohne die explizite Fkt. l ableiten zu müssen).\\
+	\\
+	\textbf{9.14.\underline{Bew.:}} $\bullet$ \underline{Falls} l existiert und diffbar, so gilt:\\
+	\begin{equation}
+		0=f(x,l(x))\Rightarrow (f(x,l(x)))'= 0\\
+		\xRightarrow[]{K.R} \frac{\delta}{\delta x} f(x, l(x)) \cdot \frac{\delta x}{\delta x}+ \underbrace{\frac{\delta}{\delta y} f(x,l(x))}\cdot l'(x)=0\\
+		\text{invbar, falls x nahe a, d.h. falls (x, l(x)) nahe (a,b)=w:}\\
+		det\frac{\delta f}{\delta y}(w)\neq 0\Rightarrow det \frac{\delta f}{\delta y}(x,l(x))\neq 0\\
+		\Rightarrow l'(x)=-(\frac{\delta f}{\delta y}(x, l(x))){-1} \frac{\delta f}{\delta x}(x, l(x))\Rightarrow l \in l^1.
+	\end{equation} 
+	$\bullet$\underline{Betr.}\begin{equation}
+		F: D \rightarrow \mathbb{R}^lx\mathbb{R}^k, F\in l^1, (x,y)\rightarrowtail (x,f(x,y)).\\
+		\text{Es gilt} F'(x,y)= \begin{pmatrix}
+			I_l & 0\\
+			\delta f & \delta f\\
+			\delta x & \delta y
+		\end{pmatrix} \in \mathbb{R}^{(l+k)x(l+k)}, det F' = det \frac{\delta f}{\delta y}\neq 0 \text{nahe w}.
+	\end{equation}
+	Der \setulcolor{blue}\ul{Satz üver lokale Umkehrbarkeit 8.8} liefert nun:\\
+	$\exists W,w \in W c  \mathbb{R}^lx\mathbb{R}^k:$\\
+	\begin{equation}
+		\stackrel{\mathbb{R}^lx\mathbb{R}^k}{(x,y)}
+	\end{equation}
+	
+	
+\end{document}

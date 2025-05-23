@@ -1,0 +1,83 @@
+\documentclass[]{scrartcl}
+\title{Vorlesung Analysis II}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{hyperref}
+\usepackage{tipa}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	
+	\textbf{\underline{an3: Konvergenz, Funktionsgrenzwerte, Stetigkeit im $\mathbb{R}^n$}}
+	\textbf{\underline{Stichworter:}} Funktionsgrenzwerte, Stetigkeit ( Komponentenweise und partiell)
+	
+	\medskip\hrule\medskip
+	
+	\textbf{\underline{Literatur:}}\setulcolor{blue}\ul{[Hoff], Kapitel 9.3}
+	
+	\textbf{3.1\underline{Einleitung:}} Wir definieren Funktionsgrenzwerte bei Funktionen f von $\mathbb{R}^n$ nach $\mathbb{R}^m$\\
+	\\
+
+	\textbf{3.2 \underline{Vereinbarung/Situation:}} Seien M,n $\in \mathbb{N}$, M $\subseteq \mathbb{R}^n$, f : D $\rightarrow \mathbb{R}^m$ \\
+	und b $\in \mathbb{R}^m$. Als Norm benutzen wir die \setulcolor{Orchid}\ul{Maximumsnorm} und schreiben deswegen $||\cdot||$ für $||\cdot||_\infty$. Weiter sei $a \in \mathbb{R}^n$ ein Häufungspunkt zu/von M, d.h $\forall \epsilon > 0 : \neq $\setulcolor{red}\ul{$\{x\in M; ||x-a||<\epsilon\}$} 
+	= $\infty$ (vgl. \setulcolor{blue} \ul{An 10.2}).\\
+	(Anmerkung\ul{$\{x\in M; ||x-a||<\epsilon\}$} = \setulcolor{yellow}\ul{$U^\epsilon_a(M)$}$\leftarrow$\setulcolor{red} \ul{$\epsilon$-Umgebung} um a, vgl. \setulcolor{blue}\ul{3.14}).\\
+	Dies bedeutet, dass a aus M heraus durch von a verschiedene Punkte x $\in M$ beliebig gut approximierbar ist, bzw. "man kommt mit Punkten aus M beliebig gut heran an a", und zwar aus "allen Richtungen" falls $\exists \epsilon > 0 : U^\epsilon_a(\mathbb{R}^n)\subseteq M$.\\
+	Wie in \ul{An 10.4} definieren wir dann den Funktionsgrenzwert:
+	\\\\
+		
+	\textbf{3.3\underline{Def.:}} In Situation \ul{3.2} gilt: f(x) $\rightarrow$ b (für M$\ni$ x $\rightarrow$ a)\\
+	: \setulcolor{red}\ul{$ <=>\forall \epsilon > 0 \exists \delta > 0$ \hspace{5mm} $ \forall x \in M: ||x-a|| < \delta  => || f(x) - b || < \epsilon$}\\
+	Lesen "f(x) Konvergiert gegen b, wenn x (aus M heraus) gegen a geht/Konvergiert".\\
+	Wir nennen b $\in \mathbb{R}^m$ den  \ul{Grenzwert} (Kurz \ul{GW})\ul{von f(x) für $M \ni x \rightarrow a.$}\\
+	Notation: f(x) $\xrightarrow[]{M\ni x \rightarrow a}$b oder $\lim_{n \ni x \rightarrow a} f(x)=b$ oder $\lim\limits_{x\rightarrow a|x\in M}f(x)=b.$\\
+	Umformulierung:$||f(x)-b||\xrightarrow{M\ni x\rightarrow a}0.$\\\\
+	
+	\textbf{3.4\underline{Bem.:}} Falls M = D ist, hat die Bedingung "$x\in M$" Keine Weitere Bedeutung und kann weggelassen werden. Fehlt eine Bedingung, ist einfach m= D gemeint.\\\\
+	
+	\textbf{3.5}Funktionsgrenzwerte können \underline{Komponentenweise} untersucht und gebildet werden:\\
+	Für $ x \in D$ ist f(x) ein Element des $\mathbb{R}^m$, also Schreibbar in den Komponenten/Koordinaten\\
+	f(x)=$\begin{pmatrix}
+		f_1(x)\\f_2(x)\\\vdots\\ f_m(x)
+	\end{pmatrix}$, den Komponentenfunktionen $f_1,...,f_m: D\rightarrow\mathbb{R}$, nämlich $\forall i \in \{1,...,m\}:$ \setulcolor{red} \ul{$f_i:=pr_i\circ f$}.\\
+	Mit $b= (b_1,...,b_m)^T \in \mathbb{R}^m$ gilt dann:\\
+	\textbf{\underline{Beh.:}} \begin{equation}\begin{split}
+		f(x)\xrightarrow{n\ni x \rightarrow a}b & \Leftrightarrow \forall i \in \{1,...,m\}: f_i (x)\rightarrow b_i (n\ni x\rightarrow a)\\
+		 & \Leftrightarrow\forall i: |f_i(x)-b_i|\rightarrow0(n\ni x \rightarrow a)
+		\end{split}
+	\end{equation} 
+	\textbf{\underline{Bew.:}} Für $z= (z_1,...,z_m)^T \in \mathbb{R}^m, i\in \{1,...,m\}$ gilt $|z_i-b_i|\leq||z-b||_\infty \leq \sum_{i=1}^{m}|z_i-b_i|.$\\
+	\strut\hfill $\square$\\
+	\textbf{3.6\underline{Bem.:}} Mit \setulcolor{blue} \ul{3.5} kann man sich also auf die kgz. der Komponentenfunktionen zurückziehen , falls das nützlich/schneller geht.\\
+	\textbf{3.7\underline{Bsp.:}} $D = \mathbb{R}^2 \backslash\{\begin{pmatrix}0\\0\end{pmatrix}\}, f(v):=\frac{xy}{\sqrt{x^2+y^2}}$, wenn $v=\begin{pmatrix}x\\y\end{pmatrix} \in D$, also $f:D\rightarrow\mathbb{R}$.\\
+	\underline{Beh.:} $f(v)\rightarrow0$ (bei $D \ni v \rightarrow(0,0)^T=:0$).\\
+	\underline{Bew.:} $|f(v)-0| = |f(v)| \leq \frac{||v||^2_2}{||v||_2}= ||v||_2\rightarrow0.$\\
+	Bei  $\leq \frac{||v||^2_2}{||v||_2} \Leftarrow |xy|\leq $max$(x^2,y^2)=||v||^2\leq x^2+y^2=||v||^2_2$.\\
+	\strut\hfill$\square$\\
+	\textbf{3.8\underline{Bsp.:}} $D = \mathbb{R}^2 \backslash\{\begin{pmatrix}0\\0\end{pmatrix}\}, f(v):=\frac{xy}{\sqrt{x^2+y^2}}$, wenn $v=\begin{pmatrix}x\\y\end{pmatrix} \in D$, also $f:D\rightarrow\mathbb{R}$.\\
+		
+\end{document} 
