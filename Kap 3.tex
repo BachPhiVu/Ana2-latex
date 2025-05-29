@@ -1,6 +1,7 @@
 \documentclass[]{scrartcl}
 \title{Vorlesung Analysis II}
 \usepackage{amsmath,amssymb,amsfonts}
+\usepackage{stmaryrd}
 \usepackage{mathtools}
 \usepackage{latexsym}
 \usepackage{graphicx}
@@ -78,6 +79,128 @@
 	\underline{Bew.:} $|f(v)-0| = |f(v)| \leq \frac{||v||^2_2}{||v||_2}= ||v||_2\rightarrow0.$\\
 	Bei  $\leq \frac{||v||^2_2}{||v||_2} \Leftarrow |xy|\leq $max$(x^2,y^2)=||v||^2\leq x^2+y^2=||v||^2_2$.\\
 	\strut\hfill$\square$\\
-	\textbf{3.8\underline{Bsp.:}} $D = \mathbb{R}^2 \backslash\{\begin{pmatrix}0\\0\end{pmatrix}\}, f(v):=\frac{xy}{\sqrt{x^2+y^2}}$, wenn $v=\begin{pmatrix}x\\y\end{pmatrix} \in D$, also $f:D\rightarrow\mathbb{R}$.\\
+	\textbf{3.8\underline{Bsp.:}} $D = \mathbb{R}^2 
+	\backslash\{\begin{pmatrix}0\\0\end{pmatrix}\}, 
+	f(v):=\frac{xy}{\sqrt{x^2+y^2}}$, wenn $v=\begin{pmatrix}x\\y\end{pmatrix} 
+	\in D$, also $f:D\rightarrow\mathbb{R}$.\\
+	\underline{Beh.:} Es existiert kein $b\in \mathbb{R}$ mit $f(v)\rightarrow
+	b$ (bei $v\rightarrow (0,0)^T=0$).\\
+	\underline{Bew.:} Für x$\in \mathbb{R}\backslash\{0\}$ gelten $f(x,0)=0$ 
+	und $f(x,x)=\frac{1}{2}$, im $\lightning$ zu \setulcolor{blue} \ul{3.5.}\\
+	\strut\hfill$\square$\\
+	Wie i, eindimensionalen Fall ist ein Funktions GW mit Folgenkonvergenz 
+	beschreibbar:\\
+	\textbf{3.9 \underline{Bem.:}}  $(f) \xrightarrow{M\ni x\rightarrow a}b$, 
+	wenn $\forall (x_k)_{k\in \mathbb{N}} \subseteq M, x_k 
+	\xrightarrow{k\rightarrow \infty}a: f(x_k)\xrightarrow{k\rightarrow 
+	\infty}b$ mit Folgenkonvergenz wie in \ul{an 1.8}\\
+	\\
+	\textbf{3.10 \underline{Rechnen mit Grenzewerten} 
+	\setulcolor{red}("\ul{GWSätze}")}:\\
+	\begin{equation}
+		\begin{cases}
+			f(x)\rightarrow b, g(x)\rightarrow c & \Rightarrow 
+			(f+g)(x)\rightarrow b \pm c\text{, sofern bildbar}\\
+			& \Rightarrow \textless f(x), g(x)\textgreater\rightarrow\textless 
+			b,c\textgreater\text{, sofern bildbar}\\
+			& \Rightarrow ||f(x)|| \rightarrow ||b||
+		\end{cases}
+	\end{equation}
+\\
+	Wir kommen zur Stetigkeit von Funktionen $f:D\rightarrow\mathbb{R}^m, 
+	D\subseteq\mathbb{R}^n.$\\
+	\textbf{3.11\underline{Def.:}}\begin{equation}
+		\begin{cases}
+		\text{Für }a\in D \text{ heißt f \ul{stetig in a} :} &\Leftrightarrow 
+		\forall \epsilon\textgreater0 \exists \delta \textgreater 0 \forall x 
+		\in D:||x-a||\textless \delta \Rightarrow ||f(x)-f(a)|| 
+		\textless\epsilon\\
+		& \Leftrightarrow f(x)\rightarrow f(a) (\text{bei } D\ni x \rightarrow 
+		a)\\
+		&\text{bzw. }\lim_{x\rightarrow a (x \in D)} f(x)= f(a).
+	\end{cases}
+	\end{equation}
+	\\
+	\textbf{3.12 \underline{Bem.:}} Die Forderung, dass a ein Häufungspunkt von 
+	D ist, wird hier nicht benötigt.\\
+	\textbf{3.13 \underline{Def.:}} Sei $T\subseteq D$. Dann: f heißt \ul{setig 
+	in T} $:\Leftrightarrow \forall z \in T: f$ stetig in z\\
+	f heißt \ul{Stetig} $:\Leftrightarrow f$ stitig in D\\
+	\\
+	\textbf{3.14} Zum Erkennen von stetigen Funktionen ist wieder folgende 
+	Grundregel zur Stetigkeit zusammengesetzter/verknüpfter Funktionen 
+	nützlich:\\
+	\underline{Vor.:} $n,m,k\in \mathbb{N}, a \in D\subseteq \mathbb{R}^n, 
+	f:D_1\rightarrow\mathbb{R}^k,\\
+	D_1 \subseteq\mathbb{R}^m$ mit $f(D)\subseteq D_1, 
+	h:D_1\rightarrow\mathbb{R}^k,\\
+	b:=f(a), f$ in a stetig, h in b stetig.\\
+	\underline{Beh.:}\setulcolor{green}\ul{$h\circ f: D\rightarrow 
+	\mathbb{R}^k$ ist in a stetig}\\
+	\underline{Skizze:}\\
+	\begin{figure}[h]
+		\includegraphics[width=7 cm,height=3cm]{skizze kap 3}
+	\end{figure}\\
+	\underline{Bezeichnung:} \setulcolor{yellow} 
+	\ul{$U^S_c$}:=\setulcolor{red}\ul{$\{x\in \mathbb{R}^l; ||x-c||\textless 
+	S\}$} heißt \ul{S-Umgebung von c} Bedeutung der Stetigkeit von $h\circ f:$ 
+	eine $\eta$-Umgebung von a wird unter f in eine $\delta$-umgebung von b, 
+	und diese dann unter h ist eine $\epsilon$-Umgebung von h(b) abgebildet. 
+	Dies ist auch der\\
+	\underline{Bew.:}\\
+	Zu $\epsilon\textgreater 0$ ex. zunächst ein $\delta \textgreater 0$ so, 
+	dass $||h(z)-h(b)|| \textless \epsilon$(bei $z \in D_1, ||z-b|| \textless 
+	\delta$).\\
+	Zu $\delta\textgreater 0$ ex. nun ein $\eta \textgreater 0$ so, dass 
+	$||f(x)-f(a)||\textless \delta (\text{bei } x\in D ,|| x-a||\textless 
+	\eta).$\\
+	Für solche x gilt also $||h(f(x))-h(f(a))||\textless \epsilon$. Also ist h 
+	$\circ$f stetig in a.\\
+	\strut\hfill$\square$\\
+	\textbf{3.15 \underline{Beh.:}}\setulcolor{blue}\ul{3.5} liefert nun mit  
+	\ul{3.14}, dass Stetigkeit und Komponentenweise Stetigkeit (d.h. mit den 
+	Komponentenfunktionen) äquivalent sind:\\
+	\underline{Beh.:} \setulcolor{green}\ul{f stetig in a} $\Leftrightarrow$ 
+	\ul{$\forall_i \in \{1,...,m\}:f_i$ stetig in a.} (Beachte $f_i=pr_i\circ 
+	f$ und \setulcolor{blue}\ul{3.20})\\
+	\underline{Bew.:} $"\Rightarrow"$: klar mit \ul{3.14/3.20} $"\Leftarrow"$: 
+	Wähle $(x_k) \subseteq D$ mit $x_k\rightarrow a.$ Dann:\\
+	$\forall i: pr_i(f(x_k))\rightarrow pr_i(f(a))$, da die $pr_i\circ f=f_i$ 
+	stetig. Nach \ul{3.5} gilt dann $f(x_k)\rightarrow f(a)$, d.h. f ist stetig 
+	in a laut \ul{3.11}.\\
+	\strut\hfill$\square$\\
+	Die GWSätze \ul{3.10} zeigen:\\
+	\textbf{3.16 \underline{Kor.:}} Linearkombinationen stetiger Funktionen 
+	(insbesondere Summen und Differenzen) und (soweit bildbar) Skalarprodukte 
+	und Normen stetiger Funktionen sind wieder stetig.\\
+	\textbf{3.17 \underline{Triviales Bsp.:}} $b\in\mathbb{R}^m$, die konstante 
+	Fkt. f(x):= b für jedes $x\in\mathbb{R}^n$ ist stetig.\\
+	\underline{Tivialität:} f stetig, $T\subseteq D\Rightarrow f r T$ stetig.\\
+	\\
+	\textbf{3.18 \underline{Satz:}} Jede \setulcolor{green} \ul{Lineare Abb.} 
+	$A:\mathbb{R}^n\rightarrow\mathbb{R}^m$ ist \ul{stetig}. (im Sinne der 
+	Lineare Algebra, s. \setulcolor{blue}\ul{Anhang 22 in an}1)\\
+	\underline{Bew.:} Sei A durch die mxm-Matrix ($\alpha_{ij})_{1\leq i\leq 
+	m|1\leq j\leq n}\in\mathbb{R}^{mxn}$ beschrieben, schreibe auch A für diese 
+	Matrix. Für $x \in \mathbb{R}^n$ und $b:=Ax$ ist dann 
+	$b_i=\sum_{j=1}^{n}\alpha_{ij}x_j$, wo $1\leq i \leq m$.\\
+	Schätze ab: \setulcolor{orange}\ul{$|b_i|\leq 
+	\sum_{j=1}^{n}|a_{ij}|\cdot|x_j|\leq 
+	\sum_{j=1}^{n}|\alpha_{ij}|\cdot||x||,$} also \ul{$||Ax||\leq K\cdot||x||$}
+	mit \ul{K:=$\max_{1\leq i\leq m}\sum_{j=1}^{n}|\alpha_{ij}|$.}\\
+	Für $x,y\in\mathbb{R}^n$ gilt somit $||Ax-Ay||=||A(x-y)||\leq K\cdot 
+	||x-y||,$ es folgt die Beh.\\
+	\strut\hfill$\square$\\
+	\textbf{3.19 \underline{Bsp.:}} $+:\mathbb{R}^2\rightarrow\mathbb{R}, 
+	(x,y)\rightarrowtail x+y, \mathbb{R}^2\rightarrow\mathbb{R}, 
+	(\alpha,x)\rightarrowtail \alpha\cdot x, 
+	/:\mathbb{R}\backslash\{0\}\rightarrow\mathbb{R}, 
+	x\rightarrowtail\frac{1}{x},$\\
+	sind \setulcolor{green}\ul{stetige Abb.}.\\
+	\\
+	\textbf{3.20 \underline{Kor.:}} $\forall_i$
+	
+	
+	
 		
 \end{document} 
