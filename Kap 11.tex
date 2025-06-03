@@ -160,6 +160,29 @@
 	$\cdot$ Sei M offen, d.h. $\forall a \in M \exists \epsilon_{a}\textgreater 0: B_a^{\epsilon_{a}}\subseteq M \Rightarrow a \in M\mathring{M},$ also ist \ul{;$\subseteq$ $\mathring{M}$}.\\
 	Da \ul{$\mathring{M}\subseteq$ M} klar ist, folgt M = $\mathring{M}$.\\
 	\strut\hfill$\square$\\
+	\textbf{11.26. \underline{Beh.:}} \setulcolor{green} \ul{$\mathcal{C}\overline{M}=(\mathcal{C}M)^\circ$}, insb. \ul{$\mathcal{C}\overline{\mathcal{C}M}=\mathring{M}$}.\\
+	\underline{Bew.:} \begin{align}
+		a\in \mathcal{C} \overline{M} &\Leftrightarrow \neg \forall \epsilon \textgreater 0: B_a^\epsilon \cap M \neq \o \Leftrightarrow \exists \epsilon \textgreater 0: B:a^\epsilon \cap M = \o\\
+		&\Leftrightarrow \exists \epsilon \textgreater 0: B_a^\epsilon \subseteq \mathcal{C}M\Leftrightarrow a \in (\mathcal{C}M)^\circ.
+	\end{align}\\
+	\strut\hfill$\square$\\
+	\textbf{11.27. \underline{Beh.:}} \ul{$\overline{M}\subseteq R$} ist stets \ul{abg.}, und zwar ist $\overline{M}$ die kleinste abg. Menge in R, die M enthält, d.h.: \ul{M abg. $\Leftrightarrow M = \overline{M}$}. $\textopencorner"\Rightarrow" \mathcal{C}\overline{M}=(\mathcal{C}M)^\circ=\mathcal{C}M "\Leftarrow": \mathcal{C}M=\mathcal{C}\overline{M}=(\mathcal{C}M)^\circ\textcorner$\\
+	\\
+	\textbf{11.28 \underline{Beh.:}} \ul{$\overline{M}=M\cup\dot{M}$}, deswegen heißt $\overline{M}$ auch die \setulcolor{red} \ul{abgeschlossene Hülle von M} bzw. der \ul{(topologische) Abschluss von M}.\\
+	\\
+	\textbf{11.29. \underline{Def.:}} $a\in R$ heißt \ul{Randpunkt von $M\in R$} :$\Leftrightarrow \forall \epsilon \textgreater0: M \cap B_a^\epsilon\neq \o\neq\mathcal{C}M\cup B_a^\epsilon.$\\
+	\underline{Bez.:} \setulcolor{yellow} \ul{$\delta M$}:$\{a\in R; \text{a Randpunkt von M}\}$ heißt der  \setulcolor{red} \ul{Rand von M.}\\
+	\\
+	\textbf{11.30. \underline{Beh.:}} \setulcolor{green}\ul{$\delta M = \delta (\mathcal{C}M)$}, \ul{$\delta \overline{M}=\overline{M}\cap\overline{\mathcal{C}M}$}.\\
+	\\
+	\textbf{11.31 \underline{Beh.:}} \ul{$\overline{M} = \mathring{M} \cup \delta M$}, \ul{$R=\mathring{M}\cup \delta M \cup (M\mathcal{C} M)^\circ$.} $ \leftarrow$ denn $R=\overline{M} \cup \mathcal{C}\overline{M}=\overline{M} \cup ( \mathcal{C}M)^\circ = \mathring{M}\cup \delta M \cup (\mathcal{C}M)^\circ$.\\
+	\\
+	\textbf{11.32. \underline{Bsp.:}}\\
+	\begin{equation}
+		\bullet = [0,1[ \subseteq \mathbb{R}\Rightarrow \mathring{M}=]0,1[, \overline{M}= [0,1], \delta M \{0,1\}.\\
+		\bullet M = [0,1[^2\subseteq \mathbb{R}^2\Rightarrow \mathring{M}=]0,1[^2, \overline{M}[0,1]^2,\\
+		\delta M = \{0\} x [0,1]\cup \{1\} x [0,1] \cup [0,1] x \{0\} \cup [0,1] x \{1\}.
+	\end{equation} 
 	
 	
 	

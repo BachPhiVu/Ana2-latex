@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  30 MAY 2025 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  3 JUN 2025 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1162,28 +1162,147 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 160.
 LaTeX Warning: Command \textgreater invalid in math mode on input line 160.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--163
+Underfull \hbox (badness 10000) in paragraph at lines 146--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--163
+Underfull \hbox (badness 10000) in paragraph at lines 146--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--163
+Underfull \hbox (badness 10000) in paragraph at lines 146--164
 
  []
 
 
 
 [3]
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textopencorner invalid in math mode on input line 169.
+
+
+LaTeX Warning: Command \textopencorner invalid in math mode on input line 169.
+
+
+LaTeX Warning: Command \textcorner invalid in math mode on input line 169.
+
+
+LaTeX Warning: Command \textcorner invalid in math mode on input line 169.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 173.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 173.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 173.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--181
+
+ []
+
+
+Overfull \hbox (170.2598pt too wide) detected at line 185
+[][][]\OMS/cmsy/m/n/10.95 ^^O \OT1/cmr/m/n/10.95 = [0\OML/cmm/m/it/10.95 ; \OT1
+/cmr/m/n/10.95 1[\OMS/cmsy/m/n/10.95 ^^R \U/msb/m/n/10.95 R \OMS/cmsy/m/n/10.95
+ ) [] \OT1/cmr/m/n/10.95 =]0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1[\OML/cmm
+/m/it/10.95 ; [] \OT1/cmr/m/n/10.95 = [0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.9
+5 1]\OML/cmm/m/it/10.95 ; ^^NM\OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 0\OML/cmm
+/m/it/10.95 ; \OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 :[] 
+ \OMS/cmsy/m/n/10.95 ^^O \OML/cmm/m/it/10.95 M \OT1/cmr/m/n/10.95 = [0\OML/cmm/
+m/it/10.95 ; \OT1/cmr/m/n/10.95 1[[]\OMS/cmsy/m/n/10.95 ^^R \U/msb/m/n/10.95 R[
+] \OMS/cmsy/m/n/10.95 ) [] \OT1/cmr/m/n/10.95 =]0\OML/cmm/m/it/10.95 ; \OT1/cmr
+/m/n/10.95 1[[]\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 [0\OML/cmm/m/it/10.95
+ ; \OT1/cmr/m/n/10.95 1][]\OML/cmm/m/it/10.95 ; [] ^^NM \OT1/cmr/m/n/10.95 = \O
+MS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95
+ x\OT1/cmr/m/n/10.95 [0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1] \OMS/cmsy/m/
+n/10.95 [ f\OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 x\OT1/c
+mr/m/n/10.95 [0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1] \OMS/cmsy/m/n/10.95 
+[ \OT1/cmr/m/n/10.95 [0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1]\OML/cmm/m/it
+/10.95 x\OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 g [ \OT1/c
+mr/m/n/10.95 [0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1]\OML/cmm/m/it/10.95 x
+\OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.
+95 :
+ []
+
+
 
 [4] (Kap 11.aux)
  ***********
@@ -1194,11 +1313,11 @@ Package rerunfilecheck Info: File `"Kap 11".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25463 strings out of 469921
- 484723 string characters out of 5468133
+ 25472 strings out of 469921
+ 484859 string characters out of 5468133
  1013970 words of memory out of 5000000
- 51853 multiletter control sequences out of 15000+600000
- 635105 words of font info for 72 fonts, out of 8000000 for 9000
+ 51858 multiletter control sequences out of 15000+600000
+ 636011 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,107p,10934b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Phi-v\AppData\Local\MiKTeX\fonts/pk/ljfour/public/tipa/dpi657\tipa
@@ -1216,9 +1335,9 @@ s/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 msy8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/symbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Kap 11.pdf" (4 pages, 180125 bytes).
+Output written on "Kap 11.pdf" (4 pages, 184836 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
+ 108 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
