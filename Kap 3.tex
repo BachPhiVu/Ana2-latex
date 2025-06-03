@@ -198,8 +198,50 @@
 	x\rightarrowtail\frac{1}{x},$\\
 	sind \setulcolor{green}\ul{stetige Abb.}.\\
 	\\
-	\textbf{3.20 \underline{Kor.:}} $\forall_i$
-	
+	\textbf{3.20 \underline{Kor.:}} $\forall_i:$ 
+	\ul{$pr_i$}:$\mathbb{R}^n\rightarrow\mathbb{R},\begin{pmatrix}
+		x_1\\ \vdots\\x_n
+	\end{pmatrix}\rightarrowtail x_i$ \ul{ist stetig}! Da Linear!\\
+	(Spezialfall von \setulcolor{blue} \ul{3.18})\\
+	\\
+	\textbf{3.21} Haben Zusammenhang zwischen FunktionsGWen und Stetigkeit, 
+	genau wie in \ul{An 10.4}:\\
+	\underline{Vor.:} \setulcolor{green}\ul{$\tilde{f}$}$:=\begin{cases}
+			f \text{ auf } M\backslash \{a\},\\
+			b \text{ für } x=a
+	\end{cases}$\\
+\underline{Beh.:}\ul{$f(x)\rightarrow b$ bei $M\ni x\rightarrow a 
+\Leftrightarrow \tilde{f}$ stetig in a.}\\
+\\
+\textbf{3.22\setulcolor{red}\ul{Partielle Stetigkeit}} (d.h. Stetigkeit in  
+einer Variablen, wenn die andere "festgehalten" werden):\\
+\setulcolor{green}\ul{f stetig, $a=(a_1,...,a_n)^T$ fest $\Rightarrow $(nicht 
+in andere Richtung) $f(\cdot, a_2,...,a_n)$ stetig} und 
+\ul{$f(a_1,\cdot,a_2,...,a_n)$ stetig} und ... und \ul{$f(a_1,...,a_{n-1}, 
+\cdot)$ stetig}.\\
+\textbf{Bem.:} die Umkehrung gilt \underline{nicht:}\\
+\textbf{Bsp.:} f: $\mathbb{R}^2 \rightarrow\mathbb{R}, f(x,y)=\begin{cases}
+	\frac{xy}{x^2+y^2}, & (x,y)\neq (0,0)\\
+	0, & (x,y) = (0,0)
+\end{cases}
+$ das \setulcolor{blue}\ul{Bsp. 3.8.}\\
+Diese Fkt. f ist stetig auf $\mathbb{R}^2\backslash\{(0,0)\}$,\\
+weiter sind $f(0,\cdot)$ und $f(\cdot,0)$ stetig,\\
+d.h. f ist partiell stetig, aber \underline{nicht} stetig in a=(0,0):\\
+Haben $(\frac{1}{n},\frac{1}{n})\xrightarrow{n\rightarrow\infty}(0,0),$ aber 
+$f(\frac{1}{n},\frac{1}{n})=\frac{1}{2}\xrightarrow{n\rightarrow 
+\infty}\frac{1}{2}\neq0=f(0,0).$\\
+\\
+\textbf{3.23. \underline{Bsp.:}} Für $f(x,y):=\frac{x-y}{x+y}$ gilt 
+$\lim_{x\rightarrow0}\lim_{y\rightarrow0} f(x,y)=1, 
+\lim_{y\rightarrow0}\lim_{x\rightarrow0}f(x,y)=-1,$\\
+demm $\lim_{y\rightarrow0}\frac{x-y}{x+y}=1, 
+\lim_{x\rightarrow0}\frac{x-y}{x+y}=-1.$\\
+Weiter: $\lim_{(x,y)\rightarrow(0,0)}f(x,y)$ ex. nicht, da 
+$\lim_{n\rightarrow\infty}f(\underbrace{\frac{1}{n},0}_{x_n=\frac{1}{n},y_n=0})=1$\\
+aber $\lim_{n\rightarrow\infty} 
+f(\underbrace{0,\frac{1}{n}}_{x_n=0,y_n=\frac{1}{n}})=-1\neq1.$\\
+Also: f partiell stetig, aber nicht stetig (fortsetzbar) in (0,0).\\
 	
 	
 		

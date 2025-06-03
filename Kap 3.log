@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.10)  28 MAY 2025 00:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.10)  2 JUN 2025 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1100,12 +1100,42 @@ LaTeX Warning: Command \textless invalid in math mode on input line 157.
 LaTeX Warning: Command \textless invalid in math mode on input line 157.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--173
+Underfull \hbox (badness 10000) in paragraph at lines 122--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--173
+Underfull \hbox (badness 10000) in paragraph at lines 122--245
+
+ []
+
+
+Overfull \hbox (5.13458pt too wide) in paragraph at lines 122--245
+\OT1/cmr/m/n/10.95 Sch^^?atze ab: [][] also [][] mit []K:=[]. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--245
 
  []
 
@@ -1113,7 +1143,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--173
 
 [2 <./skizze kap 3.png>]
 
-[3] (Kap 3.aux)
+[3]
+
+[4] (Kap 3.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1122,9 +1154,9 @@ Package rerunfilecheck Info: File `"Kap 3".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25422 strings out of 473904
- 483773 string characters out of 5726600
- 1960908 words of memory out of 5000000
+ 25423 strings out of 473904
+ 483779 string characters out of 5726600
+ 1961908 words of memory out of 5000000
  47877 multiletter control sequences out of 15000+600000
  565272 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1133,19 +1165,20 @@ Here is how much of TeX's memory you used:
 cmbx10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmmi10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Phi-v/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Phi-v/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Phi-v/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/P
-hi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
-/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
-msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/symbols/msbm10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/hoekwater/stmary10.pfb>
-Output written on "Kap 3.pdf" (3 pages, 163970 bytes).
+s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Phi-v/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Phi-v/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Phi-v/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ph
+i-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+symbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/hoekwater/stmary10.pfb>
+Output written on "Kap 3.pdf" (4 pages, 183102 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
