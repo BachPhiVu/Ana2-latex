@@ -1,0 +1,87 @@
+\documentclass[]{scrartcl}
+\title{Vorlesung Analysis II}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{hyperref}
+\usepackage{tipa}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\textbf{\underline{Teil 1: Differentialrechnung im $\mathbb{R}^n$}}\\
+	\\
+	\textbf{\underline{an5: Partielle und totale Ableitungen}}\\
+	\\
+	\textbf{\underline{\underline{Stichworte:} Funktionalmatrix, Gradient, 
+	Kettenregel, Richtungsableitungen}}\\
+	\\
+	\textbf{\underline{Literatur:}}\setulcolor{blue}\ul{[Hoff], Kapitel 9.4}\\
+	\\
+	\textbf{5.1. \underline{Einleitung:}} Die totale Ableitung liefert einen 
+	einfachen Weg, Richtungsableitungen zu berechnen. Wirdefinieren für m=1 den 
+	Gradienten und beweisen die allgemeine Kettenregel.\\
+	\\
+	\textbf{5.2. \underline{Konvention:}} Betrachten Funktionen 
+	$f:U\rightarrow\mathbb{R}^m$ mit $U\subseteq \mathbb{R}^n$.\\
+	Sei $a\in U$ ein innerer Punkt von U, d.h. $\exists s\textgreater0: 
+	U_a^s\subseteq U.$\\
+	Wir bezeichnen die Menge aller Richtungsvektoren $v\in \mathbb{R}^n$ mit 
+	\setulcolor{yellow}\ul{$S^{n-1}$}:=$\{v\in \mathbb{R}^n; ||v||_2=1\}$, die 
+	(n-1)-dimensionale \setulcolor{red}\ul{Sphäre im $\mathbb{R}^n$}.\\
+	$\bullet$ Für einen inneren Punkt $a\in U$ und ein $v\in S^{n-1}$ haben wir 
+	in \setulcolor{blue}\ul{an4.8}\\
+	$D_vf(a):=\lim\limits_{0\neq t\rightarrow0}\frac{1}{t}(f(a+tv)-t(a))$\\
+	als Richtungsableitung von f in a in Richtung v definiert.\\
+	(Diese Def. benutzt, dass $a+t v\in U$ ist aööe $t\in\mathbb{R}$ mit 
+	hinreichend kleinen $|t|$)\\
+	$\bullet$\underline{Speziell:} Ist $v=e_i$ der i-te Einheitsvektor, so ist\\
+	$D_if(a)=\frac{\delta f}{\delta \xi_i}(a)=f_{\xi_i}(a):=(D_{e_i}f)(a)$ die 
+	i-te partielle Ableitung.\\
+	\\
+	\textbf{5.3. \underline{Satz:}} \underline{Vor.:} \setulcolor{green}\ul{f 
+	in a diff'bar} (d.h. total diff'bar), \ul{$v\in S^{n-1}$}.\\
+	\underline{Beh.:} f ist \ul{in Richtung v in a diff'bar} und 
+	\ul{($D_vf$)(a)}=\ul{$\underbrace{(Df)(a)}_{\in\mathbb{R}^{m x n}}\cdot 
+	\underbrace{v}_{\in\mathbb{R}^n}$}=$\underbrace{f'(a)(v)}_{\text{mit} 
+	f'(a)\in Hom(\mathbb{R}^n,\mathbb{R}^m)\text{ausgedrückt, dh als lineare 
+	Abb.}}$.\\
+	\underline{Bew.:}$\frac{1}{t}(f(a+tv)-f(a))=\frac{1}{t}(f'(a)(tv)+o(||tv||_2)
+	=\underline{Bew.:}\frac{1}{t}(f(a+tv)-f(a))=\frac{1}{t}(f'(a)(tv)+o(||tv||_2))=
+	 f'(a)(v)+\underbrace{\underbrace{\frac{|t|\cdot||v||_2}{t}}_{\text{beschränkt}}
+	  \cdot 
+	 \underbrace{\frac{o(||tv||_2)}{||tv||_2}}_{\xrightarrow{t\rightarrow0}0}}_{\xrightarrow{t\rightarrow0}0}
+	$.\\
+	\strut\hfill$\square$\\
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}

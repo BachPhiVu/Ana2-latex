@@ -164,8 +164,271 @@
 		&=\lim\limits_{t\rightarrow0}\frac{1}{t}\cdot(f(...,a_{j-1},a_j+t\cdot\textcolor{cyan}{1}, a_{j+1},...)-f(...,a_{j-1},a_j,a_{j+1},...)),
 	\end{align} \\
 	\\
-	\textbf{4.12 \underline{Bsp.:}}
-	
-	
-	
+	\textbf{4.12 \underline{Bsp.:}} $ f:\mathbb{R}^3\rightarrow\mathbb{R}, 
+	f\begin{pmatrix}
+		x\\y\\z
+	\end{pmatrix} = 2x+y^3-z^2.$ Sei $j\in \{1,2,3\}, a=\begin{pmatrix}
+	u\\v\\w
+\end{pmatrix} \in \mathbb{R}.$\\
+Dann ist \begin{align}
+	D_{\textcolor{cyan}{e_2}} f(a)&= \lim\limits_{t\rightarrow 
+	0}\frac{1}{t}(f\begin{pmatrix}
+		u\\v+t\cdot\textcolor{cyan}{1}\\w
+	\end{pmatrix}-f\begin{pmatrix}
+	u\\v\\w
+\end{pmatrix}).\\
+&=\lim\limits_{t\rightarrow0}\frac{1}{t}\cdot(2u+(v+t)^3-w^2-(2u+v^3-w^2))\\
+&=\lim\limits_{t\rightarrow 
+0}\frac{1}{t}\cdot(t^3+3vt^2+3v^2t)=\underline{3v^2}\frac{\delta f}{\delta 
+y}(\begin{pmatrix}
+	u\\v\\w
+\end{pmatrix}),
+\end{align}\\
+entsprechend $D_{e_1}f(\begin{pmatrix}
+	x\\y\\z
+\end{pmatrix})=$\underline{2}, $D_{e_2}f\begin{pmatrix}
+	x\\y\\z
+\end{pmatrix}=\frac{\delta f}{\delta z}(\begin{pmatrix}
+	u\\v\\w
+\end{pmatrix})=$\underline{-2w}.\\
+\\
+\textbf{4.13. \underline{Bem.:}} Ist $f: U\rightarrow \mathbb{R}^m$ mit 
+$U\subseteq \mathbb{R}^n$, so erhält man die j-te partille Ableitung 
+$\frac{\delta f}{\delta x_j}$ durch Bilder der j-ten partiellen Ableitung der 
+Komponentenfunktion $f_1,...,f_m,$ nähmlich: ist $f=\begin{pmatrix}
+	f_1\\\vdots\\f_m
+\end{pmatrix}$ mit $f_i : U\rightarrow\mathbb{R}, f_i=pr_i \circ f,$\\
+so ist $D_{e_j} f(a)=\lim\limits_{t\rightarrow 
+0}\frac{1}{t}\cdot(\begin{pmatrix}
+	f_1\\\vdots\\f_m
+\end{pmatrix}(a+t\textcolor{cyan}{e_j})-\begin{pmatrix}
+	f_1\\\vdots\\f_m
+\end{pmatrix}(a))=\lim\limits_{t\rightarrow0}\frac{1}{t}\cdot\begin{pmatrix}
+	f_1(a+t\cdot\textcolor{cyan}{e_j})-f_1(a)\\\vdots\\f_m(a+t\cdot\textcolor{cyan}{e_j})-f_m(a)
+\end{pmatrix}$\\
+=$\begin{pmatrix}
+	D_{e_j}f_1(a)\\D_{e_j}f_2(a)\\\vdots\\D_{e_j}f_m(a)
+\end{pmatrix}$, bzw. $\frac{\delta f}{\delta x_j}=\begin{pmatrix}
+	\frac{\delta f_1}{\delta x_j}\\\vdots\\\frac{\delta f_m}{\delta x_j}
+\end{pmatrix}$, \underline{jede} Komponente $f_j$ wird nach der j-ten Variablen 
+abgeleitet!\\
+\\
+\textbf{4.14. \underline{Bsp.:}} nochmal \setulcolor{blue} \ul{4.9.}, d.h. 
+$f:\mathbb{R}^2\rightarrow\mathbb{R}^3, \begin{pmatrix}
+	x\\y
+\end{pmatrix}\rightarrowtail\begin{pmatrix}
+	x+y\\x+y\\2x^2
+\end{pmatrix}.$\\
+Es sollen die partiellen Ableitung berechnet werden. Laut \ul{4.13.} ist 
+(einfacher als in \ul{4.9.}): $D_1f\begin{pmatrix}
+	x\\y
+\end{pmatrix}=\frac{\delta  f}{\delta x}\begin{pmatrix}
+	x\\y
+\end{pmatrix}=\begin{pmatrix}
+	1\\1\\4x
+\end{pmatrix}, D_2f\begin{pmatrix}
+	x\\y
+\end{pmatrix}=\frac{\delta f}{\delta y}\begin{pmatrix}
+	x\\y
+\end{pmatrix}=\begin{pmatrix}
+	1\\-1\\0
+\end{pmatrix},$\\
+also $D_1f\begin{pmatrix}
+	-3\\4
+\end{pmatrix}=\begin{pmatrix}
+	1\\1\\4\cdot(-3)
+\end{pmatrix}=\begin{pmatrix}
+	1\\1\\12
+\end{pmatrix}, D_2f\begin{pmatrix}
+	-3\\4
+\end{pmatrix}=\begin{pmatrix}
+	1\\-1\\0
+\end{pmatrix}.$\\
+\\
+\textbf{4.15. \underline{Beobachtung:}} Kennt man alle partillen Ableitung, ist 
+auf Anhieb nicht klar, ib die Funktion f "mehrdimensional§ differenzierbar ist, 
+denn f kann partiell diffbar in Richtung aller $e_1,...,e_n$ in a sein, aber 
+so, dass f noch nicht einmal stetig in a ist:\\
+\\
+\textbf{4.16. \underline{Bsp.:}} $f:\mathbb{R}^2\rightarrow\mathbb{R}, 
+f\begin{pmatrix}
+	x\\y
+\end{pmatrix}=\begin{cases}
+	\frac{xy}{x^2+y^2}&, \text{ falls } \begin{pmatrix}
+		x\\y
+	\end{pmatrix}\neq\begin{pmatrix}
+	0\\0
+\end{pmatrix},\\
+0 &, \text{ falls } x=y=0, a=\begin{pmatrix}
+	0\\0
+\end{pmatrix}.
+\end{cases}$\\
+Die beiden partiellen Ableitungen sind $D_1f\begin{pmatrix}
+	0\\0
+\end{pmatrix}=\lim\limits_{t\rightarrow0}\frac{1}{t}(f\begin{pmatrix}
+	t\\0
+\end{pmatrix}-f\underbrace{\begin{pmatrix}
+	0\\0
+\end{pmatrix}}_{=0})=\lim\limits_{t\rightarrow 0}\frac{1}{t}\cdot0=0$ und 
+$D_2f\begin{pmatrix}
+	0\\0
+\end{pmatrix}= \lim\limits_{t\rightarrow0}\frac{1}{t}(f\begin{pmatrix}
+	0\\t
+\end{pmatrix}-f\underbrace{\begin{pmatrix}
+	0\\0
+\end{pmatrix}}_{=0})=\lim\limits_{t\rightarrow 0}\frac{1}{t}\cdot0=0,$\\
+aber $\lim\limits_{\begin{pmatrix}
+	x\\y
+\end{pmatrix}\rightarrow\begin{pmatrix}
+	0\\0
+\end{pmatrix}}f\begin{pmatrix}
+	x\\y
+\end{pmatrix}$ existiert nicht,\\
+weil $f\begin{pmatrix}
+	x\\0
+\end{pmatrix}\xrightarrow{x\rightarrow0}0$, aber $ f\begin{pmatrix}
+	x\\x
+\end{pmatrix}=\frac{1}{2}\xrightarrow{x\rightarrow0}\frac{1}{2}\neq0.$ Hier ist 
+y=x gewählt, bzw die Richtung $v=\begin{pmatrix}
+	1\\1
+\end{pmatrix}!$\\
+an verschiedenen Richtungen können verschiedene Funktionsgrenzwerte 
+herauskommen, d.h. f ist unstetig in $a=\begin{pmatrix}
+	0\\0
+\end{pmatrix}$,  s. auch Bsp. \ul{3.22}.\\
+\\
+\textbf{4.17. \underline{Motivation:}} DAs richtige Konzept zum 
+mehrdimensionalen Ableiten ist die totale Ableitung und ist die 
+verallgemeinerung von \ul{An 11.4.3},\\
+\underline{Erinnerung:}\\
+$f:U\rightarrow\mathbb{R}$ diff'bar in $a\in U\subseteq\mathbb{R}, U$ ein 
+offenes Intervall\\
+$\Leftrightarrow \exists A\in\mathbb{R} \exists r:U\rightarrow \mathbb{R}$ 
+stetig, $r(a)= 0: f(x)=f(a)+A\cdot(x-a)+r(x)\cdot(x-a),$\\
+mit der Interpretation: $f(x)-f(a)-A(x-a)=r(x)\cdot(x-a)$\\
+geht schneller gegen 0 als $|x-a|$.\\
+Auch der \ul{Satz von  Taylor An 19.3} macht diese Aussage; nur wird dort 
+"$r(x)\cdot(x-a)$" noch näher spezifiziert, was die Aussage der Diff'barkeit 
+verfeinert.\\
+\\
+Für eine Funktion, die "schneller gegen 0 geht als $|x-a|$", wird eine 
+mehrdimensionale Definition wie folgt gegeben:\\
+\textbf{4.18. \underline{Def.:}} Für $\varphi:U\rightarrow\mathbb{R}^m, x\in U$ 
+mit $\exists\epsilon\textgreater0:U_a^\epsilon\subseteq U\subseteq\mathbb{R}^n$ 
+sei\\
+\setulcolor{yellow}\ul{$\varphi=\sigma(||x-a||)$}:$\Leftrightarrow 
+\frac{1}{||x-a||}$\setulcolor{red}\ul{$\varphi(x)\xrightarrow{x\rightarrow 
+a}0$}.\\
+Sprich: $\varphi(x)$ ist "\underline{klein o}" von $||x-a||$.\\
+Diese Klein-o-Aussage ist eine Eigenschaft von $\varphi$.\\
+Wenn das Symbol $o(||x-a||)$ in einer Formel vorkommt, steht dieses dort 
+stellvertretend für eine Funktion, die diese "Klein-o"-Eigenschaft hat.\\
+\\
+Somit geben wir die allgemeinste Def. für \underline{mehrdimensionale 
+Diff'barkeit} (für $\mathbb{R}^n\supseteq U \xrightarrow{f}\mathbb{R}^m$):\\
+\textbf{4.19. \underline{Def.:}} Geg. sei $f:U\rightarrow\mathbb{R}^m$ mit 
+$\exists \epsilon\textgreater0: U_a^\epsilon\subseteq U.\\
+\bullet$ Dann heißt \setulcolor{red}\ul{f in a diff'bar}: $\Leftrightarrow 
+\exists A \in \mathbb{R}^{m x n}$:\\
+$f(x)=f(a)+A\cdot(x-a)+o(||x-a||)$ auf U.\\
+$\bullet$ Ist f in a diff'bar, dann heißt \setulcolor{yellow}\ul{$f'(a)=Df(a)$} 
+$:=A\in\mathbb{R}^{m x n}$\\
+die \setulcolor{red}\ul{erste Ableitung} bzw. \ul{totale Ableitung} von f in 
+a.\\
+\\
+\textbf{4.20. \underline{Bem.:}} Dabei ist A eindimensional bestimmt (laut 
+\setulcolor{blue}\ul{Bem. 4.26} unten).\\
+\\
+Beispiele: Hier sei stets $a\in U, \exists\epsilon 
+\textgreater0:U_a^\epsilon\subseteq U\subseteq\mathbb{R}^n.$\\
+\textbf{4.21. \underline{Bsp.:}} f sei die \setulcolor{green}\ul{Konstante 
+Abb.} $f:U\rightarrow\mathbb{R}^m, x\rightarrowtail c$ mit $c\in\mathbb{R}^m$ 
+fest.\\
+Dann ist f in $a\in U$ diff'bar und \ul{$f'(a)=\mathcal{O}$}$\in\mathbb{R}^{m x 
+n}$ (die m x n-Nullmatrix!).\\
+\underline{Bew.:} $f(x)=c=c+o\cdot(x-a)+o \leftarrow \in\mathbb{R}^m$ 
+Nullvektor.\\
+\strut\hfill$\square$\\
+\textbf{4.22. \underline{Bsp.:}} $f\in Hom(\mathbb{R}^n,\mathbb{R}^m),$ d.h. 
+$f:\mathbb{R}^n
+\rightarrow\mathbb{R}^m$ linear und \ul{$f(x)=Mx$} für $M\in\mathbb{R}^{m x 
+n}$.\\
+Dann ist f in $a\in\mathbb{R}^n$ diff'bar und \ul{f'(a)=M} $\in\mathbb{R}^{m x 
+n}$.\\
+\underline{Bew.:} $f(x) = Mx =M(x-a+a)=\underbrace{Ma}_{f(a)}+M(x-a)+o.$\\
+\strut\hfill$\square$\\
+\underline{Spezielles Bsp.:} $f:\mathbb{R}^2\rightarrow\mathbb{R}, 
+M:=(1,1)\in\mathbb{R}^{1x2}$, \ul{f(x)=Mx}=(1,1)$\begin{pmatrix}
+	\xi_1\\\xi_2
+\end{pmatrix}=\xi_1+\xi_2$\\
+ist diff'bar in $a\in\mathbb{R}^2$ und \ul{$f'(a)=(1,1)$} $\in 
+\mathbb{R}^{1x2}.$\\
+\\
+\textbf{4.23. \underline{Bsp.:}} $f:\mathbb{R}^2\rightarrow\mathbb{R}$, 
+\ul{$f\begin{pmatrix}
+	\xi_1\\\xi_2
+\end{pmatrix}$}=$\xi_1\xi_2$, ist diff'bar in jedem $a=\begin{pmatrix}
+	\alpha_1\\\alpha_2
+\end{pmatrix}\in\mathbb{R}^2$,\\
+und \ul{$f'\begin{pmatrix}
+	\alpha_1\\\alpha_2
+\end{pmatrix}=(\alpha_2,\alpha_1)$}$\in\mathbb{R}^{1x2}$.\\
+\underline{Bew.:}\\
+\begin{align}
+	f(x)=\xi_1\xi_2&=(\alpha_1+(\xi_1-\alpha_1))(\alpha_2+(\xi_2-\alpha_2))\\
+	&=\alpha_1\alpha_2+(\alpha_2,\alpha_1)\cdot\begin{pmatrix}
+		\xi_1-\alpha_1\\\xi_2-\alpha_2
+	\end{pmatrix}+(\xi_1-\alpha_1)\cdot(\xi_2-\alpha_2)\\
+	&=f(a)+(\alpha_2,\alpha_1)\cdot(x-a)+(\xi_1-\alpha_1)\cdot(\xi_2-\alpha_2)
+\end{align}\\
+mit $||(\xi_1-\alpha_1)\cdot(\xi_2-\alpha_2)||\leq||\begin{pmatrix}
+	\xi_1-\alpha_1\\\xi_2-\alpha_2
+\end{pmatrix}||_\infty^2=o(||x-a||),$\\
+denn $\frac{1}{||x-a||}\cdot||x-a||^2=||x-a||\xrightarrow{x\rightarrow a}0.$\\
+\strut\hfill$\square$\\
+\textbf{4.24 \underline{Bsp.:}} $f:\mathbb{R}^n\rightarrow\mathbb{R},$ 
+\ul{$f(x)=\textless x,x\textgreater$} ist diff'bar in jedem 
+$a\in\mathbb{R}^n$,\\
+under \ul{$f'(a)=\textless 2a,\cdot\textgreater=2a^T$}$\in\mathbb{R}^{1xn}.$\\
+\underline{Bew.:}
+\begin{align}
+	f(x)&=\textless x,x\textgreater=\textless a+(x-a), a+(x-a)\textgreater\\
+	&=\textless a,a\textgreater+2\textless a,x-a\textgreater+\textless 
+	x-a,x-a\textgreater\\
+	&=f(a)+2a^T\cdot(x-a)+\underbrace{||x-a||_2^2}_{=o(||x-a||).}
+\end{align}\\
+\strut\hfill$\square$\\
+Erste Eigenschaft des eindimensionalen Differenzierens übertragen sich:\\
+\textbf{4.25. \underline{Bem.:}} \ul{f in a diff'bar} $\Rightarrow$ \ul{f in a 
+stetig}.\\
+\underline{Bew.:}
+\begin{equation}
+	||f(x)-f(a)||_\infty\leq \underbrace{||A(x-a)||_\infty}_{\leq n 
+	\max_{i,j}|\alpha_{ij}|\cdot||x-a||_\infty\xrightarrow{x\rightarrow 
+	0}0}+\underbrace{||o(||x-a||)||_\infty}_{\xrightarrow[x\rightarrow a]{ 
+	}0}\xrightarrow{x\rightarrow a}0.
+\end{equation}\\
+\strut\hfill$\square$\\
+\textbf{4.26. \underline{Bem.:}} f \ul{in a diffbar} $\Leftrightarrow \forall i 
+\in \{1,...,m\}:$\ul{$f_i=pr_j\circ f$}:$D\rightarrow\mathbb{R}$ \ul{diff'bar 
+in a} und dabei gilt:\\
+$f'(a)=\begin{pmatrix}
+	f_1'(a)\\\vdots\\f_m'(a)
+\end{pmatrix}\in \mathbb{R}^{m x n},$\\
+worin\ul{jede Ableitung $f_i'(a)\in\mathbb{R}^{1 x n}$} ein \ul{Zeilenvektor} 
+ist. (Somit ist die Matrix f'(a) eindeutig bestimmt).\\
+\underline{Bew.:}"$\Rightarrow$": $\forall i \in \{1,...,m\}::$\\
+$pr_i \circ f(x)==pr_i(f(x))=pr_i(f(a))+pr_i(f'(a)(x-a))+pr_i(o(||x-a||))\\$
+d.h. $f_i(x)= f_i(a)+f_i'(a)\cdot(x-a)+o(||x-a||).$\\
+"$\Leftarrow$": $f(x)=\begin{pmatrix}
+	f_1(x)\\\vdots\\f_m(x)
+\end{pmatrix}=\begin{pmatrix}
+f_1(a)+f_1'(a)(x-a)+o(||x-a||)\\\vdots\\f_m(a)+f_m'(a)(x-a)+o(||x-a||)
+\end{pmatrix}=f(a)+\begin{pmatrix}
+	f_1'(a)\\\vdots\\f_m'(a)
+\end{pmatrix}\cdot(x-a)+o(||x-a||).$\\
+\strut\hfill$\square$\\
+
+
+
 \end{document} 
