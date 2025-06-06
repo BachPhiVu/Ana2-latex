@@ -25,6 +25,18 @@
 		{\textbf{#1}};
 	}%
 }
+\newcommand{\bluecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=blue, text=blue, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\blackcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=black, text=black, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
 \setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
 
 \setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
@@ -76,8 +88,128 @@
 	 \underbrace{\frac{o(||tv||_2)}{||tv||_2}}_{\xrightarrow{t\rightarrow0}0}}_{\xrightarrow{t\rightarrow0}0}
 	$.\\
 	\strut\hfill$\square$\\
-	
-	
+	\textbf{5.4 \underline{Bsp.:}} $f:\mathbb{R}^2\rightarrow\mathbb{R}^3, f(x,y)=\begin{pmatrix}
+		x^2-y\\3x\\sin(y)
+	\end{pmatrix}$ gibt $f'(x,y)=\begin{pmatrix}
+		2x&-1\\3&0\\0&cos(y)
+	\end{pmatrix},$ sei $a=\begin{pmatrix}
+		1\\\pi/4
+	\end{pmatrix}\in \mathbb{R}^2.$\\
+	Dann: $f'(\begin{pmatrix}
+		1\\\pi/4
+	\end{pmatrix})=\begin{pmatrix}
+		2&-1\\3&0\\0&\frac{1}{2}\sqrt{2}
+	\end{pmatrix}$ und sei $v=\frac{1}{5}\begin{pmatrix}
+		3\\4
+	\end{pmatrix}\in\mathbb{R}^2$, haben $||v||_2=\frac{1}{5}\cdot \sqrt{3^2+4^2}=1.$\\
+	sich dann als $f'\begin{pmatrix}
+		1\\\pi/4
+	\end{pmatrix}\cdot \frac{1}{5}(\begin{pmatrix}
+		\textcolor{magenta}{3}\\\textcolor{magenta}{4}
+	\end{pmatrix})=\frac{1}{5}\begin{pmatrix}
+		2\cdot \textcolor{magenta}{3}+(-1)\cdot \textcolor{magenta}{4}\\
+		3\cdot \textcolor{magenta}{3}+0\cdot \textcolor{magenta}{4}\\
+		0\cdot \textcolor{magenta}{3}+\frac{1}{2}\sqrt{2}\cdot \textcolor{magenta}{4}
+	\end{pmatrix}=\frac{1}{5}\begin{pmatrix}
+		2\\9\\2\sqrt{2}
+	\end{pmatrix}.$\\
+	Die partiellen Ableitungen sind $D_1 f(a)=f'\begin{pmatrix}
+		1\\\pi/4
+	\end{pmatrix}\cdot e_1=\begin{pmatrix}
+		2\\3\\0
+	\end{pmatrix}, D_2f(a)=f'\begin{pmatrix}
+		1\\\pi/4
+	\end{pmatrix}\cdot e_2 =\begin{pmatrix}
+		-1\\0\\\frac{1}{2}\sqrt{2}
+	\end{pmatrix}.$\\
+	\\
+	\textbf{5.5 \underline{Folgerungen:}} Sei f in a Diff'bar.\\
+	\underline{Beh.:}\\
+	(a) f ist in a in jeder Koordinate partiell diff'bar,\\
+	(b)\setulcolor{green}\ul{$(D_if)(a)=f'(a)\cdot e_i$}, und dies ist die i-te spalte von f'(a), denn Sie wissen ja:\\
+	\textcolor{blue}{die Spalten einer Matrix sind genau die Bildere der Einheitsvektoren.}\\
+	Also sind die Spalten von f' genau die Pariellen Ableitungen von f.\\
+	(c) Es ist $f'(a)=Df(a)=\begin{pmatrix}
+		(D_1f_1)(a)& \cdots & (D_nf_1)(a)\\
+		(d_1f_2)(a)& \cdots & (D_nf_2)(a)\\
+		\vdots& & \vdots\\
+		(D_1f_m)(a)&\cdots & (D_nf_m)(a)
+	\end{pmatrix}$\\
+	(d) Es ist \ul{$(D_jf_j)(a)=pr_i(D_jf(a))$}, also $D_jf_i=pr_i\circ D_jf$ für alle $j\in \{1,...,n\}, i\in \{1,...,m\}$.\\
+	\underline{Bew.:} (a),(b),(c): Klar mit \setulcolor{blue}\ul{5.3} und $v=e_i$.\\
+	Für (d): Haben $f(a)=\begin{pmatrix}
+		f_1(a)\\\vdots\\f_m(a)
+	\end{pmatrix}$ und $d_jf(a)=\begin{pmatrix}
+		D_jf_1(a)\\D_jf_2(a)\\\vdots\\D_jf_m(a)
+	\end{pmatrix},$\\
+	also $pr_j(D_jf_i(a))_{1\leq i\leq m|1\leq j\leq n}\in\mathbb{R}^{m x n}$\\
+	die \setulcolor{red}\ul{Jacobimatrix/Funktionalmatrix} von f in a.\\
+	\underline{Bem.:} "$\Leftarrow$" Kann is \setulcolor{blue}\ul{5.5} nicht gelten, die Existenz der Partiellen Ableitungen reicht nicht zum Nachweis der Differenzierbarkeit! (vgl. \ul{4.15, 4.16})\\
+	\\
+	\textbf{5.7 \underline{Fall:}} sei \underline{\underline{m=1}}, also f ein \underline{Skalarfeld}.\\
+	\setulcolor{red}
+	Dann: \begin{align}
+		f'(a)=(d_1f(a),...,D_nf(a))&=:(grad f(a))^T &"\ul{\textbf{Gradient}}"\\
+		&=:(\triangledown f(a))^T &"\ul{\textbf{Nabla}}"
+	\end{align}\\
+	Wir nennen den Spaltenvektor \setulcolor{yellow} \ul{grad f(a)}=$\begin{pmatrix}
+		D_1f(a)\\\vdots\\D_nf(a)
+	\end{pmatrix} \in \mathbb{R}^n$ den \setulcolor{red}\ul{Gradient von f in a}.\\
+	\setulcolor{yellow} mit \ul{$\triangledown$}:=$\begin{pmatrix}
+		D_1\\\vdots\\D_n
+	\end{pmatrix}$ bezeichnen wir den \setulcolor{red}\ul{Nabla-Operator}.\\
+	\\
+	Somit:\begin{align}
+		&f(x)=f(a)+(grad f(a))^T\cdot(x-a)+o(||x-a||)\\
+		\Rightarrow &f(x)=f(a)+\textless grad f(a), x-a\textgreater + o(||x-a||).
+	\end{align}\\
+	Sei grad f(a)$\neq o$, und betrachte alle $v\in S^{n-1}$.\\
+	Dann gilt: \setulcolor{green}\ul{$|D_vf(a)|$}=$|f'(a)(v)|=|(grad f(a))^T\cdot v|\\
+	=|\textless grad f(a),v\textgreater|\leq ||grad f(a)||\cdot ||v||_2$ (cauchyscchwarzungleichung Anhang 7 in an1)\\
+	Wobei "=" genau dann gilt, wenn v parallel zu grard f(a), d.h. ex. $t\in\mathbb{R}\backslash\{0\}: grad f(a)=tv,$\\
+	in diesem Fall wird für $D_cf(a)$ der maximale Wert angenommen.\\
+	Für $\tilde{v}:=\frac{1}{||grad f(a)||_2} grad f(a)$ gilt demnach:\\
+	$|D_{\tilde{v}}f(a)|=||grad f(a)||_2.$\\
+	\\
+	\textbf{5.8. \underline{FAZIT:}} \setulcolor{green}\ul{grad f(a) ist die RIchtung maximaler Steigung von f in a}\\
+	(welche dann $||grad f(a)||_2$ beträgt).\\
+	\\
+	\textbf{5.9. \underline{Veranschaulichung:}} Der Graph von f, nähmlich G(f):$\{\begin{pmatrix}
+		x\\f(x)
+	\end{pmatrix}\in\mathbb{R}^{n+1}\}$ (falls $U=\mathbb{R}^n$),\\
+	wird in $\begin{pmatrix}
+		a\\f(a)
+	\end{pmatrix}$ approximiert durch\\
+	$\xi_{n+1}= f(a)+\textless grad f(a), x-a\textgreater,$\\
+	und dies ist die Glg. für eine n-dim. Hyperebene im $\mathbb{R}^{n+1}$!\\
+	Diese heißt \setulcolor{red}\ul{Tangentialhyperebene von f im Punkt a}.\\
+	\\
+	\textbf{5.10 \underline{Bsp. mit n=2:}} $f(x,y)=x^2-3y, a=\begin{pmatrix}
+		\alpha_1\\\alpha_2
+	\end{pmatrix}	\rightarrow grad f(a)=(2\alpha_1,-3\alpha_2)^T,$ und\\
+	$\xi_3=\alpha_1^2-3\alpha_2+2\alpha_1(\xi_1-\alpha_1)-3\alpha_2(\xi_2-\alpha_2)$ ist die Glg. der Tangentialhyperebene im $\mathbb{R}^3.$\\
+	\\
+	\textbf{5.11. \underline{Fall:}} Sei \underline{\underline{m=n}}, also f ein \underline{Vektorfeld}.\\
+	Dann heißt \setulcolor{yellow}\ul{$div f(a)=\textless \triangledown, f\textgreater(a)$}:=$\sum_{i=1}^{n}D_if_i(a)=spur f'(a)\in\mathbb{R}\leftarrow$ [Erinnerung Lineare Algebra: $spur A = \sum_{i=1}^{n}\alpha_{ij}$, wenn $A=(\alpha_{ij})\in \mathbb{R}^{m x n}$, heißt \setulcolor{red}\ul{Spur} der Matrix A.]\\
+	die \ul{Divergenz von f in a.}\\
+	Die Funktionalmatrix ist quadratisch: $Df(a)=f'(a)=\begin{pmatrix}
+		D_1f_1(a)&D_2f_1(a)&\cdots&D_nf_1(a)\\
+		\vdots&\vdots&\vdots&\vdots\\
+		D_1f_n&D_2f_n&\cdots&d_nf_n(a)
+	\end{pmatrix}\in \mathbb{R}^{n x m}.$\\
+	Ihre Determinante heißt \ul{Funktionaldeterminante} bzw. \ul{Jacobideterminante}.\\
+	\\
+	Eine wichtige Rechenregel für das Ableiten verketteter Funktionen im Mehrdimensionalen ist die (allgemeine)\\
+	\textbf{5.12. \ul{Kettenregel:}} \underline{Vor.:} $ U \subseteq\mathbb{R}^n; U_1\subseteq\mathbb{R}^m; a\in U\xrightarrow{f} U_1\xrightarrow{g}\mathbb{R}^k$, \setulcolor{green}\ul{f in a diff'bar, g in f(a) diff'bar}\\
+	(insb. a innerer Punkt von U, f(A) innerer Punkt von $U_1$).\\
+	\underline{Beh.:}\ul{$g\circ f$ in a diffbar},  $\underbrace{D(f\circ f) (a)}_{\in\mathbb{R}^{k x n}}=\underbrace{(Dg)(f(a))}_{\in\mathbb{R}^{k x m}}\cdot \underbrace{(Df)(a)}_{\in\mathbb{R}}^{m x n}$.\\
+	\underline{Bew.:} Setze B:= f(a).\\
+	dann gilt für $r_1(x)=o(||x-a||),$ dass $ f(x)=f(a)+f'(a)(x-a)+r_1(x), \blackcircle{*}$\\
+	und für $r_2(y)=o(||y-b||),$ dass $ g(y)=g(b)+g'(b)(y-b)+r_2(y).$\\
+	$\xRightarrow{y=f(x)|b=f(a)} g(f(x))=g(f(a))+g'(f(a))(f(x)-f(a))+r_2(f(x))\\
+	\xRightarrow{\blackcircle{*}}g \circ f (a)+\underbrace{(Df)(f(a))\cdot (Df)(a\cdot(x-a))}_{=D(g\circ f)(a)\rightarrow\text{Beh.}}+g'(f(a))(r_1(x))+r_2(f(x))$\\
+	\\
+	Noch z.z.:
 	
 	
 	

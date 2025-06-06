@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  6 JUN 2025 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  6 JUN 2025 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"./Kap 5.tex"
-(Kap 5.tex
+**"./Kap 12.tex"
+(Kap 12.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
 
@@ -775,68 +775,80 @@ File: t3enc.def 2001/12/31 T3 encoding
 Now handling font encoding T3 ...
 ... no UTF-8 mapping file for font encoding T3
 )))
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box69
+\UL@hyphenbox=\box70
+\UL@skip=\skip74
+\UL@hook=\toks41
+\UL@height=\dimen287
+\UL@pe=\count325
+\UL@pixel=\dimen288
+\ULC@box=\box71
+Package: ulem 2019/11/18
+\ULdepth=\dimen289
+)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 21.
+Package hyperref Info: Option `colorlinks' set `true' on input line 22.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count325
-) (Kap 5.aux)
-\openout1 = `"Kap 5.aux"'.
+\l__color_backend_stack_int=\count326
+) (Kap 12.aux)
+\openout1 = `"Kap 12.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 46.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 46
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 47
 .
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 46.
-Package scrbase Info: activating english \abstractname on input line 46.
-Package scrbase Info: activating english \partname on input line 46.
-Package scrbase Info: activating english \figurename on input line 46.
-Package scrbase Info: activating english \tablename on input line 46.
-Package scrbase Info: activating english \contentsname on input line 46.
-Package scrbase Info: activating english \listfigurename on input line 46.
-Package scrbase Info: activating english \listtablename on input line 46.
-Package scrbase Info: activating english \refname on input line 46.
-Package scrbase Info: activating english \indexname on input line 46.
+LaTeX Font Info:    ... okay on input line 47.
+Package scrbase Info: activating english \abstractname on input line 47.
+Package scrbase Info: activating english \partname on input line 47.
+Package scrbase Info: activating english \figurename on input line 47.
+Package scrbase Info: activating english \tablename on input line 47.
+Package scrbase Info: activating english \contentsname on input line 47.
+Package scrbase Info: activating english \listfigurename on input line 47.
+Package scrbase Info: activating english \listtablename on input line 47.
+Package scrbase Info: activating english \refname on input line 47.
+Package scrbase Info: activating english \indexname on input line 47.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
-\scratchdimen=\dimen287
-\scratchbox=\box69
-\nofMPsegments=\count327
-\nofMParguments=\count328
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count329
-\MPscratchDim=\dimen288
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count327
+\scratchdimen=\dimen290
+\scratchbox=\box72
+\nofMPsegments=\count328
+\nofMParguments=\count329
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count330
+\MPscratchDim=\dimen291
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
+\everyMPtoPDFconversion=\toks43
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -856,10 +868,10 @@ G,.JBIG2,.JB2,.eps]
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 46.
- (Kap 5.out) (Kap 5.out)
+Package hyperref Info: Link coloring ON on input line 47.
+ (Kap 12.out) (Kap 12.out)
 \@outlinefile=\write4
-\openout4 = `"Kap 5.out"'.
+\openout4 = `"Kap 12.out"'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -868,7 +880,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 46.
+(scrartcl)           before \begin{document} on input line 47.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -876,86 +888,270 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count332
+\BKM@id=\count333
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
 
  (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
 
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 4
-7.
+8.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 47
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 48
 .
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 62.
+LaTeX Warning: Command \o invalid in math mode on input line 59.
 
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 6
-2.
+<bsp kap 12.2.png, id=6, 145.7445pt x 63.8385pt>
+File: bsp kap 12.2.png Graphic file (type png)
+<use bsp kap 12.2.png>
+Package pdftex.def Info: bsp kap 12.2.png  used on input line 63.
+(pdftex.def)             Requested size: 199.18172pt x 85.36096pt.
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 107.
+
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
+07.
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 62.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 107.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 62.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 107.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--151
+LaTeX Warning: Command \textgreater invalid in math mode on input line 108.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 108.
+
+<bsp kap 12.11.png, id=8, 160.80075pt x 52.998pt>
+File: bsp kap 12.11.png Graphic file (type png)
+<use bsp kap 12.11.png>
+Package pdftex.def Info: bsp kap 12.11.png  used on input line 110.
+(pdftex.def)             Requested size: 142.2657pt x 56.90703pt.
+
+LaTeX Warning: Command \OE invalid in math mode on input line 124.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 134.
+
+<bsp kap 12.14.png, id=9, 143.3355pt x 52.39575pt>
+File: bsp kap 12.14.png Graphic file (type png)
+<use bsp kap 12.14.png>
+Package pdftex.def Info: bsp kap 12.14.png  used on input line 137.
+(pdftex.def)             Requested size: 142.26999pt x 56.90636pt.
+
+LaTeX Warning: Command \o invalid in math mode on input line 141.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 141.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 141.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 141.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 141.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 144.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 144.
+
+
+LaTeX Warning: Command \textopencorner invalid in math mode on input line 145.
+
+
+LaTeX Warning: Command \textopencorner invalid in math mode on input line 145.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 145.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 145.
+
+
+LaTeX Warning: Command \ss invalid in math mode on input line 158.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 161.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 161.
+
+<bsp kap 12.14.2.png, id=10, 244.5135pt x 123.46124pt>
+File: bsp kap 12.14.2.png Graphic file (type png)
+<use bsp kap 12.14.2.png>
+Package pdftex.def Info: bsp kap 12.14.2.png  used on input line 166.
+(pdftex.def)             Requested size: 142.26936pt x 56.90588pt.
+
+LaTeX Warning: Command \o invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 178.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 178.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 178.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 178.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 178.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 179.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 181.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--151
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--151
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--151
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--151
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--151
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
 
  []
 
 
-Overfull \hbox (36.66937pt too wide) in paragraph at lines 47--151
-[]$ \OT1/cmr/m/n/10.95 f ist []in[] [][][]Rich[]-[]tung[] [][][]v[] [][][]in[] 
-[][][]a[] [][][]diff'bar und []([])(a)=[][]=$[]$. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--151
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--151
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Overfull \hbox (53.99933pt too wide) in paragraph at lines 48--183
+\OT1/cmr/bx/n/10.95 12.10. $[]$ \OT1/cmr/m/n/10.95 Die Aus-sage [] wird manch-m
+al missver-standen in der Form "Nur endlich viele []Uberdeckungsmengen
+ []
+
+
+Overfull \hbox (0.70012pt too wide) in paragraph at lines 48--183
+\OML/cmm/m/it/10.95 O[]$ \OT1/cmr/m/n/10.95 ^^?uberdecken M nur zum Teil" o.^^?
+a. gemeint ist aber, dass stets bere-its endlich vile []Uberdeckungsmengen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--183
 
  []
 
@@ -963,187 +1159,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--151
 
 [1
 
-{C:/Users/Phi-v/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
+{C:/Users/Phi-v/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./bsp kap 12
+.2.png>]
 
- []
+[2 <./bsp kap 12.11.png>]
 
+[3 <./bsp kap 12.14.png>]
 
-LaTeX Warning: Command \textless invalid in math mode on input line 165.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 165.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 165.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 165.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 165.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 165.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 165.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 165.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 168.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 168.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 168.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 168.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 183.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 183.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 183.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 183.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 193.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--213
-
- []
-
-
-
-[2]
-
-[3] (Kap 5.aux)
+[4 <./bsp kap 12.14.2.png>] (Kap 12.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
  ***********
-Package rerunfilecheck Info: File `"Kap 5".out' has not changed.
+Package rerunfilecheck Info: File `"Kap 12".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25475 strings out of 469921
- 485123 string characters out of 5468133
- 1014178 words of memory out of 5000000
- 51867 multiletter control sequences out of 15000+600000
- 634649 words of font info for 71 fonts, out of 8000000 for 9000
+ 25611 strings out of 469921
+ 487330 string characters out of 5468133
+ 1024820 words of memory out of 5000000
+ 52002 multiletter control sequences out of 15000+600000
+ 635390 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,107p,10933b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Phi-v/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Phi-v/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Phi-v/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ph
-i-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/symbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Kap 5.pdf" (3 pages, 181960 bytes).
+ 108i,11n,107p,10934b,707s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Phi-v\AppData\Local\MiKTeX\fonts/pk/ljfour/public/tipa/dpi657\tipa
+10.pk><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Phi-v/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Phi-v/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Phi-v/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Phi-v
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/User
+s/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy6.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/symbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Phi-v/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/hoekwater/stmary10.pfb>
+Output written on "Kap 12.pdf" (4 pages, 221400 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
