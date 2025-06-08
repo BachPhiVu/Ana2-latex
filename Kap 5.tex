@@ -8,6 +8,7 @@
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{soul}
+\usepackage{ upgreek }
 \usepackage{hyperref}
 \usepackage{tipa}
 \usepackage[dvipsnames]{xcolor}
@@ -209,11 +210,130 @@
 	$\xRightarrow{y=f(x)|b=f(a)} g(f(x))=g(f(a))+g'(f(a))(f(x)-f(a))+r_2(f(x))\\
 	\xRightarrow{\blackcircle{*}}g \circ f (a)+\underbrace{(Df)(f(a))\cdot (Df)(a\cdot(x-a))}_{=D(g\circ f)(a)\rightarrow\text{Beh.}}+g'(f(a))(r_1(x))+r_2(f(x))$\\
 	\\
-	Noch z.z.:
-	
-	
-	
-	
-	
-	
+	Noch z.z.: $g'(f(a))(r_1(x))+r_2(f(x))=o(||x-a||).$\\
+	(Def. für eine Matrix $A\in \mathbb{R}^{m x n}$ den wert 
+	$||A||_\infty:\max_{i,j}|a_{ij}|$, wenn $A=(a_{ij})_{i,j}.)$\\
+	$\bullet$ Es gilt:\\
+	$||\underbrace{g'(f(a))}_{\in\mathbb{R}^{k x m}}\cdot 
+	\underbrace{r_1(x)}_{\in \mathbb{R}^m}||_\infty \leq\redcircle{Ü} 
+	m\underbrace{||g'(f(a))||_\infty}_{\text{maximaler Eintrag der Matrix 
+	g'(f(a)) im Betrag, unabhängig von x}}\cdot ||r_1(x)||_\infty=o(||x-a||)$ 
+	nach Vor. an $r_1$.\\
+	$\bullet$ Bleibt, z.z.: $r_2(f(x))=o(||x-a||).$\\
+	Haben $r_2(y)=o(||y-b||),$ d.h. 
+	$\frac{r_2(y)}{||y-b||_\infty}\xrightarrow{y\rightarrow b}o.$\\
+	\\
+	Wähle $\mu \textgreater 0$. Dann ist für y nahe b: $r_2(y)\textless 
+	\mu\cdot||y-b||_\infty.$\\
+	Es folgt: \begin{align}
+		r_2(f(x))&\textless 
+		\mu||f(x)-f(a)||_\infty=\mu||f'(a)(x-a)+r_1(x)||_\infty\\
+		&\leq\mu \underbrace{\underbrace{||f'(a)||_\infty}_{\text{Konstant d.h. 
+		m abh. von x}}\cdot||x-a||_\infty}_{\leq 
+		\tilde{\mu}||x-a||\infty}+\underbrace{\mu||r_1(x)||\infty}_{=o(||x-a||)},
+	\end{align}
+	also $\frac{r_2 (f(x))}{||x-a||_\infty}\xrightarrow{x\rightarrow a}0$, da 
+	$\mu \textgreater 0$ beliebig.\\
+	\strut\hfill$\square$\\
+	\textbf{5.13. \underline{Illustration der Kettenregelformel:}} $D(g\circ 
+	f)(a)=$\setulcolor{green}\ul{$(Dg)(f(a))$}$\cdot$\setulcolor{magenta}\ul{$(Df)(a)$}\\
+	$\begin{pmatrix}
+		D_1(g\circ f)_1(a)&\cdots&D_n(g\circ f)_1(a)\\
+		\vdots& &\vdots\\
+		D_1(g\circ f)_k(a)&\cdots&D_n(g\circ f)_k(a)
+	\end{pmatrix}=\begin{pmatrix}
+	D_1g_1(f(a))&\cdots&D_mg_1(f(a))\\
+	\vdots& &\vdots\\
+	D_1g_k(f(a))&\cdots&D_mg_k(f(a))\\
+	\end{pmatrix}=\begin{pmatrix}
+		D_1f_1(a)&\cdots&D_nf_1(a)\\
+		\vdots& &\vdots\\
+		D_1f_m(a)&\cdots&D_nf_m(a)\\
+	\end{pmatrix}.$\\
+	\\
+	\textbf{5.14. \underline{$\bullet$ Bsp.:}} Sei $a\in U, T_a: 
+	\mathbb{R}^n\rightarrow\mathbb{R}^n, x\rightarrowtail x+a,$ ist diff'bar. 
+	\setulcolor{red}(\ul{Translation um a})\\
+	\begin{align}
+		\text{Dann: f in a diff'bar} &\Leftrightarrow f \circ T_{-a} \text{in o 
+		diff'bar}\\
+		&\Leftrightarrow T_{-f(a)} \circ f \text{in a diff'bar.}
+	\end{align}
+	$\bullet$\underline{Bsp.:} 
+	$\mathbb{R}^3\xrightarrow{f}\mathbb{R}^2\xrightarrow{g}\mathbb{R}, 
+	\mathbb{R}^3\xrightarrow{g\circ f}\mathbb{R}, n=3, m=2, g=1, 
+	f(x,y,z)=\begin{pmatrix}
+		x^{\textcolor{blue}{2}}+y\\
+		2y-z
+	\end{pmatrix}, g(u,v))uv$\\
+Betr. $a=\begin{pmatrix}
+	1\\2\\3
+\end{pmatrix}\in \mathbb{R}^3.$ Dann:$ D(g\circ 
+f)(a)=(Dg)\underbrace{f(a)}_{=\begin{pmatrix}
+	3\\1
+\end{pmatrix}}\cdot(Df)\underbrace{(a)}_{=\begin{pmatrix}
+	\textcolor{red}{1}\\2\\3
+\end{pmatrix}}=(1,3)\cdot\begin{pmatrix}
+	\textcolor{blue}{2}\cdot\textcolor{red}{1}&1&0\\
+	0&2&-1
+\end{pmatrix}=(2,7,-3)\in\mathbb{R}^{1 x 3}.$\\
+\\
+\textbf{5.15. \underline{Bsp.:}} $n=k=1, m=3: f(t)=\begin{pmatrix}
+	\varphi(t)\\\uppsi(t)\\\chi(t)
+\end{pmatrix}$ mit $\varphi, \uppsi, \chi:U\rightarrow\mathbb{R}, a\in U 
+\subseteq\mathbb{R}, \varphi,\uppsi,\chi$ diff'bar in $a\in\mathbb{R}.$\\
+sei $b:f(a), g:U_1\rightarrow, U_1\subseteq \mathbb{R}^3,$ b innerer Punkt von 
+$U_1, h:=g\circ f.$\\
+Somit zeigt die Kettenregel, dass\\
+\begin{align}
+	h'(a)&=g'(b)\cdot f'(a)=(D-1g(f(a)), D-2g(f(a)),D_3g(f(a)))\cdot 
+	\begin{pmatrix}
+		\varphi'(a)\\\uppsi'(a)\\\chi'(a)
+	\end{pmatrix}\\
+	&D_1g(f(a))\varphi'(a)+D_2g(f(a))\uppsi'(a)+D_3 g(f(a))\chi'(a)\in 
+	\mathbb{R}
+\end{align}\\
+In der Literatur wird dafür oft geschrieben: (mit 
+$x(t)=\varphi(t),y(t)=\uppsi(t), z(t)=\chi(t)$)\\
+$\frac{dh}{dt}=\frac{\delta f}{\delta x}\frac{d x}{d t}+\frac{\delta g}{\delta 
+y}\frac{dy}{dt}+\frac{\delta g}{\delta z}\frac{dz}{dt}$ oder auch 
+$dh=\frac{\delta g}{\delta x}dx+\frac{\delta g}{\delta y}dy+\frac{\delta 
+g}{\delta z}dz.$\\
+\\
+\textbf{5.16.} Spezialfall k=1 der Kettenregel, Verallgemeinerung von 
+\setulcolor{blue} \ul{5.15}:\\
+$\frac{\delta g}{\delta t_j}(a)=\sum_{i=1}^{m}\frac{\delta g}{\delta 
+x_i}(f_1(a),...,f_m(a))\cdot\frac{\delta f_i}{\delta t_j}(a)$ für alle 
+$j\in\{1,...,n\},$ bzw. schreibbar als $D_j(g\circ 
+f)(a)=(D_1g(f(a)),...,D_mg(f(a)))\cdot(d_jf_i(a))_{1\leq i\leq m}.$\\
+Bildet man rechts das Matrixprodukt, so ist dies $=\sum_{i=1}^{m} 
+D_ig(f(a))\cdot D_jf_i(a).$\\
+Ist $k=n=1$, folgt $D(g\cdot f)(a)=\textless(grad g)\circ f,f'\textgreater 
+(a)$, vgl. \ul{5.15}.\\
+\\
+\textbf{5.17.} Berechnung von Richtungsableitungen im Fall 
+\underline{\underline{m=1:}}\\
+\ul{Satz 5.3.} kann mir der Kettenregel bewiesen werden:\\
+\textopencorner Haben $D_vf(a)=\lim\limits_{h\rightarrow 
+0}\frac{1}{h}(f(a+hv)-f(a))=g'(0)$\\
+für die Funktion $g(h):=f(a+hv)=f\circ s(h),$\\
+wo $s(h):=a+hv, s:\mathbb{R}\rightarrow\mathbb{R}^n.$\\
+Die \ul{Kettenregel} liefert $D_vf(a)=g'(0)=D(f\circ s)(0)=(Df)(s(0))\cdot 
+s'(0)=Df(a)\cdot v\textcorner.$\\
+\\
+\textbf{5.18 \underline{Bem.:}} Die Voraussetzung "f total diff'bar" in 
+\ul{5.3} ist notwendig!\\
+Betr. z.b. $f:\mathbb{R}^2\rightarrow \mathbb{R}, f(x,y)=\begin{cases}
+	\frac{x^2y}{x^4+y^2} &\text{für }(x,y)\neq (0,0),\\
+	0&\text{sonst.}
+\end{cases}$\\
+	Dann ist 
+	($D_{\underbrace{u,v}_{\text{Richtungsvektor}}}f)(0,0)=\frac{u^2}{v}$ für 
+	$v\neq0$, denn 
+	$\frac{1}{t}(f(\underbrace{(0,0)+t\cdot(u,v)}_{=(tu,tv)})-f(0,0))= 
+	\frac{u^2v}{t^2u^4+v^2} 
+	\xrightarrow{t\rightarrow0}\underbrace{\frac{u^2}{v}}_{\neq 0},$\\
+	und $D_1f(0,0)=D_2f(0,0)=0,$ also grad $f(0,0)=\begin{pmatrix}
+		0\\0
+	\end{pmatrix},$ und die r.f. in \ul{5.3} ist =0.\\
 \end{document}
