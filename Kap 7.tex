@@ -1,0 +1,197 @@
+\documentclass[]{scrartcl}
+\title{Vorlesung Analysis II}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{soul}
+\usepackage{ upgreek }
+\usepackage{hyperref}
+\usepackage{tipa}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\bluecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=blue, text=blue, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\blackcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=black, text=black, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\redul}[1]{\setulcolor{red}{\ul{#1}}}
+\newcommand{\blueul}[1]{\setulcolor{blue}{\ul{#1}}}
+\newcommand{\yelul}[1]{\setulcolor{yellow}{\ul{#1}}}
+\newcommand{\greenul}[1]{\setulcolor{green}{\ul{#1}}}
+\newcommand{\oraul}[1]{\setulcolor{orange}{\ul{#1}}}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\textbf{\underline{Teil 1: Differentialrechnung im $\mathbb{R}^n$}}\\
+	\\
+	\textbf{\underline{an7: Satz von Taylor, Lokale Extrema}}\\
+	\\
+	\textbf{\underline{\underline{Stichworte:} Satz von Taylor, Extrema, 
+	Kritische Stellen, Kriterien, Hessematrix}}\\
+	\\
+	\textbf{\underline{Literatur:}}\setulcolor{blue} \ul{[Hoff] Kapitel, 9.6/7, 
+	[Forster] Kapitel 7}\\
+	\\
+	\textbf{7.1. \underline{Einleitung:}} Der Satz von Taylor in der 
+	mehrdimensionalen Version für Skalarfelder liefert Kriterien zur Erkennung 
+	von Extrema anhand Gradienten und Hessematrix.\\
+	\\
+	\textbf{7.2. \underline{Vor.:}} $f:U\rightarrow \mathbb{R}$ mit 
+	$U\subset\mathbb{R}^n, f \in \ell^{m+1}(U,\mathbb{R}), 
+	\overline{ax}\subseteq U$.\\
+	\underline{Bezeichnung:} Für $\alpha \in \mathbb{N}^n_0, 
+	\alpha=(\alpha_1,...,\alpha_n)$ setze zur einfacheren Notation\\
+	\setulcolor{yellow}\ul{$|\alpha|$}:=$\alpha_1+...+\alpha_n,$ 
+	\ul{$\alpha!$}:= $\alpha_1!\cdots\alpha_n!$\\
+	\ul{$D^\alpha$}:=$D_1^{\alpha_1}\circ D_2^{\alpha_2}\circ...\circ 
+	D_n^{\alpha_n},$ \ul{$x^\alpha$}:=$x_1^{\alpha_1}\cdots x_n^{\alpha_n},$ 
+	\ul{$X^{\alpha}$}:=$X_1^{\alpha_1}\cdots X_n^{\alpha_n}.$\\
+	Man nennt $\alpha$ auch einen \setulcolor{red}\ul{Multi-Index}.\\
+	Damit kann jedes Polynom $P\in\mathbb{R}[X_1^-,...,X_n^-]$, deg P=m, auch 
+	in der Kurzen Multi-Index-Schreibweise notiert werden als\\
+	$P=\sum_{\alpha\in\mathbb{N}_0^n;|\alpha|\leq m} c_\alpha X^{a}$, d.h. 
+	$P(X_1-,...,X_n)=\sum_{0\leq \alpha_1,...,\alpha_n\leq m, 
+	\alpha_1+...+\alpha_n\leq m} 
+	c_{(\alpha_1,...,\alpha_n)}X_1^{\alpha_1}\cdots X_n^{\alpha_n}.$\\
+	\underline{Bsp.:} $\sum_{|\alpha|\leq 2} \alpha! 
+	X^\alpha=\underbrace{0!X_1^0}_{\text{Grad 
+	0}}+\underbrace{\sum_{i=1}^{n}1!X_i^1}_{\text{Grad 
+	1}}+\underbrace{\sum_{1\leq i\neq j\leq 
+	n}1!1!X_i^1X_j^1+\sum_{i=1^n2!X_i^2}}_{\text{Grad 2}}$\\
+	\\
+	Damit kann der Satz von Taylor in einer Kurzgefassten Formel notiert 
+	werden:\\
+	\textbf{7.3. \setulcolor{red}\ul{Satz von Taylor:}} Unter der 
+	\underline{Vor.} \greenul{wie in} \blueul{7.2} gilt:\\
+	\underline{Beh.:} \greenul{$\exists c\in \overline{ax}:$}\\
+	\begin{tcolorbox}[colframe=red]
+		\greenul{$f(x)=\sum_{|\alpha|\leq m}\frac{1}{\alpha!}(D^\alpha 
+		f)(a)(x-a)^\alpha + 
+		\sum_{\textcolor{red}{|\alpha|=m+1}}\frac{1}{\alpha!}(D^\alpha 
+		f)(\textcolor{red}{c})(x-a)^\alpha$}
+	\end{tcolorbox}
+	\textbf{7.4. \underline{Bem.:}} Für \redul{m=0} lautet die Beh. 
+	\greenul{$f(x)=f(a)+Df(c)(x-a)$} für ein $c\in\overline{ax}$, dies is die 
+	Aussage des \blueul{MWS 6.4.}\\
+	\\
+	\textbf{7.5. \underline{Kor.:}} Für \redul{m=1} lautet die Beh.\\
+	\greenul{$f(x)=f(a)+\textless$ grad 
+	$f(a),x-a\textgreater+\frac{1}{2}(x-a)^T H(f_ic)(x-a)$}\\
+	mit der (laut dem \blueul{Satz von Schwarz}) \greenul{symmetrischen} Matrix 
+	\yelul{$H(f_ic)$}:=\redul{$(D_iD_jf(c))_{n,n}$}, die \redul{Hessematrix} 
+	heißt; die zugehörige quadratische Form heißt \redul{Hesseform}.\\
+	(Auch: Schreibweise \yelul{Hess f(c)} statt $H(f_ic)$ üblich.)\\
+	(Jede symmetrische Matrix A, wo $A^T=A$, definiert über $\textless 
+	x,Ax\textgreater=x^TAx$ eine quadratische Form.)\\
+	\\
+	\textbf{7.6. \underline{Bem.:}} Ist P ein Polynom, 
+	$P\in\mathbb{R}[X_1,...,X_n]$, deg P=m, dann ist $P\in 
+	\ell^\infty(\mathbb{R}^n)$ und P ist seine (eigene) Taylorreihe.\\
+	\\
+	\textbf{7.7. \underline{Beweis des} \redul{Satzes 7.3 von Taylor:}}\\
+	\underline{1. Schritt:} Für $\epsilon \textgreater 0, t\in ]-\epsilon, 
+	1+\epsilon [ \subseteq \mathbb{R}$ setze \oraul{$g(t):=f(a+t(x-a))$} für 
+	festes x und a. Es ist also $g\in \ell^{m+1}(]-\epsilon,1+\epsilon[)$.\\
+	\underline{Beh.:} Für $k\subseteq m+1$ ist 
+	\oraul{$\frac{d^kg}{dt^k}(t)\overset{!}{=}\sum_{|\alpha|=k}\frac{k!}{\alpha!}
+	 D^\alpha f(a+t(x-a))$}.\\
+	\underline{Bew.:} Setze zunächst \oraul{y:=x-a}=:$(\eta_1,...,\eta_n)^T$.\\
+	\textopencorner\underline{Beh.:} 
+	$\frac{d^kg}{dt^k}(t)=$\oraul{$\sum_{i1,i,k=1}^{n}D_{i_k}D_{i_{k-1}}\cdots 
+	D_{i_1}f(a+ty)\eta_{i_1}\cdots\eta_{i_k}$}.\\
+	\underline{Bew.:} Vollständige Induktion über k:\\
+	\oraul{k=1}:$\frac{dg}{dt}(t)=\sum_{i=1}^{n}D_if(a+ty)\eta_i$ nach 
+	\blueul{Kettenregel 5.12}\\
+	denn Df(z)=($D_\eta f(z),...,D_nf(z)$),\\
+	D(a+ty)=y=$(\eta_1,...,\eta_n)^T$
+	\oraul{$k\rightarrow 
+	k+1$}:$\frac{d^{k+1}g}{dt^{k+1}}(t)=\frac{d}{dt}(\sum_{i1,i,k=1}^{n}D_{i_k}D_{i_{k-1}}\cdots
+	 D_{i_1}f(a+ty)\eta_{i_1}\cdots\eta_{i_k})$\\
+	 =\oraul{$\sum_{j=1}^{n}$}$\sum_{i1,i,k=1}^{n}\textcolor{red}{D_j}D_{i_k}D_{i_{k-1}}\cdots
+	  
+	 D_{i_1}f(a+ty)\eta_{i_1}\cdots\eta_{i_k}\textcolor{red}{\eta_j}$, setze 
+	 \oraul{$i_{k+1}:=j$}\\
+	 $\sum_{i1,i,k=1}^{n}D_{i_k+1}D_{i_{k}}\cdots 
+	 D_{i_1}f(a+ty)\eta_{i_1}\cdots\eta_{i_k}\eta_{k+1$
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
