@@ -138,17 +138,267 @@
 	k+1$}:$\frac{d^{k+1}g}{dt^{k+1}}(t)=\frac{d}{dt}(\sum_{i1,i,k=1}^{n}D_{i_k}D_{i_{k-1}}\cdots
 	 D_{i_1}f(a+ty)\eta_{i_1}\cdots\eta_{i_k})$\\
 	 =\oraul{$\sum_{j=1}^{n}$}$\sum_{i1,i,k=1}^{n}\textcolor{red}{D_j}D_{i_k}D_{i_{k-1}}\cdots
-	  
 	 D_{i_1}f(a+ty)\eta_{i_1}\cdots\eta_{i_k}\textcolor{red}{\eta_j}$, setze 
 	 \oraul{$i_{k+1}:=j$}\\
 	 $\sum_{i1,i,k=1}^{n}D_{i_k+1}D_{i_{k}}\cdots 
-	 D_{i_1}f(a+ty)\eta_{i_1}\cdots\eta_{i_k}\eta_{k+1$
-	
-	
-	
-	
-	
-	
+	 D_{i_1}f(a+ty)\eta_{i_1}\cdots\eta_{i_k}\eta_{k+1}$ nach 
+	 \blueul{Kettenregel 5.12}\textcorner\\
+	 \\
+	 Nach dem \blueul{Satz von Schwarz} ist hier beliebiges Umordnen der 
+	 partiellen Ableitungen möglich. \oraul{Fassen} daher in den 
+	 $(i_1,...,i_k)\in \{1,...,n\}^k$ \oraul{gleiche Indezes zusammen}. Dabei 
+	 komme der Index j darunter $\alpha_j-$mal vor $(j\in\{1,...,n\})$, und wir 
+	 erhalten zu einem $(i_1,...,i_k)$ ein bestimmtes ($\alpha_1,...,\alpha_n$) 
+	 mit $\alpha_1+...+\alpha_n=k$. Zu diesem ($\alpha_1,...,\alpha_n$) gibt es 
+	 genau $\frac{k!}{\alpha!}$ viele Möglichlkeiten, ein solches passendes 
+	 $(i_1,...,i_k)$ zu finden (beweisbar durch vollständige Induktion, 
+	 \blueul{s. 7.8}).\\
+	 Daraus folgt \\
+	 \oraul{$\frac{dg}{dt}(t)=\sum_{i=1}^{n}\frac{k!}{\alpha!}D_if(a+ty)y^\alpha$}
+	  für $k\geq 1$(k=0: Def. von g)\\
+	 \\
+	 \textbf{\underline{2. Schritt:}} Wenden nun auf g den 
+	 \blueul{eindimensionalen Satz von Taylor An 19.3}, an: \\
+	 \begin{align}
+	 	f(x)=g(1)&=\sum_{j=0}^{m}\frac{g^{(j)}(0)}{j!}+\frac{1}{(m+1)!}g^{m+1}(\vartheta)
+	 	 \text{für }\vartheta\in\text{]0,1[}(Lagrange-Restglied 
+	 	An19.8)\\
+	 	(schritt 
+	 	1.)\rightarrow&=\sum_{j=0}^{m}\frac{1}{j!}\sum_{|\alpha|=j}D^\alpha 
+	 	f(a)(x-a)^\alpha +\frac{1}{(m+1)!}\sum_{|\alpha|=m+1} 
+	 	\frac{(m+1!)}{\alpha!}D^\alpha f(c)(x-a)^\alpha
+	 \end{align}\\
+	mit \oraul{$c:=a+\vartheta(x-a)$} also $c\in 
+	\overline{ax}\backslash\{a,x\}$\\
+	$=\sum_{|\alpha|\leq m}\frac{1}{\alpha!}D^\alpha 
+	f(a)(x-a)^\alpha+\sum_{|\alpha|=m+1}\frac{1}{\alpha!}D^\alpha 
+	f(c)(x-a)^\alpha.$\\
+	\\
+	\textbf{7.8. \underline{Beh.:}} Zu $(\alpha_1,...,\alpha_n) \in 
+	\mathbb{N}_0^n$ gibt es $\frac{k!}{\alpha!}$ viele k-Tupel 
+	$(i_1,...,i_k)\in \{1,...,n\}^k$ so, dass ein (vorgeg.) $j\in\{1,...,n\}$ 
+	darin $\alpha_j$-mal vorkommt mit $\alpha_1+...+\alpha_k=k.$ 
+	\textopencorner Was sind die 4-Tupel $(i_1,...,i_4)$ zu 
+	$\alpha=(\alpha_1,\alpha_2,\alpha_3)=(1,3,0)?\redcircle{Ü}\textcorner$\\
+	\underline{Bew.:}  durch \oraul{vollständige Induktion über k:}\\
+	k=1: zu (0,...,0,1,0,...,0) (an der Stelle j) gilt es 
+	$\frac{k!}{\alpha!}=1$ einziges k-Tupel $(i_1)$, so, dass j darin 
+	$\alpha_j$-malig vorkommt, nähmlich j. $\checkmark$\\
+	$k\rightarrow k+1$: zu ($\alpha_1,...,\alpha_n$) mit 
+	$\alpha_1+...+\alpha_n=k+1$ gibt es, fallls \oraul{$i_1=j$} ist, nach 
+	\oraul{Ind. vor.} genau 
+	$\frac{k!}{\alpha_1!\cdots(\alpha_j-1)!\cdots\alpha_n!}$ viele (k+1)-Tupel 
+	$(i_1,...,i_k+1)$ der geforderten Art, insgesamt sind dies:$\sum_{j=1}^{n} 
+	\frac{k!}{\alpha_1!\cdots(\alpha_j-1)!\cdots\alpha_n!}= 
+	\frac{k!(\alpha_1+\cdots+\alpha_n)}{\alpha_1!\cdots\alpha_n!}=\frac{(k+1)!}{\alpha!}$
+	$\checkmark$\\
+	\strut\hfill$\square$\\
+	\textbf{7.9. \underline{Bezeichnung:}} Sei $a \in D \subset \mathbb{R}^n, 
+	f:D\rightarrow\mathbb{R}$. Sei 
+	\yelul{$\mathcal{U}_a$}:=$\{U\subset\mathbb{R}^n; a\in U\}.$\\
+	\\
+	\textbf{7.10. \underline{Def.:}} f hat in a ein \redul{relatives}
+	$
+	\left\{ 
+	\begin{array}{l}
+		\text{Maximum} \\
+		\text{Minimum}
+	\end{array}
+	\right\}
+	:\Leftrightarrow\exists U\in \mathcal{U}_a:f_{rU}
+	\left\{ 
+	\begin{array}{l}
+		\leq f(a)\\
+		\geq f(a)
+	\end{array}
+	\right\}.
+	$\\
+	\underline{Def.:} f hat in a ein \redul{striktes}
+$
+\left\{ 
+\begin{array}{l}
+\text{Maximum} \\
+\text{Minimum}
+\end{array}
+\right\}
+:\Leftrightarrow\exists U\in \mathcal{U}_a:f_{rU\backslash\{a\}}
+\left\{ 
+\begin{array}{l}
+< f(a)\\
+> f(a)
+\end{array}
+\right\}.
+$\\
+	Ein relatives Extremum heißt auch \redul{lokales Extremum, Globales 
+	Extremum}, falls U=D wählbar.\\
+	\\
+	\textbf{7.11. \redul{Erste notwendige Bedingung:}} Sei $f:D\rightarrow 
+	\mathbb{R}, D\subset \mathbb{R}^n.$\\
+	\underline{Vor.:} f habe in $a \in D$ \greenul{relatives Extremum}, 
+	$\forall j \in \{1,...,n\}:$ \greenul{$D_jf(a)$ ex.}\\
+	\underline{Beh.:} \greenul{$D_jf(a)=o$} bzw. \ul{grad f(a)=O}.\\
+	\underline{Bew.:} Sei \oraul{$\varphi(t):= f(a+te_j)$}, für $|t|$ 
+	hinreichend klein: \\
+	$\varphi$ hat in O ein relatives Extremum \\$\Rightarrow \varphi'(t)=O\\ 
+	\Rightarrow D_jf(a)=O$.\\
+	\strut\hfill$\square$\\
+	\textbf{7.12. \underline{Def.:}} a heißt \redul{Kritischer Punkt von f,} 
+	falls $f\in l^1(D), D \subset \mathbb{R}^n$, und grad f(a)=0 gilt.\\
+	\\
+	\textbf{7.13. \redul{Zweite notwendige Bedingung:}}\\
+	\underline{Vor.:} f habe in a ein \greenul{relatives 
+	M$\textcolor{magenta}{a}$ximum(/M$\textcolor{magenta}{i}$nimum)}, $ f\in 
+	l^2 
+	(D), D \subset \mathbb{R}^n.$\\
+	\underline{Beh.:} \greenul{H(f;a)} ist 
+	\greenul{neg$\textcolor{magenta}{a}$tiv(/pos$\textcolor{magenta}{i}$tiv) 
+	semidefiniert}. [Bew. vgl. \blueul{7.17}]\\
+	\\
+	\textbf{7.14. \underline{Bezeichnung}(vgl.\blueul{Lin Algebra} 
+	\textcolor{blue}{II}):} A symmetrische Bilinearform, dann heißt A 
+	\redul{positiv semidefiniert} :$\Leftrightarrow \forall h \in 
+	\mathbb{R}^n\backslash\{0\}: \textless h,Ah\textgreater =h^T Ah\left\{ 
+	\begin{array}{l}
+		\geq 0\\
+		\leq 0\\
+		>0\\
+		>0
+	\end{array}
+	\right\}\\$
+	A \redul{positiv definiert}:""""""\\
+	1.positiv semidefiniert\\
+	2.negativ semidefiniert\\
+	3.positiv definiert\\
+	4.negativ definiert bei der geschweiften Klammer.\\
+	\\
+	\textbf{7.15. \redul{EQ-Kriterium für Definierbarkeit} (vgl. 
+	\blueul{Lineare Algebra $\textcolor{blue}{II, Kor. 6.5.7, SoSe 25}$}):} Sei 
+	$ 
+	A\in \mathbb{R}^{nxn}$ symmetrisch, d.h. $A^T=A$.\\
+	Dann gilt:A positiv (\textcolor{green}{negativ}) definiert 
+	$\Leftrightarrow$ alle EWe \textgreater 0 (\textcolor{green}{\textless}0).\\
+	A positiv (\textcolor{green}{negativ}) \textcolor{blue}{semi}definiert 
+	$\Leftrightarrow$ alle EWe $\geq$0(\textcolor{green}{$\leq$}0).\\
+	\\
+	\textbf{7.16. \redul{Hauptminoranten-Kriterium} (auch: Hurwitz-Kriterium):} 
+	Sei $A\in\mathbb{R}^{nxn}$ symmetrisch. Dann \greenul{A positiv definiert 
+	$\Leftrightarrow$ alle Hauptminoren det $A_k\textgreater0$}, wo 
+	\yelul{$A_k$} die Matrix sei, die aus den ersten k Zeilen und k Spalten von 
+	A besteht, $k\in\{1,...,n\}$.\\
+	\\
+	\textbf{7.17. \underline{Bsp.:}} $g(t)=f(a+t(x-a))$ habe rel. Maximum in 
+	t=0.\\
+	Dann $0\geq g"(t)=h^TH(f;a)h$ mit $h=x-a$ laut \blueul{7.13}.\\
+	$\bullet: D=\mathbb{R}^2, f\begin{pmatrix}
+		x\\
+		y
+	\end{pmatrix}=y^2+x^4+x^3$. Dann ist $D_1f\begin{pmatrix}
+	x\\
+	y
+	\end{pmatrix}=4x^3+3x^2, D_2f\begin{pmatrix}
+		x\\
+		y
+	\end{pmatrix}=2y.$\\
+	Kritische Punkte: (0,0), $(-\frac{3}{4},0)$, sind mögliche Extremstellen 
+	laut \blueul{7.11}.\\
+	\\
+	\textbf{7.18. \redul{Hinreichende Bedingung:}}\\
+	\underline{Vor.:} $f\in l^2(D), D\subset\mathbb{R}^n$, a 
+	\greenul{Kritischer Punkt in f, H(f;a)$\left\{ 
+		\begin{array}{l}
+			negativ\\
+			positiv
+		\end{array}
+		\right\}.
+		$ definiert.}\\
+	\underline{Beh.:} f hat in a \greenul{striktes lokales $\left\{ 
+		\begin{array}{l}
+			Max\\Min
+		\end{array}
+		\right\}.
+		$.}\\
+	\underline{Bew.:} Ans \blueul{7.3}, dem \blueul{Satz von Taylor für m=2}, 
+	folgt:\\
+	f(a+h)=f(a)+$\underbrace{0}_{grad f(a)=o \text{da Krit. 
+	Pkt}}+\frac{1}{2}h^TH(f;\textcolor{red}{c})h$ für 
+	$\textcolor{red}{c}\in\overline{a(a+h)}$ geeignet.\\
+	Da \oraul{H(f;c) stetig} und c nahe bei a liegt (wenn h klein ist), ist 
+	auch \oraul{H(f;c) negativ definiert}.\\
+	Daher ist f(a+h)\textless f(a), d.h. f hat in a ein striktes lokales 
+	Maximum.\\
+	\underline{Bem.:} Dieser Beweisansatz zeigt auch 
+	\blueul{7.17}.\hfill$\square$\\
+	\\
+	\textbf{7.19. Bsp.:} $D=\mathbb{R}^2, f\begin{pmatrix}
+		x\\y
+	\end{pmatrix}= y^2+x^4+x^3\Rightarrow D_2D_1f\begin{pmatrix}
+		x\\y
+	\end{pmatrix}=0, D_1^2f\begin{pmatrix}
+		x\\y
+	\end{pmatrix}
+	=6x(2x+1), D_2^2f\begin{pmatrix}
+		x\\y
+	\end{pmatrix}
+	=2$.\\
+	$\Rightarrow H(f;0)=\begin{pmatrix}
+		0&0\\0&2
+	\end{pmatrix}$ positiv \underline{semi}definiert,\\
+	$H(f;(-\frac{3}{4},0))=\begin{pmatrix}
+		+&0\\0&2
+	\end{pmatrix}$ positiv definiert $\Rightarrow$ in $(-\frac{3}{4})$ ex. ein 
+	striktes lok. Min.\\
+	Ferner ex. in o  kein Extremum: Denn es ist \\
+	$f\begin{pmatrix}
+		x\\0
+	\end{pmatrix}=x^3(x+1)\left\{ 
+	\begin{array}{l}
+		< 0=f(o)\\
+		> 0=f(o)
+	\end{array}
+	\right\}$ falls $\left\{ 
+	\begin{array}{l}
+		-1\textless x\textless0\\x\textgreater0
+	\end{array}
+	\right\}$ \\
+	\\
+	\textbf{7.20. \underline{Bem.:}} Ein Anschluss von Extrema ist wie folgt 
+	möglich (Kor. aus \blueul{7.13}):\\
+	Ist f auf $U\subset \mathbb{R}^n$ zweimal stetig diff'bar, \greenul{grad 
+	f(a)=0}, H(f;a) \greenul{indefinit}, so hat f in a \greenul{kein lokales 
+	Extremum}.\\
+	\\
+	\textbf{7.21. \underline{Praktisches Vorgehen:}} $\bullet$ Als 
+	Extremstellen kommen die Punkte in Frage,\\
+	-die Fritisch sind (d.h. grad f verschwindet dort),\\
+	-die Randpunkte von U sind (falls U nicht offen sein sollte),\\
+	-oder die singulär sind (wo f nicht diff'bar ist).\\
+	$\bullet$ Sie Kritischen Punkte ermittelt man durch lösen des 
+	Gleichungssystems (i.a. nicht lin.) grad f(x)=0, welches n Gleichungen in n 
+	Unbekannt hat. Dieses hat oft nur endlich viele Lösungen. Der Vergleich der 
+	Funktionswerte dort reicht aber nicht aus, deshalb sind Kriterien nötig.\\
+	$\bullet$ Dann jeweils Hessematrix berechnen und Kriterien testen. Hilft 
+	das nicht, müssen die Stellen anderweitig untersucht werden.\\
+	\\
+	\textbf{7.22. \underline{Bsp.:}} Betr. $f_1,f_2,f_3: 
+	\mathbb{R}^2\rightarrow\mathbb{R}, f_1(x,y)= x^2+y^4, f_2(x,y)=x^2, 
+	f_3(x,y)=x^2+y^3$.\\
+	Für alle $i\in\{1,2,3\}$ ist grad $f_i(o)=o$ und $H(f_i;o)=\begin{pmatrix}
+		2&0\\0&2
+	\end{pmatrix}$ positiv semidefinit.\\
+$\bullet$ Die Fkt. $f_1$ hat in o ein striktes lokales Minimum. $(\forall 
+\begin{pmatrix}
+	x\\y
+\end{pmatrix}\neq o:f_1(x,y)=x^2+y^2\textgreater0=f_1(o).)$\\
+$\bullet$ Die Fkt. $f_2$ hat in o lokales Minimum $(\forall \begin{pmatrix}
+	x\\y
+\end{pmatrix}:f_2\begin{pmatrix}
+x\\y
+\end{pmatrix}\geq0)$, das nicht strikt ist, denn in allen Punkten der y-Achse 
+hat $f_2$ denselben Wert wie in o. ($\forall y: f_2(0;y)=0=f_2(0,0)$)\\
+	$\bullet$ Die Fkt. $f_3$ hat in o weder ein lokales Minimum noch lokales 
+	Maximum.\\
+	($\forall y \textless 0: f_3(0,y)=y^3\textless0=f_3(o), \forall y 
+	\textgreater0: f_3(0,y)=y^3\textgreater0=f_3(o).$)
 	
 	
 	

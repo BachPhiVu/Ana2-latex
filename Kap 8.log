@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.10)  17 JUN 2025 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.10)  18 JUN 2025 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"./Kap 7.tex"
-(Kap 7.tex
+**"./Kap 8.tex"
+(Kap 8.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 
@@ -948,44 +948,44 @@ tex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count339
 \l__pdf_internal_box=\box83
-) (Kap 7.aux)
-\openout1 = `"Kap 7.aux"'.
+) (Kap 8.aux)
+\openout1 = `"Kap 8.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 54.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 54
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 61
 .
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 54.
-Package scrbase Info: activating english \abstractname on input line 54.
-Package scrbase Info: activating english \partname on input line 54.
-Package scrbase Info: activating english \figurename on input line 54.
-Package scrbase Info: activating english \tablename on input line 54.
-Package scrbase Info: activating english \contentsname on input line 54.
-Package scrbase Info: activating english \listfigurename on input line 54.
-Package scrbase Info: activating english \listtablename on input line 54.
-Package scrbase Info: activating english \refname on input line 54.
-Package scrbase Info: activating english \indexname on input line 54.
+LaTeX Font Info:    ... okay on input line 61.
+Package scrbase Info: activating english \abstractname on input line 61.
+Package scrbase Info: activating english \partname on input line 61.
+Package scrbase Info: activating english \figurename on input line 61.
+Package scrbase Info: activating english \tablename on input line 61.
+Package scrbase Info: activating english \contentsname on input line 61.
+Package scrbase Info: activating english \listfigurename on input line 61.
+Package scrbase Info: activating english \listtablename on input line 61.
+Package scrbase Info: activating english \refname on input line 61.
+Package scrbase Info: activating english \indexname on input line 61.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1022,17 +1022,17 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count346
 Package tocbasic Info: omitting babel extension for `lol'
-(tocbasic)             because of missing \bbl@set@language on input line 54.
+(tocbasic)             because of missing \bbl@set@language on input line 61.
 \scr@dte@lstlisting@maxnumwidth=\skip74
  (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks46
 \inpenc@posthook=\toks47
 )
-Package hyperref Info: Link coloring ON on input line 54.
-(Kap 7.out) (Kap 7.out)
+Package hyperref Info: Link coloring ON on input line 61.
+(Kap 8.out) (Kap 8.out)
 \@outlinefile=\write4
-\openout4 = `"Kap 7.out"'.
+\openout4 = `"Kap 8.out"'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -1041,7 +1041,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 54.
+(scrartcl)           before \begin{document} on input line 61.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -1051,174 +1051,191 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
 \BKM@id=\count347
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
 
  (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
 
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
-5.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
+2.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 55
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 62
 .
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 55--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--102
-
- []
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
-
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-09.
+03.
+
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 109.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 103.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 117.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 117.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
+LaTeX Warning: Command \OE invalid in math mode on input line 168.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
+LaTeX Warning: Command \OE invalid in math mode on input line 169.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
+LaTeX Warning: Command \OE invalid in math mode on input line 169.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
+LaTeX Warning: Command \OE invalid in math mode on input line 169.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
+LaTeX Warning: Command \OE invalid in math mode on input line 169.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
+LaTeX Warning: Command \OE invalid in math mode on input line 169.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 109.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 189.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 189.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \OE invalid in math mode on input line 190.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 212.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 212.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 212.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 212.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 109.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 114.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 114.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 115.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 115.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 122.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 122.
+LaTeX Warning: Command \textless invalid in math mode on input line 215.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--162
-
- []
+LaTeX Warning: Command \textcorner invalid in math mode on input line 221.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--162
-
- []
+LaTeX Warning: Command \textcorner invalid in math mode on input line 221.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--162
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--162
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--162
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--162
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
+
+ []
+
+
+Overfull \hbox (1.02226pt too wide) in paragraph at lines 62--244
+\OT1/cmr/bx/n/10.95 8.1. $[]$ \OT1/cmr/m/n/10.95 Mit dem Ba-nach-schen Fix-punk
+-t-satz zeigen wir den Satz ^^?uber die lokale Umkehrbarkeit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
+
+ []
+
+
+Overfull \hbox (54.82808pt too wide) in paragraph at lines 62--244
+\OT1/cmr/m/n/10.95 Die Fix-punkte von g bzw. Nst. von f erh^^?alt man nach []8.
+6.[] [][][](b) mit der Rekur-sion [][],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--244
 
  []
 
@@ -1228,194 +1245,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--162
 
 {C:/Users/Phi-v/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Warning: Command \textcorner invalid in math mode on input line 182.
-
-
-LaTeX Warning: Command \textcorner invalid in math mode on input line 182.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 260.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 260.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 260.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 260.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 360.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 360.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 360.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 360.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 360.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 360.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 391.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 391.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 400.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 400.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 400.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 400.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 401.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 401.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 401.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 401.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Overfull \hbox (28.50096pt too wide) in paragraph at lines 170--402
-[]$ \OT1/cmr/m/n/10.95 viele (k+1)-Tupel $(\OML/cmm/m/it/10.95 i[]; :::; i[] \O
-T1/cmr/m/n/10.95 + 1)$ der geforderten Art, in-s-ge-samt sind dies:$[][] [] =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--402
-
- []
-
-
-
 [2]
 
-[3]
-
-[4] (Kap 7.aux)
+[3] (Kap 8.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
-Package rerunfilecheck Info: File `"Kap 7".out' has not changed.
+Package rerunfilecheck Info: File `"Kap 8".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32062 strings out of 473904
- 653586 string characters out of 5726600
- 1985908 words of memory out of 5000000
- 54409 multiletter control sequences out of 15000+600000
+ 32034 strings out of 473904
+ 652913 string characters out of 5726600
+ 1993908 words of memory out of 5000000
+ 54384 multiletter control sequences out of 15000+600000
  567815 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,107p,10933b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,12n,107p,10933b,657s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Phi-v\AppData\Local\MiKTeX\fonts/pk/ljfour/public/tipa/dpi657\tipa
 10.pk><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public
@@ -1430,11 +1277,13 @@ s/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 msy6.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmsy8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Kap 7.pdf" (4 pages, 204575 bytes).
+ic/amsfonts/euler/eurm10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Phi-v/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/hoekwater/stmary10.pfb>
+Output written on "Kap 8.pdf" (3 pages, 197105 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
