@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  20 JUN 2025 16:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  20 JUN 2025 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"./Kap 12.tex"
-(Kap 12.tex
+**"./Kap 13.tex"
+(Kap 13.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
 
@@ -593,41 +593,228 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 z/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
-Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks35
+\verbatim@line=\toks36
+\verbatim@in@stream=\read3
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
-Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
-\SOUL@word=\toks35
-\SOUL@lasttoken=\toks36
-\SOUL@syllable=\toks37
-\SOUL@cmds=\toks38
-\SOUL@buffer=\toks39
-\SOUL@token=\toks40
-\SOUL@syllgoal=\dimen274
-\SOUL@syllwidth=\dimen275
-\SOUL@charkern=\dimen276
-\SOUL@hyphkern=\dimen277
-\SOUL@dimen=\dimen278
-\SOUL@dimeni=\dimen279
-\SOUL@minus=\count309
-\SOUL@comma=\count310
-\SOUL@apo=\count311
-\SOUL@grave=\count312
-\SOUL@spaceskip=\skip72
-\SOUL@ttwidth=\dimen280
-\SOUL@uldp=\dimen281
-\SOUL@ulht=\dimen282
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count309
+)
+\tcb@titlebox=\box69
+\tcb@upperbox=\box70
+\tcb@lowerbox=\box71
+\tcb@phantombox=\box72
+\c@tcbbreakpart=\count310
+\c@tcblayer=\count311
+\c@tcolorbox@number=\count312
+\l__tcobox_tmpa_box=\box73
+\l__tcobox_tmpa_dim=\dimen274
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.cod
+e.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.4.1'
+\c@tcbrastercolumn=\count313
+\c@tcbrasterrow=\count314
+\c@tcbrasternum=\count315
+\c@tcbraster=\count316
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
+.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image
+.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill-commo
+n.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfil
+l.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box78
+))
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
+w.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
+))
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.
+code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
 ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box79
+\tcb@totalupperbox=\box80
+\tcb@totallowerbox=\box81
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code
+.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.4.1'
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.c
+ode.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.4.1'
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
+de.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.4.1'
+\tcbfitdim=\dimen275
+\tcb@lowerfitdim=\dimen276
+\tcb@upperfitdim=\dimen277
+\tcb@cur@hbadness=\count317
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsut
+f8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.4.1'
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.c
+ode.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.4.1'
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count318
+\lst@gtempboxa=\box82
+\lst@token=\toks37
+\lst@length=\count319
+\lst@currlwidth=\dimen278
+\lst@column=\count320
+\lst@pos=\count321
+\lst@lostspace=\dimen279
+\lst@width=\dimen280
+\lst@newlines=\count322
+\lst@lineno=\count323
+\lst@maxwidth=\dimen281
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count324
+\lst@skipnumbers=\count325
+\lst@framebox=\box83
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsco
+re.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.4.1'
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing
+.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.4.1'
+)
+\c@tcblisting=\count326
+))
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsut
+f8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+))))
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbexternal.c
+ode.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.4.1'
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbmagazine.c
+ode.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.4.1'
+)
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbvignette.c
+ode.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.4.1'
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter.cod
+e.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.4.1'
+)) (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks38
+\SOUL@lasttoken=\toks39
+\SOUL@syllable=\toks40
+\SOUL@cmds=\toks41
+\SOUL@buffer=\toks42
+\SOUL@token=\toks43
+\SOUL@syllgoal=\dimen282
+\SOUL@syllwidth=\dimen283
+\SOUL@charkern=\dimen284
+\SOUL@hyphkern=\dimen285
+\SOUL@dimen=\dimen286
+\SOUL@dimeni=\dimen287
+\SOUL@minus=\count327
+\SOUL@comma=\count328
+\SOUL@apo=\count329
+\SOUL@grave=\count330
+\SOUL@spaceskip=\skip72
+\SOUL@ttwidth=\dimen288
+\SOUL@uldp=\dimen289
+\SOUL@ulht=\dimen290
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
-)))
+)) (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/was\upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
 
@@ -638,21 +825,6 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-))
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
@@ -669,20 +841,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count313
+\c@section@level=\count331
 )
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count314
-)
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
-ty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)
-\@linkdim=\dimen283
-\Hy@linkcounter=\count315
-\Hy@pagecounter=\count316
+\@linkdim=\dimen291
+\Hy@linkcounter=\count332
+\Hy@pagecounter=\count333
  (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -690,7 +853,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count317
+\Hy@SavedSpaceFactor=\count334
  (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -703,14 +866,14 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count318
+\c@Hy@tempcnt=\count335
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen284
+\XeTeXLinkMargin=\dimen292
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -720,9 +883,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count319
-\Field@Width=\dimen285
-\Fld@charsize=\dimen286
+\Fld@menulength=\count336
+\Field@Width=\dimen293
+\Fld@charsize=\dimen294
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -735,9 +898,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count320
-\c@Item=\count321
-\c@Hfootnote=\count322
+\Hy@abspage=\count337
+\c@Item=\count338
+\c@Hfootnote=\count339
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -748,8 +911,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count323
-\c@bookmark@seq@number=\count324
+\Fld@listcount=\count340
+\c@bookmark@seq@number=\count341
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -775,80 +938,68 @@ File: t3enc.def 2001/12/31 T3 encoding
 Now handling font encoding T3 ...
 ... no UTF-8 mapping file for font encoding T3
 )))
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
-\UL@box=\box69
-\UL@hyphenbox=\box70
-\UL@skip=\skip74
-\UL@hook=\toks41
-\UL@height=\dimen287
-\UL@pe=\count325
-\UL@pixel=\dimen288
-\ULC@box=\box71
-Package: ulem 2019/11/18
-\ULdepth=\dimen289
-)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 22.
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count326
-) (Kap 12.aux)
-\openout1 = `"Kap 12.aux"'.
+\l__color_backend_stack_int=\count342
+) (Kap 13.aux)
+\openout1 = `"Kap 13.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 47.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 47
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 61
 .
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 47.
-Package scrbase Info: activating english \abstractname on input line 47.
-Package scrbase Info: activating english \partname on input line 47.
-Package scrbase Info: activating english \figurename on input line 47.
-Package scrbase Info: activating english \tablename on input line 47.
-Package scrbase Info: activating english \contentsname on input line 47.
-Package scrbase Info: activating english \listfigurename on input line 47.
-Package scrbase Info: activating english \listtablename on input line 47.
-Package scrbase Info: activating english \refname on input line 47.
-Package scrbase Info: activating english \indexname on input line 47.
+LaTeX Font Info:    ... okay on input line 61.
+Package scrbase Info: activating english \abstractname on input line 61.
+Package scrbase Info: activating english \partname on input line 61.
+Package scrbase Info: activating english \figurename on input line 61.
+Package scrbase Info: activating english \tablename on input line 61.
+Package scrbase Info: activating english \contentsname on input line 61.
+Package scrbase Info: activating english \listfigurename on input line 61.
+Package scrbase Info: activating english \listtablename on input line 61.
+Package scrbase Info: activating english \refname on input line 61.
+Package scrbase Info: activating english \indexname on input line 61.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
-\scratchdimen=\dimen290
-\scratchbox=\box72
-\nofMPsegments=\count328
-\nofMParguments=\count329
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count330
-\MPscratchDim=\dimen291
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count343
+\scratchdimen=\dimen295
+\scratchbox=\box84
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen296
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks45
 )
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -868,10 +1019,19 @@ G,.JBIG2,.JB2,.eps]
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 47.
- (Kap 12.out) (Kap 12.out)
+\c@lstlisting=\count349
+Package tocbasic Info: omitting babel extension for `lol'
+(tocbasic)             because of missing \bbl@set@language on input line 61.
+\scr@dte@lstlisting@maxnumwidth=\skip74
+ (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks46
+\inpenc@posthook=\toks47
+)
+Package hyperref Info: Link coloring ON on input line 61.
+(Kap 13.out) (Kap 13.out)
 \@outlinefile=\write4
-\openout4 = `"Kap 12.out"'.
+\openout4 = `"Kap 13.out"'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -880,7 +1040,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 47.
+(scrartcl)           before \begin{document} on input line 61.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -888,280 +1048,109 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count333
+\BKM@id=\count350
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
 
  (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
 
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 4
-8.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
+3.
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 48
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 63
 .
 
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
-LaTeX Warning: Command \o invalid in math mode on input line 59.
+LaTeX Warning: No \author given.
 
-<bsp kap 12.2.png, id=6, 145.7445pt x 63.8385pt>
-File: bsp kap 12.2.png Graphic file (type png)
-<use bsp kap 12.2.png>
-Package pdftex.def Info: bsp kap 12.2.png  used on input line 63.
-(pdftex.def)             Requested size: 199.18172pt x 85.36096pt.
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 107.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-07.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 7
+5.
 (C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 107.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 75.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 107.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 108.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 108.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
-<bsp kap 12.11.png, id=8, 160.80075pt x 52.998pt>
-File: bsp kap 12.11.png Graphic file (type png)
-<use bsp kap 12.11.png>
-Package pdftex.def Info: bsp kap 12.11.png  used on input line 110.
-(pdftex.def)             Requested size: 142.2657pt x 56.90703pt.
 
-LaTeX Warning: Command \OE invalid in math mode on input line 124.
+LaTeX Warning: Command \textless invalid in math mode on input line 75.
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 134.
+LaTeX Warning: Command \textless invalid in math mode on input line 75.
 
-<bsp kap 12.14.png, id=9, 143.3355pt x 52.39575pt>
-File: bsp kap 12.14.png Graphic file (type png)
-<use bsp kap 12.14.png>
-Package pdftex.def Info: bsp kap 12.14.png  used on input line 137.
-(pdftex.def)             Requested size: 142.26999pt x 56.90636pt.
 
-LaTeX Warning: Command \o invalid in math mode on input line 141.
+LaTeX Warning: Command \textless invalid in math mode on input line 75.
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 141.
+LaTeX Warning: Command \textless invalid in math mode on input line 75.
 
 
-LaTeX Warning: Command \o invalid in math mode on input line 141.
+LaTeX Warning: Command \OE invalid in math mode on input line 84.
 
+<bsp kap 13.4.png, id=42, 98.16675pt x 62.03175pt>
+File: bsp kap 13.4.png Graphic file (type png)
+<use bsp kap 13.4.png>
+Package pdftex.def Info: bsp kap 13.4.png  used on input line 91.
+(pdftex.def)             Requested size: 85.35944pt x 56.90518pt.
 
-LaTeX Warning: Command \o invalid in math mode on input line 141.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 141.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 144.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 144.
-
-
-LaTeX Warning: Command \textopencorner invalid in math mode on input line 145.
-
-
-LaTeX Warning: Command \textopencorner invalid in math mode on input line 145.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 145.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 145.
-
-
-LaTeX Warning: Command \ss invalid in math mode on input line 158.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 161.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 161.
-
-<bsp kap 12.14.2.png, id=10, 244.5135pt x 123.46124pt>
-File: bsp kap 12.14.2.png Graphic file (type png)
-<use bsp kap 12.14.2.png>
-Package pdftex.def Info: bsp kap 12.14.2.png  used on input line 166.
-(pdftex.def)             Requested size: 142.26936pt x 56.90588pt.
-
-LaTeX Warning: Command \o invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 178.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 178.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 178.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 178.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 178.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 179.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 181.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 183.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 183.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 184.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 184.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 184.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
+Underfull \hbox (badness 10000) in paragraph at lines 63--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
+Underfull \hbox (badness 10000) in paragraph at lines 63--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
+Underfull \hbox (badness 10000) in paragraph at lines 63--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
+Underfull \hbox (badness 10000) in paragraph at lines 63--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
+Underfull \hbox (badness 10000) in paragraph at lines 63--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
+Underfull \hbox (badness 10000) in paragraph at lines 63--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
+Underfull \hbox (badness 10000) in paragraph at lines 63--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Overfull \hbox (53.99933pt too wide) in paragraph at lines 48--185
-\OT1/cmr/bx/n/10.95 12.10. $[]$ \OT1/cmr/m/n/10.95 Die Aus-sage [] wird manch-m
-al missver-standen in der Form "Nur endlich viele []Uberdeckungsmengen
- []
-
-
-Overfull \hbox (0.70012pt too wide) in paragraph at lines 48--185
-\OML/cmm/m/it/10.95 O[]$ \OT1/cmr/m/n/10.95 ^^?uberdecken M nur zum Teil" o.^^?
-a. gemeint ist aber, dass stets bere-its endlich vile []Uberdeckungsmengen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--185
+Underfull \hbox (badness 10000) in paragraph at lines 63--94
 
  []
 
@@ -1169,49 +1158,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--185
 
 [1
 
-{C:/Users/Phi-v/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./bsp kap 12
-.2.png>]
 
-[2 <./bsp kap 12.11.png>]
+{C:/Users/Phi-v/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./bsp kap 13
+.4.png>]
 
-[3 <./bsp kap 12.14.png>]
-
-[4 <./bsp kap 12.14.2.png>] (Kap 12.aux)
+[2] (Kap 13.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
  ***********
-Package rerunfilecheck Info: File `"Kap 12".out' has not changed.
+Package rerunfilecheck Info: File `"Kap 13".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25611 strings out of 469921
- 487330 string characters out of 5468133
- 1025820 words of memory out of 5000000
- 52002 multiletter control sequences out of 15000+600000
- 635390 words of font info for 72 fonts, out of 8000000 for 9000
+ 32067 strings out of 469921
+ 653950 string characters out of 5468133
+ 1185115 words of memory out of 5000000
+ 58358 multiletter control sequences out of 15000+600000
+ 640299 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,107p,10934b,707s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,8n,107p,10934b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Phi-v\AppData\Local\MiKTeX\fonts/pk/ljfour/public/tipa/dpi657\tipa
 10.pk><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmex10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Phi-v/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Phi-v/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Phi-v/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Phi-v
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/User
-s/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-msy6.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Phi-v/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/hoekwater/stmary10.pfb>
-Output written on "Kap 12.pdf" (4 pages, 223469 bytes).
+/amsfonts/cm/cmmi10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Phi-v/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Phi-v/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Phi-v/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Phi
+-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/s
+ymbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/symbols/msbm10.pfb>
+Output written on "Kap 13.pdf" (2 pages, 143143 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
