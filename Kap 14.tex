@@ -1,0 +1,208 @@
+\documentclass[]{scrartcl}
+\title{Vorlesung Analysis II}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{soul}
+\usepackage{ upgreek }
+\usepackage{hyperref}
+\usepackage{tipa}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\bluecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=blue, text=blue, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\blackcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=black, text=black, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\orangecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=orange, text=orange, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\redul}[1]{\setulcolor{red}{\ul{#1}}}
+\newcommand{\blueul}[1]{\setulcolor{blue}{\ul{#1}}}
+\newcommand{\yelul}[1]{\setulcolor{yellow}{\ul{#1}}}
+\newcommand{\greenul}[1]{\setulcolor{green}{\ul{#1}}}
+\newcommand{\oraul}[1]{\setulcolor{orange}{\ul{#1}}}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\maketitle
+	\textbf{\underline{Teil 2: Topologische Grundbegriffe in metrischen 
+	Räumen}}\\
+	\\
+	\textbf{\underline{an14: Weierstraßscher Approximationssatz}} (WAS)\\
+	\\
+	\textbf{\underline{\underline{Stichworte:} Supremumsnorm auf Kompakter 
+	Menge, WAS mit Polynome}}\\
+	\\
+	\textbf{\underline{Literatur:}} \blueul{[Königsberger, Analysis 1], Kapitel 
+	15/16}.\\
+	\\
+	\textbf{14.1. \underline{Einleitung:}} Die Bedeutung der Kompaktheit als 
+	topologische Eigenschaft ist für die Mathematik nicht zu unterschätzen. In 
+	diesem Kapitel zeigen wir als Anwendung davon den Weierstraßschen 
+	Approximationssatz (für Polynome und trigonomische Polynome), und insb., 
+	dass $\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{\pi^2}{6}$\\
+	\\
+	\textbf{14.2. \underline{Motivation:}} Stetige Funktion lassen sich auf 
+	Kompakten Mengen beliebig genau durch Polynome approximieren. Dies besagt 
+	der WAS.\\
+	\\
+	\textbf{14.3. \underline{Vereinbarung:}} Sei $K\subseteq \mathbb{R}$ 
+	Kompakt, $f \in \phi(k,\mathbb{C}), \epsilon \textgreater0.$\\
+	Wie betrachten die gleichmäßige Konvergenz von f durch Funktionenfolgen auf 
+	K, zunächst mit Polynomen über $\mathbb{C}$, nähmlich in der Supremumsnorm 
+	auf K.\\
+	\\
+	\textbf{14.4. \underline{Def.:}} Für $f\in\phi (K,\mathbb{C})$ sei 
+	$||\cdot||_K:\phi(K,\mathbb{C})\rightarrow\mathbb{R}_{\supseteq0},$ 
+	\yelul{$||f||_K$}:=$\sup\{|f(x)|;x \in K\}$\\
+	die \redul{Supremumsnorm} auf K.\\
+	\\
+	\textbf{14.5. \underline{Bem.:}} Weil K Kompakt, ex. $||f||_K$ immer und 
+	\greenul{ist stets beschränkt} (d.h. $\exists \mathbb{R}_{\supseteq0}$), 
+	und weiter \greenul{ist das Supremum ein Maximum}, vgl. \blueul{an 
+	13.13/14}. Das \greenul{Maximum} von $\{|f(x)|; x\in K\}$ ist 
+	\greenul{eindeutig bestimmt}, kann aber in verschiedenen Stellen $x\in K$ 
+	angenommen werden. Weiter ist \greenul{$||\cdot||_K$ eine Norm}.\\
+	\\
+	\textbf{14.6. \redul{Weierstraßscher Approximationssatz (WAS):}}\\
+	\underline{Vor.:} $K\subseteq \mathbb{R}$ \greenul{Kompakt, 
+	$f\in\phi(K,\mathbb{C})$}, $\epsilon\textgreater 0.$\\
+	\underline{Beh.:} \greenul{$\exists p \in \mathbb{C}[X]: ||f-p||_K 
+	\textless \epsilon$}.\\
+	\\
+	Einige Vorbereitungen zum Beweis, der in \blueul{14.11.} geführt wird.\\
+	\textbf{14.7. \underline{Def.:}} Sei \yelul{$\overline{\mathcal{O}:= 
+	\overline{\mathcal{P}(K)}}$}:=$\{f:K\rightarrow \mathbb{R}; f 
+	\text{stetig}, \forall \epsilon \textgreater0 \exists 
+	p\in\mathbb{R}[X]:||f-p||_K\textless \epsilon\}$\\
+	die \redul{Menge aller (reellen) stetigen Funktionen auf K}, die sich 
+	\redul{auf K beliebig genau durch (reelle) Polynome approximieren lassen}.\\
+	\\
+	Zunächst analysieren wir $\overline{\mathcal{P}}$:\\
+	\textbf{14.8. \underline{Hilfssatz:}} $\overline{\mathcal{P}}$ ist eine 
+	\greenul{Unteralgebra von $\phi(K,\mathbb{R})$},\\
+	d.h. $\overline{\mathcal{P}}$ ist \greenul{UVR} und \greenul{$f,g \in 
+	\overline{\mathcal{P}} \Rightarrow f\cdot g \in \overline{\mathcal{P}}$}.\\
+	\underline{Bew.:} $f,g\in \overline{\mathcal{P}}, \epsilon 
+	\textgreater0\Rightarrow \exists p,q \in \mathbb{R} [X]: ||f-p||_K\textless 
+	\epsilon$.\\
+	Dann:\\ 
+	\begin{align}
+		||(f+g)-(p+q)||_K &\leq ||f-p||_K +||g-q||_K\leq2\epsilon\\
+		\text{und} ||f\cdot g-p\cdot q||_K&\leq 
+		||f-p||_K\cdot||q||_K+||g-q||_K\cdot||f||_K\\
+		&\leq \epsilon (||q||_K +||f||_K) \leq \epsilon(\epsilon + 
+		\underbrace{||g||_K+||f||_K}_{\text{beschränkt, s. 
+		\blueul{14.5.}}})\xrightarrow{\epsilon \rightarrow0}0.
+	\end{align}\\
+	\strut\hfill$\square$\\
+	\textbf{14.9. \underline{Hilfssatz:}} $f,g \in 
+	\overline{\mathcal{P}}\Rightarrow$ \greenul{$|f|, \max(f,g), \min(f,g)\in 
+	\overline{\mathcal{P}}$}.\\
+	\underline{Bew.:} Es ist $\max(f,g)=\frac{1}{2}(f+g+|f-g|),\\
+	\min(f,g)=\frac{1}{2}(f+g-|f-g|),$\\
+	also \oraul{gen. z.z.: $\overline{\mathcal{P}}\ni|f|,$ falls $f\in 
+	\overline{\mathcal{P}}$}.\\
+	Dazu sei \OE $f\neq 0 \Rightarrow ||f||_K \neq 0,$ betr. also 
+	\oraul{$\phi:=$}$\frac{f}{||f||_K}$, 
+	\oraul{z.z.}:$|\phi|\in\overline{\mathcal{P}}.$\\
+	\textopencorner Bem.: $|x|\leq 1 \Rightarrow 
+	\sqrt{x^2}=|x|=\sum_{n=0}^{\infty}\begin{pmatrix}
+		1/2\\n
+	\end{pmatrix}(x^2-1)^n$, dies ist klar für $|x|\textless 1$, vgl. 
+	\blueul{An 19.20}.\\
+	Weiter Konvergiert die \oraul{binomische Reihe gleichmäßig} für $|x|\leq1$, 
+	weil $|\begin{pmatrix}
+		1/2\\n
+	\end{pmatrix}| \leq C\cdot \frac{1}{n\sqrt{n}}.$\textcorner\\
+	Hier: $|\phi|\leq1\Rightarrow|\phi|=\sum_{n=0}^{\infty}\begin{pmatrix}
+		1/2\\n
+	\end{pmatrix}(\phi^2-1)^n$.\\
+	Zu $\epsilon \textgreater0$ ex. \oraul{Partialsumme $P_N$} davon mit 
+	\oraul{$|| |\phi|-P_N||_K\textless \epsilon$}\\
+	$\Rightarrow P_N \in \overline{\mathcal{P}},$ d.h. $\exists p \in 
+	\mathbb{R}[X]:||P_N-p||_K\textless\epsilon$\\
+	$\Rightarrow$ \oraul{$|||\phi|-p||_K \textless 2\epsilon,$ d.h. $|\phi|\in 
+	\overline{\mathcal{P}}$}.\\
+	\strut\hfill$\square$\\
+	\\
+	\textbf{14.10. \underline{Hilfssatz:}} $f \in \phi(K, \mathbb{R}),$ 
+	gegebenes $x\in K, \epsilon\textgreater0.$\\
+	\underline{Beh.:} \greenul{$\exists q \in \overline{\mathcal{P}}:$} (a) 
+	\greenul{$q(x)=f(x)$}\\
+	 (b) \greenul{$q\leq f+\epsilon$ auf K}.\\
+	 \underline{Bew.:} $\forall z \in K$ wähle \oraul{affinlineares 
+	 $l_z(y)=ay+b$}, also \oraul{$l_z \in \overline{\mathcal{P}}$},\\
+	mit \oraul{$l_z(x)=f(x), l_z(z)=f(z)$}.\\
+	$l_z$ stetig $\Rightarrow \in$ offenes $IV$ \oraul{$I_Z\ni Z$} mit 
+	\oraul{$l_Z \leq f + \epsilon$ auf $I_Z$}.\\
+	Ferner: $K\subseteq \bigcup_{z \in K}I_Z$ ist \oraul{überdeckung} 
+	$\Rightarrow \in z_1,...,z_n: K \subseteq \bigcup_{j=1}^{n}I_{z_j}$.\\
+	Sei \oraul{q:=min$\{l_{z_i}$}$;j\in \{1,...,n\}\}$. Dann gilt:\\
+	q erfüllt \blueul{(a) und (b)}, denn jedes $z\in K$ \oraul{liegt in einem 
+	$I_{z_j}$}. Ferner \oraul{$q\in\overline{\mathcal{P}}$} nach 
+	\blueul{Hilfssatz 14.9.}\\
+	\\
+	\textbf{14.11. \underline{Beweis des Weierstraßschen 
+	Approximatinssatzes:}}\\
+	\oraul{1. Fall $\mathbb{K}=\mathbb{R}$}, d.h. 
+	$\mathbb{K}\subseteq\mathbb{R}$ Kompakt.\\
+	$\forall x\in K$ wähle $q_x \in \overline{\mathcal{P}}$ nach 
+	\blueul{Hilfssatz 14.10.}\\
+	$q_x$ stetig $\Rightarrow \exists$ offenes IV $I_x \ni x, f-\epsilon \leq 
+	q_x$ auf $I_x$ \textopencorner wg. \blueul{14.10a}\textcorner\\
+	K Kompakt $\Rightarrow \exists x_1,...,x_n$ mit K
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
