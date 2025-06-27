@@ -186,23 +186,77 @@
 	\blueul{Hilfssatz 14.10.}\\
 	$q_x$ stetig $\Rightarrow \exists$ offenes IV $I_x \ni x, f-\epsilon \leq 
 	q_x$ auf $I_x$ \textopencorner wg. \blueul{14.10a}\textcorner\\
-	K Kompakt $\Rightarrow \exists x_1,...,x_n$ mit K
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	K Kompakt $\Rightarrow \exists x_1,...,x_n$ mit $K\subseteq \bigcup_{j=1}^{n} I_{x_j}.$\\
+	Sei $g:=\max_{j\in\{1,...,n\}} q_{x_j}\Rightarrow g \geq f-\epsilon$ auf ganz K.\\
+	$\xRightarrow{14.10 (b)} g \leq f+\epsilon,$ also $||f-g||_K\leq \epsilon,$ d.h. $g\in\overline{\mathcal{P}}$ nach \blueul{Hilfssatz 14.9.}\\
+	$\Rightarrow\exists p \in \mathcal{P}:||g-p||_k\textless \epsilon$\\
+	$\Rightarrow ||f-p||_K\leq ||f-g||_K+||g-p||_k\textless2\epsilon$.\\
+	\oraul{2. Fall $\mathbb{K}=\mathbb{C}$}, d.h. $K\subseteq\mathbb{C}$ Kompakt.\\
+	Wähle $u,v\in \mathcal{P}(\mathbb{R})$ mit \oraul{$||\mathcal{P}e f-u||_k+\textless \epsilon$} und \oraul{$||\mathcal{Y}mf-v||_K ßtextless \epsilon$}.\\
+	Sei \oraul{p:=u+iv} $\in \mathcal{P}(\mathbb{C})$, wo $i=\sqrt{-1}.$\\
+	$\Rightarrow ||f-p||_K \leq ||\mathcal{P}e f-u||_K+||\mathcal{Y}mf-v||_K\textless 2\epsilon$.\\
+	\strut\hfill$\square$\\
+	\textbf{14.12. \underline{Bem.:}} Der \blueul{WAS 14.6.} zeigt, dass Potenzreihen gleichmäßig Konvergieren auf Kompakten Mengen innerhalb des Konvergenzintervalls (Fall $\mathbb{R}$) bzw. Konvergenzkreises (Fall $\mathbb{C}$). Auf dem offenen Kgz. IV/Kreis liegt i.a. Keine Kgz. vor.\\
+	\\
+	\redul{Der WAS für 2$\pi$-periodische Funktionen.}\\
+	\textbf{14.12. \underline{Def.:}} $\bullet$ f heißt \redul{2$\pi$-periodisch}:$\Leftrightarrow \forall x: f(x+2\pi)=f(x).$\\
+	$\bullet$ Ein \redul{trigonomisches Polynom} vom $Grad \leq n$ ist ein Term vor der Form \yelul{T(x):}=$\sum_{k=-n}^{n}c_ke^{ikx},$ die $c_k\in\mathbb{C}.$\\
+	\\
+	\textbf{14.13.} Diese \greenul{bilden einen $\mathbb{C}-VR$} und haben eine \redul{cos-sin-Darstellung:}\\
+	Löse Gleichungssystem für $a_k, b_k$ mit $k\geq 1$:\\
+	$c_0=\frac{a_0}{2}, c_k=\frac{1}{2}(a_k-ib_k), c_{-k}=\frac{1}{2}(a_k+ib_k),$\\
+	also $a_0=2c_0, a_k=c_k+c_{-k},b_k=i(c_k-c_{-k})$, es folgt:\\
+	\greenul{T(x)}= $\frac{a_0}{2}+\sum_{k=1}^{n}(a_k \cos kx+b_k \sin kx).$\\
+	\\
+	\textbf{14.14. \underline{Beh.:}}$\bullet$ Die \greenul{Koeffizienten $c_k$} in T (und damit $a_n und b_k$) sind \greenul{eindeutig}.\\
+	$\bullet$ Konsequenz: \greenul{T reellwertig $\Leftrightarrow\forall k \overline{c_k}=-c_k\Leftrightarrow \forall k: a_k,b_k \in \mathbb{R}$}.\\
+	\underline{Bew.:} $\bullet$ $c_k = \frac{1}{2\pi}\int_{0}^{2\pi}T(x)e^{-ikx}dx$, da: $\frac{1}{2\pi}\int_{0}^{2\pi}e^{ilx}dx=\begin{cases}
+		1, l=k\\
+		0, l\neq k
+	\end{cases}$.\\
+	$\bullet$ T reellwertig $\Rightarrow$ $\overline{c_k}=\frac{1}{2\pi}\int_{0}^{2\pi}T(x)e^{ikx}dx=c_{-k}\Rightarrow a_k=\mathcal{P}e c_k,b_k=\mathcal{Y}m c_k$.\\
+	\strut\hfill$\square$\\
+	\textbf{14.15. \redul{WAS für 2$\pi$-periodische Funktionen:}}\\
+	\underline{Vor.:} $f\in \phi(\mathbb{R},\mathbb{C}), f$\greenul{2$\pi$-periodisch}.\\
+	\underline{Beh.:} $\forall \epsilon0$ \greenul{$\exists$ trigon. Pol. T: $||f-T||_{\sup} \textless \epsilon$}.\\
+	\underline{Bew.:} Sei \yelul{$\overline{\mathcal{T}}$}:= $\{f:\mathbb{R}\rightarrow\mathbb{R} \text{stetig, }2\pi-\text{periodisch, appr'bar durch trigon. Pol.}\}.$\\
+	(a) \oraul{$\overline{\mathcal{T}}$ ist Unteralgebra con $\phi(\mathbb{R},\mathbb{R})$}\\
+	(b) \oraul{$f,g \in \overline{\mathcal{T}} \Rightarrow |f|, \max(f,g), \min(f,g)\in\overline{\mathcal{T}}$}\\
+	(c) \oraul{f wie in WAS}, $x\in\mathbb{R} \Rightarrow$ \oraul{$\exists T \in \overline{\mathcal{T}}$}: $\alpha$\oraul{$T(x)=f(x)$}, $\beta$ \oraul{T$\subseteq f+\epsilon$ auf $\mathbb{R}$}\\
+	Hier: ersetzen $l_z$ durch \oraul{trgon. Pol. $L_z$} mit \oraul{$L_z(x)=f(x), L_z(z)=f(z)$}.\\
+	Beweis dann analog wie in \blueul{14.11.}\\
+	\\
+	\textbf{14.15. \underline{Bem.:}} Dieser Satz ist der Ausgangspunkt der Theorie der \blueul{Fourierreihen}, man kommt so zur \blueul{Fourieranalysis}, ein Teilgebiet der Analysis, wo trigonomische Approximationen untersucht werden. Die Fourieranalysis ist auch in physikalischen Anwendungen von Bedeutung.\\
+	\\
+	Eine Mathematische Anwendung der Fourierreihentheorie:\\
+	\textbf{14.16. \underline{Bsp.:}} Sei $f(x)=|x|$ für $-\pi \leq x\leq \pi$, setzee dies $2\pi$-periodisch fort. Ans \blueul{14.13.} erhalten wir die \redul{Fourierreihen $S_\infty f(x)$}:=$\lim\limits_{n\rightarrow\infty}T_n(x)=\frac{a_0}{2}+\sum_{k=1}^{\infty}(a_k \cos kx+b_k \sin kx)$\\
+	Da f gerade, sind alle $b_k=0, a_k=\frac{2}{\pi}\int_{0}^{\pi}x\cos(kx)dx, a_0=\frac{2}{\pi}\cdot\frac{\pi^2}{2}=\pi$ \textopencorner\blueul{14.13/14}\textcorner\\
+	und für $k\geq1$ ist \\
+	$\alpha_k=\frac{2}{\pi}\int_{0}^{\pi}x\cos(kx)dx=(\frac{x}{k}\sin(kx)\underset{0}{\overset{\pi}{\rule{0.4pt}{0.4cm}}}-\frac{1}{k}\int_{0}^{\pi}\sin(kx)dx)$\\
+	$=\frac{2}{\pi}\cdot\frac{1}{k^2}\cos(kx)\underset{0}{\overset{\pi}{\rule{0.4pt}{0.4cm}}}=\frac{2}{\pi k^2}(-1+(-1)^k)=\begin{cases}
+		\frac{-4}{\pi k^2}, 2tk,\\
+		0, 2/k
+	\end{cases}.\\
+	\Rightarrow$\greenul{$S_\infty f(x)=\frac{\pi}{2}-\frac{4}{\pi}\sum_{n=0}^{\infty}\frac{cos((2n+1)x)}{(2n+1)^2}$}, ist \greenul{glm. Kgt.} auf $\mathbb{R}$ und somit \greenul{stetig}. \textopencorner nach \blueul{An18.9.(b)}\textcorner\\
+	Nach dem \blueul{Darstellungssatz 14.18} Kgt. $S_\infty f$ glm. gegen f.\\
+	für x=0 erhält man eine Gleichung für $\pi$,\\
+	nähmlich $\frac{pi^2}{8}=\sum_{n=0}^{\infty}\frac{1}{(2n+1)^2}$.\\
+	Daraus folgt \fcolorbox{green}{white}{$\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{\pi^2}{6}$}\\, denn 
+	$\sum_{n=1}^{\infty}\frac{1}{n^2}=\sum_{n=1}^{\infty}\frac{1}{(2n+1)^2}=\frac{1}{4}\sum_{n=1}^{\infty}\frac{1}{n^2}+\sum_{n=0}^{\infty}\frac{1}{(2n+1)^2}$\\
+	$\Rightarrow \frac{3}{4}\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{\pi^2}{8}\Rightarrow\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{4}{3}\cdot\frac{\pi^2}{8}=\frac{\pi^2}{6}.$\\
+	\\
+	\textbf{14.17. \redul{Identitätssatz für Fourierreihen:}}\\
+	\underline{Vor.:} $f,g:\mathbb{R}\rightarrow\mathbb{C}$, $f,g 2\pi$-periodisch und integrierbar auf $[0,2\pi]$ stetig und \greenul{mit gleichen Fourierkoeffizienten}.\\
+	\underline{Beh.:} \greenul{f=g}.\\
+	\underline{Bew.:} $h:=f-g$ hat laut Vor. die Fourierkoeff. 0, dann folgt $h\overset{!}{=}0$,\\
+	denn: $T_n(x)=\sum_{k=-n}^{n}c_ke^{ikx}\Rightarrow \int_{0}^{2\pi}h T_n(x)dx=\sum_{k=-n}^{n}c_k \underbrace{\int_{0}^{2\pi}b e^{-ikx}dx}_{=0}=0.$\\
+	Laut \blueul{WAS 14.15.} folgt $\exists (T_n)\Rightarrow h$.\\
+	$\Rightarrow \int_{0}^{2\pi}|h|^2dx = \lim\limits_{n\rightarrow\infty}\int_{0}^{2\pi}hT_ndx=0$. Da h stetig, ist $\overline{h}$ und $|h|^2$ stetig.\\
+	Wäre $h\neq0$, folgte $\int_{0}^{2\pi}|h|^2dx\textgreater0 \lightning.$\\
+	\strut\hfill$\square$\\
+	\textbf{14.18. \redul{Darstellungssatz:}} \underline{Vor.:} f wie in \blueul{14.17.}, \greenul{$S_\infty$ f kgt. glm.} \underline{Beh.:}  \greenul{$S_\infty f\Rightarrow f$}.\\
+	\underline{Bew.:} Sei \oraul{g(x)}:= $\lim\limits_{n\rightarrow\infty}\sum_{k=-n}^{n}$\oraul{$c_k l^{ikx}=s_\infty f(x)$}. Nach \blueul{An18.8.(b)} ist g stetig.\\
+	Ferner ist der \oraul{l-te Fourierkoeff. von g} gleich $\frac{1}{2\pi}\lim\limits_{n\rightarrow\infty}\sum_{k=-n}^{n}c_k\underbrace{\int_{0}^{2\pi}e^{ikx}e^{-ilx}dx}_7=2\pi\delta_{k,l}$\oraul{$=c_k$},\\
+	dem k-ten Fourierkoeff. von f. mit \blueul{14.17} folgt f=g.\\
+	\strut\hfill$\square$	
 \end{document}

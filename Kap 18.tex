@@ -1,0 +1,122 @@
+\documentclass[]{scrartcl}
+\title{Vorlesung Analysis II}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{soul}
+\usepackage{ upgreek }
+\usepackage{hyperref}
+\usepackage{tipa}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\bluecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=blue, text=blue, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\blackcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=black, text=black, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\orangecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=orange, text=orange, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\redul}[1]{\setulcolor{red}{\ul{#1}}}
+\newcommand{\blueul}[1]{\setulcolor{blue}{\ul{#1}}}
+\newcommand{\yelul}[1]{\setulcolor{yellow}{\ul{#1}}}
+\newcommand{\greenul}[1]{\setulcolor{green}{\ul{#1}}}
+\newcommand{\oraul}[1]{\setulcolor{orange}{\ul{#1}}}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\maketitle
+	\textbf{\underline{Teil 3: Gewöhnliche Differentialgleichungen}}\\
+	\\
+	\textbf{\underline{an 18: Lineare DGL 1. Ordnung}}\\
+	\\
+	\textbf{\underline{\underline{Stichworte:} Variation der Konstanten, zugeh. homogene DGL, partikuläre Lsg.}}\\
+	\\
+	\textbf{\underline{Literatur:}} \blueul{[Hoffmann], kapitel 7.3.}\\
+	\\
+	\textbf{18.1. \underline{Einleitung:}} Bereits die einfache DGL $y'=\alpha y$ beschreibt exponentielles Verhalten (Wachstum für $\alpha\textgreater0$, zerfall für $\alpha\textless0$), in vielen Anwendungen ein Standardkonzept. Wir behandeln die DGL $y'=f(x)y+g(x)$ als Verallgemeinerung dieser Form.\\
+	\\
+	\textbf{18.2. \underline{Motivation:}} Die Lineare DGL 1.Ordnung wird untersucht.\\
+	\\
+	\textbf{18.3. \underline{Vereinbarung:}} Betr. die DGL \fcolorbox{red}{white}{$y'=f(x)y+g(x)$}\blackcircle{*}\\
+	wo $f,g:j\rightarrow\mathbb{R}$ stetig, $j\subseteq \mathbb{R}$ ein IV. Die r.s. ist linear in y.\\
+	\\
+	\textbf{18.4. \underline{Bem.:}} Für $a\in j$ wird durch \greenul{$y_0(x):= \exp(\int_{a}^{x}f(t)dt)$}, $x\in j$, \greenul{eine Lsg. $y_0$} der \redul{zugehörigen homogenen (linearen) DGL} auf j erklärt, die $y_0(x)\neq 0, y_0(a)=1$ erfüllt.\\
+	\fcolorbox{red}{white}{$f'=f(x)y$}$\blackcircle{*}_l$\\
+	\\
+	\textbf{18.5. Satz:} $\bullet$ Für $a \in j$ und $b\in\mathbb{R}$ ist \greenul{die (eindeutig bestimmte) Lsg. y von $\blackcircle{*}$ auf j mit y(a)=b gegeben durch}\\
+	\greenul{$y(x)=y_0(x)\cdot(\int_{a}^{x}g(t)y_0(t)^{-1}dt+b)$}. \blackcircle{+}\\
+	$\bullet$\greenul{Sämtliche Lösungen von $\blackcircle{*}$} erhält man durch \greenul{Variation von a und b} (d.h. a=a(x), b=b(x)) und \greenul{Einschränkung auf Teilintervalle}.\\
+	\underline{Beweis:} $\bullet$ Sei y eine Lsg. von $\blackcircle{*}$ in einem IV $j_0$ mit $a \in j_0 \subseteq j$ und $y(a)b \in \mathbb{R}$. Wir schreiben y in der Form \oraul{$y(x)=c(x)y_0(x)$}, $x\in j_0$, \redul{"Variation der Konstanten"}\\
+	mit $c:j_0\rightarrow\mathbb{R}, x$ (stetig)diff'bar (die Glg. kann als Def. für c gelesen werden).\\
+	\\
+	Nehmen wir diese Form $y=cy_0$ an, dann gilt damit \\
+	\underline{$fcy_0$}+g$= fy+g=y'=c'y_0+cy_0=c'y_0+$\underline{$cfy_0$}\\
+	$\Rightarrow c'(t)=g(t)y_0(t)^{-1}$,\\
+	somit notwendig $y(x)=y_0(x)\cdot(\int_{a}^{x}g(t)y_0(t)^{-1}dt+b)$, d.h. \blackcircle{+}.\\
+	$\bullet$ Andererseits wird durch \blackcircle{+} eine Lsg. von \blackcircle{+} mit y(a)=b erklärt.\\
+	\strut\hfill$\square$\\
+	\textbf{e18.6. \underline{Folgerung:}} (a) Für die zugeh. \greenul{homogene DGL $\blackcircle{*}_h$} sind \greenul{alle Lsg. auf j} gegeben durch \greenul{$y(x)=by_0(x)$}, $x\in j$, $b\in\mathbb{R}$.\\
+	(b) Für eine Lsg. y der \greenul{homogenen DGL $\blackcircle{*}_h$} gilt: \greenul{$y\neq0\Rightarrow\forall x \in j : y(x)\neq0$}.\\
+	(c) \greenul{Jede bel. Lsg. von $\blackcircle{*}$} auf j entsteht \greenul{aus einer speziellen} ("\redul{partikulären"})\greenul{Lsg. durch Addition eine Lsg. der homogenen DGL $\blackcircle{*}_h$}.\\
+	\underline{Bew.:} (a): direkt ablesbar aus \blackcircle{+} mit g(t):=0, $t\in j$.\\
+	(b): aus (a), da $y_0\neq 0$ für $x\in j$.\\
+	(c): aus der Linearität der Ableitung folgt:\\
+	Sind y,z Lsgn. von $\blackcircle{*}$, so gilt \oraul{$(y-z)'=y'-z'=f(y)-f(y)=f(y-z)$}.\\
+	Also ist y-z Lsg. von $\blackcircle{*}_h$, und \oraul{y=z+(y-z)} die gewünschte Darstellung.\\
+	\strut\hfill$\square$\\
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
