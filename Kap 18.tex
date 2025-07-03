@@ -99,24 +99,57 @@
 	Sind y,z Lsgn. von $\blackcircle{*}$, so gilt \oraul{$(y-z)'=y'-z'=f(y)-f(y)=f(y-z)$}.\\
 	Also ist y-z Lsg. von $\blackcircle{*}_h$, und \oraul{y=z+(y-z)} die gewünschte Darstellung.\\
 	\strut\hfill$\square$\\
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	Die hier enthaltenen Linearitätsüberlegungen sind aus der Linearen Algebra 
+	bereits bei der Lösung Linearer Gleichungssysteme bekannt:\\
+	\textbf{18.7. \underline{Bem.:}} (a) \greenul{u,v Lsgn. von 
+	$\blackcircle{*}_h$} $\Rightarrow$ \greenul{$\alpha u+\beta v$ Lsg. von 
+	$\blackcircle{*}_h$} für alle $\alpha, \beta \in \mathbb{R}$\\
+	(b) \greenul{u Lsg. von $\blackcircle{*}$} $\wedge$ \greenul{v Lsg. von 
+	$\blackcircle{*}_h$}\\
+	(c) \greenul{u,v Lsg. von $\blackcircle{*}$} $\Rightarrow$ \greenul{u-v 
+	Lsg. 
+	von $\blackcircle{*}_h$}\\
+	Die Beh. (a) zeigt, dass die \greenul{Menge der Lsgn. der homogenen DGL 
+	$\blackcircle{*}_h$} bereits einem \greenul{$\mathbb{R}$-Vektorraum} 
+	liefert.\\
+	\underline{Bew.:} (c): siehe \blueul{18.6.(c)}.\\
+	\underline{(a),(b)}: ebenso aus der \oraul{Linearität der Ableitung}:\\
+	\underline{(a)}: $(\alpha u+\beta v)'=\alpha u'+\beta v'=\alpha f(u)+\beta 
+	f(v)=f(\alpha u+ \beta v)$,\\
+	\underline{(b)}: $(u+v)'=u'+v'=(f(u)+g)+f(v)=f(u+v)+g.$\\
+	\strut\hfill$\square$\\
+	\textbf{18.8. \underline{Bsp.:}} DGL \fcolorbox{red}{white}{y'=-xy+3x}, 
+	\redul{y(0)=5}.\\
+	$\bullet$ Zur Lsg. dieser AWA ist in \blueul{Satz 18.5.} zu setzen:\\
+	$j:=\mathbb{R}, a:=0, b:=5, f(x):=-x, g(x):=3x.$\\
+	Es ergibt sich: 
+	\greenul{$y_0(x)$}:=$\exp(\int_{0}^{k}(-t)dt)=$\greenul{$\exp(-\frac{1}{2}x^2)$}\\
+	\greenul{y(x)}:=$y_0(x)\cdot (\int_{0}^{x}3t 
+	\exp(-\frac{1}{2}t^2)dt+5)=$\greenul{$y_0(x)\cdot(3\exp(\frac{1}{2}x^2)+2)$},\\
+	wegen $\int_{0}^{x}3t \exp(\frac{1}{2}t^2)dt=3\exp(\frac{1}{2}t^2) 
+	\underset{0}{\overset{x}{\rule{0.4pt}{0.5cm}}}=3(\exp(\frac{1}{2}x^2)-1)$\\
+	Daher ist \greenul{$y(x)3+2\exp(-\frac{1}{2}x^2)$} die eindeutig bestimmt 
+	\greenul{Lsg. der AWA}.\\
+	$\bullet$ Dieselbe AWA \redul{direkt mit "Variation der Konstanten"} gelöst 
+	(ohne Formel\blackcircle{+}):\\
+	$y_0(x)=\exp(-\frac{1}{2}x^2)$ erfüllt $y_0'=-xy_0, y_0(0)=1.$\\
+	Der \yelul{Ansatz} \redul{$y(x)=c(x)y_0(x)$} liefert\\
+	\underline{$-x(cy_0)$}+$3x=-xy+3x=y'=c'y_0+cy_0'=c'y_0+$\underline{$c(-xy_0)$}\\
+	$\Rightarrow c'y_0=3x \Rightarrow c'(x)=3x\exp(\frac{1}{2}x^2)$.\\
+	Daraus folgt $c(x)=3\exp(\frac{1}{2}x^2)+\alpha$. DIe Anfangswertbedingung 
+	c(0)=y(0)=5 gibt dann $\alpha$=2, zusammen also wieder die Lsg. 
+	$y(x)=3+2\exp(-\frac{1}{2}x^2).$\\
+	\\
+	$\bullet$ Oft ist es noch einfacher, eine \underline{Lsg. von 
+	\blackcircle{*} zu erraten} und dann mit \blueul{Satz 18.6.(c)(und (a))} 
+	die allgemeine Lsg. zu notieren:\\
+	\\
+	Schreibt man die geg. DGL in der Form $y'=x(-y+3)$, so erkennt man leicht 
+	die Konstante Fkt. \redul{$y_p(x):=3$} als \redul{partikuläre Lösung}.\\
+	\\
+	Mit der oben schon besimmten Lsg. $y_0$ der zugeh. homogenen DGL ist die 
+	\redul{allgemeine Lösung} (nach \blueul{Satz 18.6.(a) und (c)}) dann\\
+	\\
+	$y(x)=by_0(x)+y_p(x)=b\exp(-\frac{1}{2}x^2)+3$, mit $b\in\mathbb{R}$ bel.\\
+	Die Forderung $y(0)=5$ zeige dann abschließend b=2.
 \end{document}
