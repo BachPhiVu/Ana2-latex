@@ -1,0 +1,105 @@
+\documentclass[]{scrartcl}
+\title{Vorlesung Analysis II}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{soul}
+\usepackage{ upgreek }
+\usepackage{hyperref}
+\usepackage{tipa}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\bluecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=blue, text=blue, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\blackcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=black, text=black, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\orangecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=orange, text=orange, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\redul}[1]{\setulcolor{red}{\ul{#1}}}
+\newcommand{\blueul}[1]{\setulcolor{blue}{\ul{#1}}}
+\newcommand{\yelul}[1]{\setulcolor{yellow}{\ul{#1}}}
+\newcommand{\greenul}[1]{\setulcolor{green}{\ul{#1}}}
+\newcommand{\oraul}[1]{\setulcolor{orange}{\ul{#1}}}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\maketitle
+	\textbf{\underline{Teil 3: Gewöhnliche Differentialgleichungen}}\\
+	\\
+	\textbf{\underline{1n20: Spezielle explizite DGLn 2.Ordnung}}\\
+	\\
+	\textbf{\underline{\underline{Stichworte} explizite DGL 2.Ordnung ohne y und ohne x}}\\
+	\\
+	\textbf{\underline{Stichworte:}} \blueul{[Hoffmann], Kapitel 7.6/7}\\
+	\\
+	\textbf{20.1. \underline{Einleitung:}} Wir behandeln zwei spezielle Beispiele für DGLn 2. Ordnung, die sich durch geeignete Substitution in eine DGL 1. Ordnung überführen lässt.\\
+	\\
+	\textbf{20.2. \underline{Def.:}} Eine DGL der Art \fcolorbox{red}{white}{y''=f(x,y')} $\blackcircle{*}$,\\
+	ist eine \redul{explizite DGL 2.Ordnung ohne y}.\\
+	\\
+	\textbf{20.3. \underline{Vorgehen:}} Substitution \redul{z=y'} führt auf \fcolorbox{red}{white}{z'=f(x,z)},\\
+	also eine \greenul{explizite DGL 1.Ordnung}.\\
+	Eine Lösung z dieser DGL \greenul{liefert y als Stammfunktion zu z}.\\
+	\\
+	\textbf{20.4. \underline{Bsp.:}} \fcolorbox{red}{white}{y''=$\sqrt{1+y'^2}$}, mit z=y' erhalten wir $z'=\sqrt{1+z^2}$ bzw. $\frac{z'}{\sqrt{1+z^2}}=1$.\\
+	Die l.s. ist aber die Ableitung von $\arcsin$(z), \blueul{An14.12.}\\
+	Mit $c\in \mathbb{R}$ folgt $arsinh(z)=x+c$, also $z=sinh(x+c)$ und \greenul{$y(x)=\cos h(x+c)+d$}, $c,d \in \mathbb{R}$ Konstanten.\\
+	\\
+	\textbf{20.5. \underline{Def.:}} Eine DGL der Art \fcolorbox{red}{white}{y''=f(y,y')} \blackcircle{*}\\
+	ist eine \redul{explizite DGL 2.Ordnung ohne x}.\\
+	\\
+	\textbf{20.6. \underline{Vorgehen:}} Substitution \redul{p=p(y)=y'}, also y''=p'(y)y'=p'(y)p,\\
+	man erhält die DGL 1. Ordnung pp'(y)=f(y,p), für $p\neq0$ also: \fcolorbox{red}{white}{$p'(y)=\frac{f(y,p)}{p}$} \blackcircle{+}.\\
+	Ist p Lösung von \blackcircle{+}, so ist in IVen, in denen $p(n)\neq0$ ist: \greenul{$\int^{y(x)}\frac{d\eta}{p(\eta)}+C$} [$aus 1=\frac{y'}{p}$]\\
+	woraus sich unter geeigneten Voraussetzung y(x) ergibt.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}

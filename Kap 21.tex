@@ -1,0 +1,136 @@
+\documentclass[]{scrartcl}
+\title{Vorlesung Analysis II}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{soul}
+\usepackage{ upgreek }
+\usepackage{hyperref}
+\usepackage{tipa}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\bluecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=blue, text=blue, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\blackcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=black, text=black, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\orangecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=orange, text=orange, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\redul}[1]{\setulcolor{red}{\ul{#1}}}
+\newcommand{\blueul}[1]{\setulcolor{blue}{\ul{#1}}}
+\newcommand{\yelul}[1]{\setulcolor{yellow}{\ul{#1}}}
+\newcommand{\greenul}[1]{\setulcolor{green}{\ul{#1}}}
+\newcommand{\oraul}[1]{\setulcolor{orange}{\ul{#1}}}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\maketitle
+	\textbf{\underline{Teil 3: Gewöhnliche Differentialgleichungen}}\\
+	\\
+	\textbf{\underline{an21: Lineare DGLn n-ter Ordnung mit Konstanten Koeffizienten}}\\
+	\\
+	\textbf{\underline{\underline{Stichworte:} Linearität der Lösungsmenge, charakteristisches Polynom, Operatormethode}}\\
+	\\
+	\textbf{\underline{Literatur:}} \blueul{[Hoffmann]: Kapitel 7.8., [Heuser]: Kapitel 16}\\
+	\\
+	\textbf{21.1. \underline{Einleitung:}} Behandeln mit der Operatormethode Lineare DGLn n-ter Ordnung mit Konstanten Koeffizienten, homogen und inhomogen. Speziell den Fall n=2.\\
+	\\
+	\textbf{21.2. \underline{Vereinbarung:}} Betrachten für $n\in \mathbb{N}$ fest, $a_0,...,a_{n-1} \in \mathbb{R}, f:j\rightarrow\mathbb{K},$ \redul{$\mathbb{K}\in\{\mathbb{R},\mathbb{C}\}$}, \\
+	Die DGL \fcolorbox{red}{white}{$u^{(n)}+a_{n-1}u^{(n-1)}+...+a_1u'+a_0u=f$} $\blackcircle{*}$\\
+	\\
+	\textbf{21.3. \underline{Motivation:}} Haben schon n=1 behandelt, daneben ist n=2 wichtig.\\
+	\\
+	\textbf{21.4. \underline{Def.:}} Für $f\neq0$ heißt $\blackcircle{*}$ eine \redul{inhomogene Lineare DGL n-ter Ordnung mit Konstanten Koeffizienten,} f heißt \redul{Inhomogenität} oder \redul{Störglied}.\\
+	Die zugehörige \underline{homogene} DGL (linear, n-ter Ordnung, mit Konstanten Koeffizienten) lautet $\blackcircle{*}_h$ \fcolorbox{red}{white}{$u^{(n)}+a_{n-1}u^{(n-1)}+...+a_1u'+a_0u=0$}.\\
+	\\
+	\textbf{21.5. \underline{Linearitätsüberlegungen:}} (a) \greenul{u,v Lsgn.} von $\blackcircle{*}_h \Rightarrow \forall\alpha, \beta \in \mathbb{K}:$ \greenul{$\alpha u+\beta v$ Lsg.} von $\blackcircle{*}$, d.h. doie Menge der Lösungen der homogenen DGL $\blackcircle{*}_h$ liefert einen \greenul{Vektorraum}.\\
+	(b) \greenul{u Lsg.} von $\blackcircle{*} \wedge$ \greenul{v Lsg.} von \greenul{$\blackcircle{*}_h$} $\Rightarrow$ \greenul{u+v Lsg.} von $\blackcircle{*}$\\
+	(c) \greenul{v,w Lsgn.} von $\blackcircle{*}$ $\Rightarrow$ \greenul{v-w Lsg. von $\blackcircle{*}_h$}\\
+	(d) Ist y=u+iv mit u,v:j $\rightarrow \mathbb{R}, i=\sqrt{-1},$ so gilt:\\
+	\greenul{y (Komplexe) Lsg. von $\blackcircle{*}$} $\Leftrightarrow$ \greenul{u,v (reelle) Lsgn. von $\blackcircle{*}$} mit \greenul{Re$ f, Ym f$ als r.l.}\\
+	\\
+	\underline{Bem.:} Alle Lsgn. von $\blackcircle{*}$ erhält man durch Addition irgendeiner \redul{spzillen (partikulären) Lsg.}  zu einer (beliebigen) von $\blackcircle{*}_h$.\\
+	\\
+	\textbf{21.6. \underline{Def.:}} Das zu $\blackcircle{*}$ gehörige Polynom \yelul{$\phi(\lambda)$}$:=\lambda^n+a_{n-1}\lambda^{n-1}+...+a_1\lambda+a_0, \lambda\in\mathbb{K}$,\\
+	Heißt das \redul{charaktistische Polynom} von $\blackcircle{*}$,\\
+	Die Gleichung $\phi(\lambda)=0$ heißt \redul{charakteristische Glg.}\\
+	\\
+	\textbf{21.7. \underline{Spezialfall \underline{n=2:}}} $\blackcircle{*}:u''+au'+bu=f, \blackcircle{*}_h: u''+au'+bu=0,$\\
+	wo a,b $\in \mathbb{R}, f:j\rightarrow\mathbb{K}$ stetig.\\
+	Das charakteristische Polynom ist $\phi(\lambda)=\lambda^2+a\lambda+b, \lambda\in\mathbb{K}$\\
+	und $\lambda^2+a\lambda+b=0$ ist die charakteristische Glg.\\
+	\\
+	\textbf{21.8. \underline{Def.:}} Der \redul{Ableitungsoperator D} seei definiert durch \yelul{Du:=u'} für u:j$\rightarrow\mathbb{K}$ bel. oft diff'bar.\\
+	\\
+	\textbf{21.9. \underline{Bem.:}} D:$\phi^{\infty}(j,\mathbb{K})\rightarrow\phi^\infty(j,\mathbb{K})$ \greenul{ist Linear}.\\
+	\\
+	\textbf{21.10. \underline{Def.:}} Mit \yelul{$D^0=E$}:=$id_{\phi^\infty(j,\mathbb{K})}$ und \yelul{$D^{k+1}$}:=$DD^k, k\in \mathbb{N}_0,$ sind bel. Potenzen und Linearkombinationen davon definiert.\\
+	\\
+	\textbf{21.11. \underline{Bem.:}} $\bullet$ Haben \greenul{Eu=u, $D^ku=u^{(k)}$}, für $k\in \phi^\infty(j,\mathbb{K}).$\\
+	$\bullet$ Haben die \redul{Verauschbarkeitsbeziehung} $\forall n, m \in \mathbb{N}_0:$ \greenul{$D^nD^m=D^{n+m}=D^mD^n$}.\\
+	\\
+	\textbf{21.12. \underline{Notation:}} Zur Abkürzung def. \underline{$\alpha$}:=$\alpha E$ für $\alpha\in \mathbb{K}$,\\
+	und für k$\in\mathbb{N}_0, c_0,...,c_k\in \mathbb{K}, \Uppsi(x):=\sum_{l=0}^{k}c_lx^l, x\in\mathbb{K}$, notieren wir \yelul{$\uppsi(D)$}:=$\sum_{l=0}^{k}c_lD^l.$ (Setzen D in Polynome ein!)\\
+	\\
+	Schreiben damit $\blackcircle{*}$ in der Kurzform $\blackcircle{*}$ \fcolorbox{red}{white}{$\phi(D)u=f$}.\\
+	\\
+	\textbf{21.13. \underline{Beh.:}} Für $\Uppsi \in \mathbb{K}[x], \alpha\in \mathbb{K}:$ \greenul{$\Uppsi(D)e^{\alpha x}$} = \greenul{$\uppsi(\alpha)e^{\alpha x}$} (als Fkt in x).\\
+	\underline{Bew.:} l.l. =$(\sum_{_l=0}^{k}c_lD^l)e^{\alpha x}= \sum_{l=0}^{k}c_l(D^le^{\alpha x})= \sum_{l=0}^{k}c_ld^le^{\alpha x}= r.l$\\
+	\strut\hfill$\square$\\
+	\textbf{21.13. \underline{Beh.:}} Für $\Uppsi \in \mathbb{K}[x], \alpha \in \mathbb{K}:$ \greenul{$\Uppsi (D) e^{\alpha x}$} = \greenul{$\Uppsi (\alpha)e^{\alpha x}$} (als Fktt. in x).\\
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
