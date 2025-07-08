@@ -64,7 +64,7 @@
 	\\
 	\textbf{\underline{an21: Lineare DGLn n-ter Ordnung mit Konstanten Koeffizienten}}\\
 	\\
-	\textbf{\underline{\underline{Stichworte:} Linearität der Lösungsmenge, charakteristisches Polynom, Operatormethode}}\\
+	\textbf{\underline{\underline{Stichworte:} Linearität der Lösungsmenge, $\phi$=charakteristisches Polynom, Operatormethode, D = Differntialoperator, r.S. = rechte Seite, l.S. = linke Seite}}\\
 	\\
 	\textbf{\underline{Literatur:}} \blueul{[Hoffmann]: Kapitel 7.8., [Heuser]: Kapitel 16}\\
 	\\
@@ -123,17 +123,114 @@
 	\mathbb{K} \forall r \in \mathbb{N}_0:$ \greenul{$(D-\eta)^re^{\alpha x} = 
 	(\alpha -\eta)^re^{\alpha x}$}. \textopencorner 
 	$\Uppsi(x)=(x-\eta)^r$\textcorner\\
-	(b) Ist \greenul{$\alpha$ Nst. von l}, so ist \greenul{$e^{\alpha x}$}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	(b) Ist \greenul{$\alpha$ Nst. von l}, so ist \greenul{$e^{\alpha x}$ Lsg. der homogenen DGL} $\blackcircle{*}_h$.\\
+	(c) Ist \greenul{$\alpha$ K eine Nst. von $\phi$}, so ist $\frac{\beta}{\phi(\alpha)}e^{\alpha x}$ \greenul{Lsg. der inhomogenen DGL $\blackcircle{*}$ mit der r.l.} \redul{$f(x):=\beta e^{\alpha x}$} für $\beta \in \mathbb{K}$. \textopencorner$\Uppsi=\phi$ in \blueul{21.13.}\textcorner\\
+	\\
+	\textbf{21.15. \underline{Bsp.:}} DGL \fcolorbox{red}{white}{$u''+u'-6u=e^x$} \blackcircle{*}\\
+	Haben $\phi(\lambda)=\lambda^2+\lambda-6=(\lambda+3)(\lambda-2)$.\\
+	Mit \blueul{21.14.(a)} erhalten wir \greenul{$e^{-3x}, e^{2x}$} als Lsgn. \greenul{von $\blackcircle{*}_h$}.\\
+	Mit \blueul{21.14.(b)} ergibt sich ($\alpha:=1, \beta:=1$) dann $\frac{1}{\phi(1)}e^{x}=-\frac{1}{4}e^x$.\\
+	als eine \greenul{Lsg. von $\blackcircle{*}$}. Somit: \greenul{$c_1e^{-3x}+c_2e^{2x}-\frac{1}{4}e^x,c_1,c_2\in\mathbb{K}$}, sind \greenul{Lösungen von $\blackcircle{*}$}.\\
+	\textopencorner Auch: \underline{Alle} Lsgn., denn der Lösungsraum von $\blackcircle{*}_h$ \greenul{hat die Dimension 2} nach \blueul{21.24.}\textcorner\\
+	\\
+	\textbf{21.16. \underline{Lemma:}} Für $\Uppsi \in \mathbb{K}[x], \alpha\in\mathbb{K}$, \greenul{$v\in\phi^\infty (j,\mathbb{K})$} gilt:\\
+	\greenul{$\Uppsi(D)(e^{\alpha x}v)=e^{\alpha x}\Uppsi(D+\alpha)v$}\\
+	"\redul{Exponentialshift}".\\
+	\underline{Bew.:}$\bullet$ Der \oraul{Spezialfall $\Uppsi(x)=x^l$}, $l\in\mathbb{N}_0$, ergibt sich induktiv:\\
+	\oraul{l=0}: trivial wegen $\Uppsi (D)=D^0=id=(D+\alpha)^0\checkmark$\\
+	\oraul{$l\rightarrow l+1$}: $D^{l+1}(e^{\alpha x}v)=D(D^le^{\alpha x}v)\underbrace{=}_{Ind. Vor.}D(e^{\alpha x}\underbrace{(D+ßalpha)^lv}_{=:w\in\phi^\infty(j,\mathbb{K})})$ \\
+	$\underbrace{=}_{Produktionsregel}e^{\alpha x}(\alpha+D)w=e^{\alpha x}(D+\alpha)^{l+1}v. \checkmark$\\
+	$\bullet$ Daraus ist der \oraul{allg. Fall} ablesbar, da \oraul{$\Uppsi(D)=\sum_{l=0}^{k}c_lD^l$}.\\
+	\strut\hfill$\square$\\
+	\textbf{21.17. \underline{Bem.:}} \greenul{$\Uppsi(D+\alpha)=\sum_{l=0}^{k}\frac{\Uppsi^{(l)}(\alpha)}{l!}D^l, ßalpha \in \mathbb{K}$}.\\
+	\\
+	\textbf{21.18. \underline{Bew.:}} \oraul{Taylorentwicklung von $\Uppsi$} Zeigt $\Uppsi(t+\alpha)=\sum_{l=0}^{k}\frac{\Uppsi^{(l)}(\alpha)}{l!}t^l.$\\
+	\strut\hfill$\square$\\
+	\textbf{21.19. \underline{Bem.:}} Beh. \blueul{21.13.} ergibt sich auch aus dem \blueul{Exponentialshift 21.16.} mit $v(t)\equiv1$,\\
+	denn \oraul{alle Ableitungen (ab der Ordnung 1) sind 0}, somit ist \oraul{$\Uppsi(D+\alpha)v=\Uppsi(\alpha)$}.\\
+	\\
+	\textbf{21.20. \underline{Bem.:}} \greenul{$\phi(D)(xe^{\alpha x})=(x\phi(\alpha)+\phi'(\alpha))e^{\alpha x}, \alpha \in \mathbb{K}$}.\\
+	\underline{Bew.:} direkt oder ablesbar aus \blueul{21.16.} und \blueul{21.17.} mit \oraul{v(x):=x} wie folgt:\\
+	l.S. $\underbrace{=}_\text{\blueul{21.16.}}e^{\alpha x}\phi (D+\alpha)x\underbrace{=}_7\text{\blueul{21.17.}}e^{\alpha x}\sum_{l=0}^{n}\frac{\phi^{(l)}(\alpha)}{l!}D^lx)$r.S.\\
+	\strut\hfill$\square$\\
+	Aus \blueul{Bem. 21.20.} erhalten wir als Ergänzung zu \blueul{21.14.:}\\
+	\textbf{21.21. \underline{Satz:}} (d) Ist \greenul{$\alpha$ doppelte Nst. von $\phi$}, so ist auch \greenul{$xe^{\alpha x}$ Lsg. von $\blackcircle{*}$}.\\
+	(e) Ist \greenul{$\alpha$ nur einfache Nst. von $\phi$} (d.h. \greenul{$\phi (\alpha)=0\neq\phi'(\alpha)$}, so liefert $\frac{\beta}{\phi'(\alpha)}xe^{\alpha x} $ eine Lsg. von \blackcircle{*}) mit \redul{$f(x):=\beta e^{\alpha x}$} als r.S., $\beta \in \mathbb{K}$.\\
+	\\
+	\textbf{21.22. \underline{Bsp.:}} DGL \fcolorbox{red}{white}{$\dot{\dot{s}}-2\dot{s}=\cos$}\\
+	Haben $\phi(\lambda)=\lambda^2-2\lambda+1=(\lambda-1)^2$, nach \blueul{21.14.(b)} und \blueul{21.21.(d)} erhalten wir \greenul{$e^x,xe^x$} als \greenul{Lsgn. von $\blackcircle{*}_h$}.\\
+	Zur Lsg. von \blackcircle{*} betr. die Komplexe DGL \fcolorbox{red}{white}{$\dot{\dot{z}}-2\dot{z}+z=e^{ix}$}.\\
+	Nach \blueul{21.14.(c)} mit \oraul{$\alpha=i, \beta=1$} ist z=\greenul{$\frac{1}{\phi(i)}e^{ix}$}=$\frac{1}{-2_i}(\cos(x)+i\sin(x))$ =$\frac{1}{2}(-\sin(x)+i\cos(x))$ eine \greenul{Partikuläre Lsg.}\\
+	Da die r.S. der DGL  \underline{für s} genau (Realteil)Re($e{ix}$) ist, erhalten wir eine \greenul{partikuläre Lsg.} durch \greenul{s=Re($\frac{1}{2}(-\sin(x)+i\cos(x))$)}=\greenul{$-\frac{1}{2}\sin(x)$}.\\
+	\textopencorner Ebenso mit \greenul{Im($e^{ix}$) Lsg. von $\dot{\dot{s}}-2\dot{s}+s=\sin$}.\\
+	Haben, dass $(c_1x+c_2)e^x-\frac{1}{2}\sin(x)$ für $c_1,c_2\in\mathbb{R}$ schon \underline{alle} Lsgn. sin nach \blueul{21.24.}\textcorner\\
+	\\
+	\textbf{21.23. \underline{Allgemeine Lsg. der homogenen DGL \blackcircle{*}:}}\\
+	Hat \greenul{$\phi$ die r-fache Nst. $\alpha$}$\infty\mathbb{C}$, d.h. $\phi(x)=(x-\alpha)^r\Uppsi(x), r\infty\mathbb{N}_0$\\
+	und $\Uppsi\in\mathbb{C}[x], deg \Uppsi =n-r, \Uppsi(\alpha)\neq0,$\\
+	so hat man \greenul{$\phi(D)=(D-\alpha)^r\Uppsi(D)=\Uppsi(D)(D-\alpha)^r$}.\\
+	\\
+	\underline{Fall} \greenul{(D-$\alpha)^ru=0$}: Dies zeigt $\phi(D)u=0$, wir suchen dann Lsgn. de Form \greenul{$u(x)=e^{\alpha x}v(x)$} \textopencorner jede Fkt. ist so schreibbar\textcorner.\\
+	Dann ist $0=(D-\alpha)^re^{\alpha x}v=e^{\alpha x}D^rv$, also \greenul{$D^rv=0$}.\\
+	Also ist \greenul{v ein Polynom vom Grad $\leq$ r-1}, Und \setulcolor{magenta}\ul{$e^{\alpha x}, xe^{\alpha x}, x^2e^{\alpha x},...,x^{r-1}e^{\alpha x}$} sind zu $\alpha$ gehörende Lsgn. \greenul{von $\blackcircle{*}_h$}.\\
+	\textopencorner Diese sind \greenul{Linear unabh.}, da $x^0,x^1,...,x^{r-1}$lin. unabh. Fktn. sind.\\
+	\\
+	\textbf{21.24. \underline{Schluss:}} Man erhält eine \greenul{Basis des Lsgs.raums} (ein "\redul{Fundamentalsystem}"), d.h.: \greenul{Jede Lsg. von $\blackcircle{*}_h$} lässt sichh \greenul{in eindeutiger Weise als LK von $e^{\alpha x}, xe^{\alpha x},...,x^{r-1}e^{\alpha x}$} schreiben, wobei \greenul{$\alpha$ die verschiedenen Nullstellen von $\phi$ durchläuft.}<<<ßß
+	Hat \greenul{$\phi$ nut reelle Nst.}, ergibt dies ein \greenul{reelle Fundamentalsystem.}\\
+	\\
+	\textbf{21.25. \underline{Bem.:}} Die Lösung der allgemeinen DGL \fcolorbox{red}{white}{$\phi(D)u=f$} \blackcircle{*}\\
+	lässt sich wegen \redul{$\phi(D)=(D-\lambda_1)^{r_1}\cdots(D-\lambda_s)^{r_s}$},\\
+	$s\in \mathbb{N}, r_1,...,r_s\in\mathbb{N}$, ddie $\lambda_1,...,\lambda_s\in\mathbb{C}$ p.w.v. Nst. von $\phi$ \textopencorner laut \redul{Hauptsatz der Algebra} \textcorner\\
+	auf das \greenul{sukzessive Lösen} von n (linearen) DGLn \underline{erster} Ordnung zurückführen.\\
+	\\
+	\textbf{21.26. \underline{Beweisskizze} für \blueul{21.24.:}}\\
+	\oraul{1. Schritt:} Aus der Darstellung \redul{$\phi(\lambda)=(\lambda-\lambda_1)^{r_1}\cdots (\lambda-\lambda_s)^{r_s}$} gewinnen wir mit der \blueul{Partialbruchzerlegung An17.14.} Polynome $q_1,...,q_s$ mit \oraul{$\frac{1}{\phi(\lambda)}= \frac{q_1(\lambda)}{(\lambda-\lambda_1)^{r_1}}+...+ \frac{q_s(\lambda)}{(\lambda-\lambda_s)^{r_s}}$}, $\lambda \notin \{\lambda_1,...,\lambda_s\}.$\\
+	\oraul{2. Schritt:} Setze \redul{$p_j(\lambda):=\prod_{l=1;l\neq j}^{s}(\lambda-\lambda_l)^{r_l}$}, $j=1,...,s.$\\
+	\begin{align}
+		\text{damit folgt} &1=q_1(\lambda)p_1(\lambda)+...+q_s(\lambda)p_s(\lambda),\\
+		\text{also} &u=\underbrace{q_1(D)p_1(D)u}_{=:u_1}+...+\underbrace{q_s(D)p_s(D)u}_{=:u_s}
+	\end{align}\\
+	\oraul{3. Schritt:} Ist u Lsg. von $\blackcircle{*}_h,$ so gilt\\
+	$\blackcircle{\#}$ \fcolorbox{orange}{white}{($D-\lambda_j)^{r_j}u_j=0$}, \oraul{$j=1,...,s$},\\
+	\textopencorner l.S.=$(D-\lambda_j)^{r_j}q_j(D)p_j(D)u=q_j(D)\overbrace{\phi(D)u}^{=0}=0.$ \textcorner\\
+	\oraul{4. Schritt:} Die \oraul{Lsgn. $v_1,...,v_s$} von $\blackcircle{\#}$ liefern durch \oraul{$v:v_1+...+v_s$}\\
+	eine \oraul{Lsg. von $\blackcircle{*}_h$}. \textopencorner$\phi(D)v=\phi(D)v_1+...+\phi(D)v_s=\sum_{j=1}^{s}p_j(D)\underbrace{(D-\lambda)^{r_j}v_j}_{=0}=0$.\textcorner\\
+	\oraul{5. Schritt: Dimensionsüberlegung:} $\mathcal{M}:=\{u\in \phi^\infty(j,\mathbb{C}; \phi(D)u=0(\Leftrightarrow \blackcircle{*}_h))\}$.\\
+	und für $1\leq j\leq s$ sei $\mathcal{L}_j:=\{v_j\in \phi^\infty (j,\mathbb{C}); (D-\lambda_j)^{r_j}v_j=0\}.$\\
+	haben Isomorphismus $\mathcal{M}\tilde{=}\mathcal{L}_1\blackcircle{+}...\blackcircle{+}\mathcal{L}_s, u\rightarrowtail u_1+...+u_s$, wo $u_j:=q_jp_j(D)u, 1\leq j \leq s.$\\
+	Dabei ist die Summe der $\mathcal{L}_j$ direkt. Es folgt \oraul{$dim_\mathbb{C}\mathcal{M}=dim \mathcal{L}_1+...+dim\mathcal{L}_s=r_1+...+r_s=n$}.\\
+	\strut\hfill$\square$\\
+	Man erhält auf ähnliche Art den:\\
+	\textbf{21.27. \redul{Existenz- und Eindeutigkeitssatz} für DGL $\phi(D)y=f$:}\\
+	Zu $f\in \phi(j,\mathbb{C}),$ \greenul{$x_0\in j, (y_0,...,y_{n-1})\in \mathbb{C}^{n-1} $ Ex. eindeutig} ein $y \in \phi^\infty (j,\mathbb{C})$ \greenul{$\phi$(D)y=f}, mit \greenul{$y^{(j)}(x_0)=y, j=0,...,n-1$}.\\
+	Vgl. \blueul{[Heuser, Satz 16.13.]}\\
+	\\
+	\textbf{21.28. \blueul{Der Ex.-und Eind.satz 21.27.} (bzw. die Überlegungen in \blueul{21.23-21.26})}\\
+	Liefern speziell für den VR der Lösungen der homogenen DGL,\\
+	\redul{$\mathcal{M}$}:=$\{u\in\phi^\infty(j,\mathbb{C});\phi(D)u=0\}$\\
+	durch $u\rightarrowtail (u(x_0),...,u^{(n-1)})\in \mathbb{C}^n$ einen Isomorphismus, d.h. \greenul{$dim_\mathbb{C}\mathcal{M}=n$}.\\
+	\\
+	\textbf{21.29. \underline{Reelle Lösungen zu Komplexen Nst.}}\\
+	Ist $\alpha+i\beta, \alpha,\beta \in \mathbb{R}, \beta\neq 0$, r-fache Nst. von $\phi$, so auch $\alpha-i\beta$.\\
+	Die zugeh. \greenul{homogenen Lsgn.} sind nach \blueul{21.23.} dann von der Form \greenul{$p(x)e^{(\alpha+i\beta)x}+q(x)e^{(\alpha-i\beta)x}$, $p,q\in\mathbb{C}[x],deg p, deg q \leq r-1$}.\\
+	zu \greenul{P,Q$\in \mathbb{R}[x]$}, deg P, deg Q $\leq r-1$, sind mit \redul{p}$=\frac{1}{2}(P-iQ)$, \redul{q}$=\frac{1}{2}(P+iQ)$ dann die Funktionen\\
+	\begin{align}
+		\text{\greenul{$pe^{(\alpha+i\beta)x}+qe^{(\alpha-i\beta)x}$}}&=e^{\alpha x}(\frac{1}{2}(P-iQ)e^{i\beta x}+\frac{1}{2}(P+iQ)e^{-i\beta x})\\
+		&=e^{\alpha x}(P(\frac{1}{2}(e^{i\beta x}+e^{-i\beta x}))-Q(\frac{i}{2}(e^{i\beta x}-e^{i\beta x})))\\
+		&=e^{\alpha x} (P\cos(\beta x)+Q\sin(\beta x)) \text{die \greenul{reellen Lösungen}}.
+	\end{align}\\
+	\\
+	\textbf{21.30. \underline{Fazit:}} Zu einer \greenul{r-fachen Nst. $\alpha+i\beta$}, $\alpha,\beta \in \mathbb{R}$, gehört die \greenul{allg. Lsg. $e^{\alpha x}(P\cos(\beta x)+Q\sin(\beta x))$}, mit \greenul{$P,Q \in \mathbb{R}[x], deg P, deg Q \leq r-1$}.\\
+	$\bullet$ Für \greenul{r=1} ist dies \greenul{$e^{\alpha x}(c_1 \cos(\beta x)+c_2 \sin (\beta x))$}, $c_1,c_2\in\mathbb{R}.$\\
+	$\bullet$ Falls \greenul{$\beta$=0}, ist $\alpha$ reelle Nst. mit allg. Lsg. \greenul{$e^{\alpha x}P, P\in\mathbb{R}[x], degP\leq r-1$},\\
+	$\bullet$ speziell \greenul{r=1 ind $\beta$=0} ergibt \greenul{$ce^{\alpha x}$}, falls \greenul{$\alpha$ einfache reelle Nst.}\\
+	\\
+	\textbf{21.31. \underline{Spezialfall \underline{n=2:}}} \fcolorbox{red}{white}{$y''+ay'+by=0$}, $a,b\in \mathbb{R}.$\\
+	1. Fall \redul{$a^2-4b>0$}: haben zwei verschiedene reelle Nst.\\
+	$\lambda_{1/2}=\frac{1}{2}(-a\pm\sqrt{a^2-4b}),$\\
+	und \greenul{$e^{\lambda_1x}, e^{\lambda_2x}$} ist \greenul{(reelles) Fundamentalsystem.}\\
+	2. Fall \redul{$a^2-4b=0$}: haben eine \greenul{doppelte Nst.} $\lambda_0:=-\frac{a}{2}$ und \greenul{$e^{\lambda_0x}, xe^{\lambda_0x}$} ist \greenul{(reelles) Fundamentalsystem}.\\
+	3. Fall \redul{$a^2-4b<0$}: \greenul{$\lambda_{1/2}=\alpha\pm i\beta, \alpha:=-\frac{1}{2}, \beta:=\frac{1}{2}\sqrt{4b-a^2}$} sind Konjugiert Komplexe Nst., und \greenul{$e^{\alpha x}\cos(\beta x), e^{\alpha x}\sin(\beta x)$} ist \greenul{(reelles) Fundamentalsystem}.\\
 	
 	
 	
