@@ -25,37 +25,41 @@
 		{\textbf{#1}};
 	}%
 }
-\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+\setul{1pt}{1.5pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
 
 \setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
 \setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
 \setlength{\parindent}{0pt}
 
 \begin{document}
-	
-	\textbf{\underline{an3: Konvergenz, Funktionsgrenzwerte, Stetigkeit im $\mathbb{R}^n$}}
-	\textbf{\underline{Stichworter:}} Funktionsgrenzwerte, Stetigkeit ( Komponentenweise und partiell)
-	
-	\medskip\hrule\medskip
-	
-	\textbf{\underline{Literatur:}}\setulcolor{blue}\ul{[Hoff], Kapitel 9.3}
-	
+	\maketitle
+	\textbf{\underline{an3: Konvergenz, Funktionsgrenzwerte, Stetigkeit im 
+	$\mathbb{R}^n$}}\\
+	\\
+	\textbf{\underline{\underline{Stichwörter:}Funktionsgrenzwerte, Stetigkeit 
+	( Komponentenweise und partiell)}} \\
+	\\
+	\textbf{\underline{Literatur:}}\setulcolor{blue}\ul{[Hoff], Kapitel 9.3}\\
+	\\
 	\textbf{3.1\underline{Einleitung:}} Wir definieren Funktionsgrenzwerte bei Funktionen f von $\mathbb{R}^n$ nach $\mathbb{R}^m$\\
 	\\
-
 	\textbf{3.2 \underline{Vereinbarung/Situation:}} Seien M,n $\in \mathbb{N}$, M $\subseteq \mathbb{R}^n$, f : D $\rightarrow \mathbb{R}^m$ \\
 	und b $\in \mathbb{R}^m$. Als Norm benutzen wir die \setulcolor{Orchid}\ul{Maximumsnorm} und schreiben deswegen $||\cdot||$ für $||\cdot||_\infty$. Weiter sei $a \in \mathbb{R}^n$ ein Häufungspunkt zu/von M, d.h $\forall \epsilon > 0 : \neq $\setulcolor{red}\ul{$\{x\in M; ||x-a||<\epsilon\}$} 
-	= $\infty$ (vgl. \setulcolor{blue} \ul{An 10.2}).\\
+	= $\infty$ (vgl. \setulcolor{blue}\ul{An 10.2}).\\
 	(Anmerkung\ul{$\{x\in M; ||x-a||<\epsilon\}$} = \setulcolor{yellow}\ul{$U^\epsilon_a(M)$}$\leftarrow$\setulcolor{red} \ul{$\epsilon$-Umgebung} um a, vgl. \setulcolor{blue}\ul{3.14}).\\
 	Dies bedeutet, dass a aus M heraus durch von a verschiedene Punkte x $\in M$ beliebig gut approximierbar ist, bzw. "man kommt mit Punkten aus M beliebig gut heran an a", und zwar aus "allen Richtungen" falls $\exists \epsilon > 0 : U^\epsilon_a(\mathbb{R}^n)\subseteq M$.\\
 	Wie in \ul{An 10.4} definieren wir dann den Funktionsgrenzwert:
 	\\\\
 		
 	\textbf{3.3\underline{Def.:}} In Situation \ul{3.2} gilt: f(x) $\rightarrow$ b (für M$\ni$ x $\rightarrow$ a)\\
-	: \setulcolor{red}\ul{$ <=>\forall \epsilon > 0 \exists \delta > 0$ \hspace{5mm} $ \forall x \in M: ||x-a|| < \delta  => || f(x) - b || < \epsilon$}\\
-	Lesen "f(x) Konvergiert gegen b, wenn x (aus M heraus) gegen a geht/Konvergiert".\\
+	: \setulcolor{red}\ul{$ \Leftrightarrow\forall \epsilon > 0 \exists \delta 
+	> 0$ \hspace{5mm} $ \forall x \in M: 0\textless||x-a|| < \delta  
+	\Rightarrow || f(x) - b || < \epsilon$}\\
+	Lesen: "f(x) Konvergiert gegen b, wenn x (aus M heraus) gegen a 
+	geht/Konvergiert".\\
 	Wir nennen b $\in \mathbb{R}^m$ den  \ul{Grenzwert} (Kurz \ul{GW})\ul{von f(x) für $M \ni x \rightarrow a.$}\\
-	Notation: f(x) $\xrightarrow[]{M\ni x \rightarrow a}$b oder $\lim_{n \ni x \rightarrow a} f(x)=b$ oder $\lim\limits_{x\rightarrow a|x\in M}f(x)=b.$\\
+	Notation: f(x) $\xrightarrow[]{M\ni x \rightarrow a}$b oder $\lim_{M \ni x 
+	\rightarrow a} f(x)=b$ oder $\lim\limits_{x\rightarrow a|x\in M}f(x)=b.$\\
 	Umformulierung:$||f(x)-b||\xrightarrow{M\ni x\rightarrow a}0.$\\\\
 	
 	\textbf{3.4\underline{Bem.:}} Falls M = D ist, hat die Bedingung "$x\in M$" Keine Weitere Bedeutung und kann weggelassen werden. Fehlt eine Bedingung, ist einfach m= D gemeint.\\\\
@@ -67,8 +71,10 @@
 	\end{pmatrix}$, den Komponentenfunktionen $f_1,...,f_m: D\rightarrow\mathbb{R}$, nämlich $\forall i \in \{1,...,m\}:$ \setulcolor{red} \ul{$f_i:=pr_i\circ f$}.\\
 	Mit $b= (b_1,...,b_m)^T \in \mathbb{R}^m$ gilt dann:\\
 	\textbf{\underline{Beh.:}} \begin{equation}\begin{split}
-		f(x)\xrightarrow{n\ni x \rightarrow a}b & \Leftrightarrow \forall i \in \{1,...,m\}: f_i (x)\rightarrow b_i (n\ni x\rightarrow a)\\
-		 & \Leftrightarrow\forall i: |f_i(x)-b_i|\rightarrow0(n\ni x \rightarrow a)
+		f(x)\xrightarrow{M\ni x \rightarrow a}b & \Leftrightarrow \forall i \in 
+		\{1,...,m\}: f_i (x)\rightarrow b_i (M\ni x\rightarrow a)\\
+		 & \Leftrightarrow\forall i: |f_i(x)-b_i|\rightarrow0(M\ni x 
+		 \rightarrow a)
 		\end{split}
 	\end{equation} 
 	\textbf{\underline{Bew.:}} Für $z= (z_1,...,z_m)^T \in \mathbb{R}^m, i\in \{1,...,m\}$ gilt $|z_i-b_i|\leq||z-b||_\infty \leq \sum_{i=1}^{m}|z_i-b_i|.$\\
@@ -81,36 +87,35 @@
 	\strut\hfill$\square$\\
 	\textbf{3.8\underline{Bsp.:}} $D = \mathbb{R}^2 
 	\backslash\{\begin{pmatrix}0\\0\end{pmatrix}\}, 
-	f(v):=\frac{xy}{\sqrt{x^2+y^2}}$, wenn $v=\begin{pmatrix}x\\y\end{pmatrix} 
+	f(v):=\frac{xy}{x^2+y^2}$, wenn $v=\begin{pmatrix}x\\y\end{pmatrix} 
 	\in D$, also $f:D\rightarrow\mathbb{R}$.\\
 	\underline{Beh.:} Es existiert kein $b\in \mathbb{R}$ mit $f(v)\rightarrow
 	b$ (bei $v\rightarrow (0,0)^T=0$).\\
 	\underline{Bew.:} Für x$\in \mathbb{R}\backslash\{0\}$ gelten $f(x,0)=0$ 
 	und $f(x,x)=\frac{1}{2}$, im $\lightning$ zu \setulcolor{blue} \ul{3.5.}\\
 	\strut\hfill$\square$\\
-	Wie i, eindimensionalen Fall ist ein Funktions GW mit Folgenkonvergenz 
+	Wie in eindimensionalen Fall ist ein Funktions GW mit Folgenkonvergenz 
 	beschreibbar:\\
-	\textbf{3.9 \underline{Bem.:}}  $(f) \xrightarrow{M\ni x\rightarrow a}b$, 
+	\textbf{3.9 \underline{Bem.:}}  $f(x) \xrightarrow{M\ni x\rightarrow a}b$, 
 	wenn $\forall (x_k)_{k\in \mathbb{N}} \subseteq M, x_k 
 	\xrightarrow{k\rightarrow \infty}a: f(x_k)\xrightarrow{k\rightarrow 
 	\infty}b$ mit Folgenkonvergenz wie in \ul{an 1.8}\\
 	\\
 	\textbf{3.10 \underline{Rechnen mit Grenzewerten} 
 	\setulcolor{red}("\ul{GWSätze}")}:\\
-	\begin{equation}
-		\begin{cases}
-			f(x)\rightarrow b, g(x)\rightarrow c & \Rightarrow 
-			(f+g)(x)\rightarrow b \pm c\text{, sofern bildbar}\\
-			& \Rightarrow \textless f(x), g(x)\textgreater\rightarrow\textless 
-			b,c\textgreater\text{, sofern bildbar}\\
-			& \Rightarrow ||f(x)|| \rightarrow ||b||
-		\end{cases}
-	\end{equation}
+
+	\begin{align}
+		f(x)\rightarrow b, g(x)\rightarrow c & \Rightarrow 
+		(f+g)(x)\rightarrow b \pm c\text{, sofern bildbar}\\
+		& \Rightarrow \textless f(x), g(x)\textgreater\rightarrow\textless 
+		b,c\textgreater\text{, sofern bildbar}\\
+		& \Rightarrow ||f(x)|| \rightarrow ||b||
+	\end{align}
 \\
 	Wir kommen zur Stetigkeit von Funktionen $f:D\rightarrow\mathbb{R}^m, 
 	D\subseteq\mathbb{R}^n.$\\
-	\textbf{3.11\underline{Def.:}}\begin{equation}
-		\begin{cases}
+	\textbf{3.11\underline{Def.:}}\setulcolor{red}\\
+	\begin{align}
 		\text{Für }a\in D \text{ heißt f \ul{stetig in a} :} &\Leftrightarrow 
 		\forall \epsilon\textgreater0 \exists \delta \textgreater 0 \forall x 
 		\in D:||x-a||\textless \delta \Rightarrow ||f(x)-f(a)|| 
@@ -118,8 +123,7 @@
 		& \Leftrightarrow f(x)\rightarrow f(a) (\text{bei } D\ni x \rightarrow 
 		a)\\
 		&\text{bzw. }\lim_{x\rightarrow a (x \in D)} f(x)= f(a).
-	\end{cases}
-	\end{equation}
+	\end{align}
 	\\
 	\textbf{3.12 \underline{Bem.:}} Die Forderung, dass a ein Häufungspunkt von 
 	D ist, wird hier nicht benötigt.\\
@@ -130,9 +134,9 @@
 	\textbf{3.14} Zum Erkennen von stetigen Funktionen ist wieder folgende 
 	Grundregel zur Stetigkeit zusammengesetzter/verknüpfter Funktionen 
 	nützlich:\\
-	\underline{Vor.:} $n,m,k\in \mathbb{N}, a \in D\subseteq \mathbb{R}^n, 
+	\underline{Vor.:} $n,m,k\in \mathbb{N},\ a \in D\subseteq \mathbb{R}^n,\ 
 	f:D_1\rightarrow\mathbb{R}^k,\\
-	D_1 \subseteq\mathbb{R}^m$ mit $f(D)\subseteq D_1, 
+	D_1 \subseteq\mathbb{R}^m$ mit $f(D)\subseteq D_1,\ 
 	h:D_1\rightarrow\mathbb{R}^k,\\
 	b:=f(a), f$ in a stetig, h in b stetig.\\
 	\underline{Beh.:}\setulcolor{green}\ul{$h\circ f: D\rightarrow 
@@ -149,13 +153,13 @@
 	Dies ist auch der\\
 	\underline{Bew.:}\\
 	Zu $\epsilon\textgreater 0$ ex. zunächst ein $\delta \textgreater 0$ so, 
-	dass $||h(z)-h(b)|| \textless \epsilon$(bei $z \in D_1, ||z-b|| \textless 
+	dass $||h(z)-h(b)|| \textless \epsilon$ (bei $z \in D_1, ||z-b|| \textless 
 	\delta$).\\
 	Zu $\delta\textgreater 0$ ex. nun ein $\eta \textgreater 0$ so, dass 
-	$||f(x)-f(a)||\textless \delta (\text{bei } x\in D ,|| x-a||\textless 
+	$||f(x)-f(a)||\textless \delta\ (\text{bei } x\in D ,|| x-a||\textless 
 	\eta).$\\
 	Für solche x gilt also $||h(f(x))-h(f(a))||\textless \epsilon$. Also ist h 
-	$\circ$f stetig in a.\\
+	$\circ$ f stetig in a.\\
 	\strut\hfill$\square$\\
 	\textbf{3.15 \underline{Beh.:}}\setulcolor{blue}\ul{3.5} liefert nun mit  
 	\ul{3.14}, dass Stetigkeit und Komponentenweise Stetigkeit (d.h. mit den 
@@ -173,6 +177,7 @@
 	\textbf{3.16 \underline{Kor.:}} Linearkombinationen stetiger Funktionen 
 	(insbesondere Summen und Differenzen) und (soweit bildbar) Skalarprodukte 
 	und Normen stetiger Funktionen sind wieder stetig.\\
+	\\
 	\textbf{3.17 \underline{Triviales Bsp.:}} $b\in\mathbb{R}^m$, die konstante 
 	Fkt. f(x):= b für jedes $x\in\mathbb{R}^n$ ist stetig.\\
 	\underline{Tivialität:} f stetig, $T\subseteq D\Rightarrow f r T$ stetig.\\
