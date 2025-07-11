@@ -231,12 +231,72 @@
 	und \greenul{$e^{\lambda_1x}, e^{\lambda_2x}$} ist \greenul{(reelles) Fundamentalsystem.}\\
 	2. Fall \redul{$a^2-4b=0$}: haben eine \greenul{doppelte Nst.} $\lambda_0:=-\frac{a}{2}$ und \greenul{$e^{\lambda_0x}, xe^{\lambda_0x}$} ist \greenul{(reelles) Fundamentalsystem}.\\
 	3. Fall \redul{$a^2-4b<0$}: \greenul{$\lambda_{1/2}=\alpha\pm i\beta, \alpha:=-\frac{1}{2}, \beta:=\frac{1}{2}\sqrt{4b-a^2}$} sind Konjugiert Komplexe Nst., und \greenul{$e^{\alpha x}\cos(\beta x), e^{\alpha x}\sin(\beta x)$} ist \greenul{(reelles) Fundamentalsystem}.\\
-	
-	
-	
-	
-	
-	
-	
-	
+	\textopencorner Darin enthalten: \greenul{Spezialfälle a=0 v b=0,}\\
+	\begin{align}
+		\text{d.h.:}&\bullet \text{falls } a=0 \wedge\ b=0: \ y''== \rightarrow y(x)=c_1x+c_2\\
+		&\bullet \text{falls }a\neq0 \wedge b=0: \ y''+ay'= 0\rightarrow y(x)=c_1+c_2e^{-x},\\
+		&\bullet \text{falls } a=0 \wedge  b\neq0: \underline{b\textless0}: \ \lambda_{1/2}=\pm\sqrt{-b},\ y=c_1\sin(\sqrt{b}x)+c_2\cos(\sqrt{b}x). 
+	\end{align}\textcorner\\
+	\underline{Bsp.:} $y(x)=10e(-\frac{x}{10}) \sin(x)$ gedämpfte Schwingung mit $\alpha \textless 0$\\
+	\begin{figure}[h]
+		\includegraphics[width=4 cm,height=2cm]{bsp kap 21.31.1}
+	\end{figure}\\ 
+	\underline{Bsp.:} $y(x)=exp(\frac{x}{10}\sin x)$ aufschaukelnde Schwingung mit $\alpha \textgreater0$\\
+	\begin{figure}[h]
+		\includegraphics[width=4 cm,height=2cm]{bsp kap 21.31.2}
+	\end{figure}\\ 
+	\\
+	\textbf{21.32. \underline{Lösung der inhomogenen DGL}}\\
+	Aus der \oraul{Linearität von $\varphi(D)$} folgt das\\
+	\\
+	\textbf{21.33. \redul{Superpositionsprinzip:}} Ist \greenul{$f=f_1+f_2$} und \greenul{$u_j$ Lsg. von $\varphi(D)u_j=f_j$}, j=1,2, \\
+	so liefert \greenul{$u:=u_1+u_2$ eine Lsg.} von \greenul{$\varphi(D)u=f$}.\blackcircle{*}\\
+	Strategie: Suche Lsgn. für die einzelnen Summanden von f.\\
+	\\
+	\textbf{21.34. \underline{Satz:}} \underline{Vor.:} \greenul{$Q\in \mathbb{C}[x], deg\ Q=s \in \mathbb{N}_0, \alpha \in \mathbb{C}$}.\\
+	Beh.: Zur \greenul{Inhomogenität $f:=e^{\alpha x}Q$ ex. eine Lsg. von $\blackcircle{*}$ der Gestalt $ee^{\alpha x}R$} mit einem \greenul{$R\in\mathbb{C}[x]$}, wo \greenul{$deg\ R\leq s$ für $\varphi(\alpha)\neq0$}, und \greenul{$deg\ R\leq r+s$ für Nst. $\alpha$ der Ordnung r.}\\
+	Beweis siehe \blueul{[Beuser, Satz 16.5.]}\\
+	\\
+	Nützlich zum Auffinden einer partikulären Lösung von \blackcircle{*}:\\
+	\textbf{21.35. \underline{Bem.:}} Ist $P \in \mathbb{C}[x]$, \greenul{$ddeg\ P\leq k$}$\infty\mathbb{N}_0$, so gilt \greenul{$\forall\alpha\in\mathbb{C}\backslash\{0\}:$}\\
+		\greenul{$(D-\alpha)^{-1}P=-\frac{1}{\alpha}\sum_{l=0}^{k}\frac{1}{\alpha^l}D^lP$}.\\
+		\underline{Bew.:} \oraul{$(D-\alpha)\cdot$ r.S.}=$\underbrace{-\frac{1}{\alpha}\sum_{l=0}^{k}\frac{1}{\alpha^l}D^lP}_{=-\sum_{l=1}^{k}\frac{1}{\alpha^l}D^lP}+\sum_{l=0}^{k}\frac{1}{\alpha^l}D^lP=\frac{1}{\alpha^0}D^0P=$\oraul{P=$(D-\alpha)\cdot$l.S.}\checkmark\\
+		\strut\hfill$\square$\\
+	\textbf{21.36. \underline{Bsp.:}} \fcolorbox{red}{white}{$y''-4y'+4y=x^2$}.\\
+	Die l.S. ist ($D^2-4D+4$)y=$(D-2)^2y$, nach \blueul{21.14.(b)} und \blueul{21.21.(d)} liefern \greenul{$e^{2x},xe^{2x}$ ein Fundamentalsystem der homogenen DGL.}\\
+	Mit \blueul{21.35.} erhält man eine \greenul{partikuläre Lsg. y} durch \greenul{$((D-\alpha)^{-1})^2$. l.S.}\\
+	=$((D-\alpha)^{-1})^2x^2=(-\frac{1}{2}(1+\frac{1}{2}D+\frac{1}{4}D^2))^2x^2=\frac{1}{4}(1+D+\frac{3}{4}D^2)x^2=$\greenul{$\frac{1}{4}(x^2)+2x+\frac{3}{2}$}.\\
+	\textopencorner$(1+\frac{1}{2}D+\frac{1}{4}D^2)^2=1+2D+(\frac{1}{2}D)^2+\frac{1}{4}D^2$+ terme mit $D^h, \ h\geq 3$\textcorner\\ 
+	\textbf{21.37. \underline{Standardbsp. der Physik:}} Frei schwingendes Federpendel in der Mechanik\\
+	$\blackcircle{*}$ \fcolorbox{red}{white}{m $\overset{\cdot\cdot}{y}+r\dot{y}+ky=0$}, y Auslenkung, Variable: Zeit t$\geq$0, m$\textgreater$0 Masse, r$\geq$0 Reibung, k\textgreater0 Federkonstante\\
+	$\rightarrow a=\frac{r}{m},\ b=\frac{k}{m}$ von der Form $\blackcircle{*}_h$\\
+	\\
+	\textbf{21.38. \underline{Standardbsp. der Physik:}} geschlossener Schwingkreis in der Elektrotechnik \\
+	\fcolorbox{red}{white}{$CL\overset{\cdot \cdot}{y}+CR\dot{y}+y=0$}, y Kondensatorladung, Variable: Zeit $t\geq0$ C Kapazität, R Widerstand,\\
+	$\rightarrow=\frac{R}{L},\ b=\frac{1}{CL}$ von der Form $\blackcircle{*}_h$, genauso! L Induktivität\\
+	\textopencorner Standardbsp. in Wirtschaftstheorie: Konjunkturschwankungen \textcorner\\
+	\\
+	\underline{Lsg., nur im Fall Federpendel}\blueul{21.37:}\\
+	\textbf{21.39. (a):} \redul{Harmonische Oszillator/harmonische Schwingung} \underline{im Fall r=0} (ohne Reibung)\\
+	Mit \yelul{$w_0$}:=$\sqrt{\frac{k}{m}}$ wird \blackcircle{*} in der Form \redul{$\overset{\cdot \cdot }{y}+w_0^2y=0$} notiert.\\
+	$\rightarrow$\greenul{$\varphi(\lambda)=\lambda^2+w_0^2=(\lambda-iw_0)(\lambda+iw_o),\ y(t)=c_1\sin(w_0t)+c_2\cos(w_0t), \ c_1,c_2\in \mathbb{R}$}\\
+	Mit $A\geq 0,\ \beta \in \mathbb{R}$ geeignet schreibe dies als \greenul{$y(t)=A\sin(w_0t+\beta)$}, \redul{A:Amplitude, $w_0$: Eigenfrequenz}.\\
+	\\
+	\textbf{21.40. (b):} \underline{Für $r\textgreater0$} setzen \yelul{$\sigma$}:= $\frac{r}{2m}=\frac{a}{2}\rightarrow$\greenul{$a^2-4b$}=$\frac{r^2}{m^2}-4\frac{k}{m}=$\greenul{$4(\sigma^2-w_0^2)$}.\\
+	\underline{1. Fall:} \redul{$a^2-4b\textgreater0\Leftrightarrow \sigma\textgreater w_0$}.\\
+	Dann: $\lambda_{1,2}=\frac{1}{2}(-a\pm\sqrt{a^2-4b})=-\sigma\pm\sqrt{\sigma^2-w_0^2},$\\
+	$\rightarrow$ \greenul{$y(t)=e^{-\sigma t}(c_1e^{\sqrt{\sigma^2-w_0^2}t}+c_2e^{-\sqrt{\sigma^2-w_0^2}t})$}\\
+	Da \greenul{$-\sigma\pm\sqrt{\sigma^2-w_0^2}\textless 0$}: \redul{abklingende Kriechbewegung/aperiodischer Fall/starke Dämpfung} \textopencorner in \blueul{21.36.:} Entladung des Kondensators\textcorner\\
+	\\
+	\textbf{21.41. \redul{periodische Störung:}} \redul{$\overset{\cdot \cdot}{y}+a\dot{y}+by=\overset{\cdot \cdot}{y}+2\sigma \dot{y}+w_0^2y= A\cos(wt) \textbf{ bzw. }A exp(iwt)$}\\
+	mit \redul{Störamplitude A \textgreater 0, Störfrequenz $w_0\textgreater 0$}\\
+	Setze \yelul{$\gamma:=$}$\frac{A}{\varphi(iw)}=\frac{A}{w_0^2-w^2+i2\sigma w}=:$ \redul{$|\gamma|\exp(i\sigma)$}\\
+	\greenul{Partikuläre Lsg: z(t)=$|\gamma| \exp(i(wt-\sigma))$}, $|\gamma|:$\redul{Amplitude, $\sigma$: Phasenverschiebung}.\\
+	Im Fall \redul{$w_0^2-2\sigma^2\leq0$}$\Leftrightarrow w_0\geq\sqrt{2}\sigma$ der \redul{"schwache Dämpfung"} erhält man das \redul{strikte Min.} \underline{für $w^*$}:= $\sqrt{w_0^2-2\sigma^2}\rightarrow|\gamma(w^*)|=\frac{A}{2\sigma\sqrt{w_0^2-\sigma^2}}$\\
+	$w^*$ heißt \redul{Resonanzfrequenz} \textopencorner $|\gamma|$ maximal $\Leftrightarrow$ $w^*$ minimal \textcorner\\
+	Weiter: $\sigma \rightarrow$0 $\Rightarrow\ w^*\rightarrow w_0,$ \greenul{$|\gamma(w^*)|\rightarrow\infty$}\\
+	\underline{Falls}\redul{$w=w_0$}: $\overset{\cdot \cdot}{z}+w_02 z=A\exp(iw_0t)\rightarrow$ Lsg. \greenul{$\frac{A}{2iw_0} t \exp(iw_0t)$},\\
+	reell: \greenul{$y^*(t)=\frac{A}{2w_0}t\sin(w_0t)\xrightarrow{t\rightarrow\infty}\infty$} \redul{Resonanzkatastrophe}\\
+	\underline{Falls} \redul{$w\neq w_0$}: " hat Lsg. \greenul{$\frac{A}{w^2-w_0^2}\exp(iwt)$}\\
+	\underline{Falls} \redul{$w_0^2-2\sigma^2\textless0$} $\Leftrightarrow w_0\textless\sqrt{2}\sigma$ \redul{"starke Dämpfung"}: \greenul{Max. von $|\gamma(w)|$ für $w^*=0$} mit \greenul{$|\gamma(0)|=\frac{A}{q_0^2}$}, und \greenul{$|\gamma(w)|\xrightarrow{w\rightarrow\infty}0$}.
 \end{document}

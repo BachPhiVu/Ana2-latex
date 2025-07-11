@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  11 JUL 2025 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  11 JUL 2025 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"./Kap 21.tex"
-(Kap 21.tex
+**"./Kap 22.tex"
+(Kap 22.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
 
@@ -947,8 +947,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 tex.def
 File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count342
-) (Kap 21.aux)
-\openout1 = `"Kap 21.aux"'.
+) (Kap 22.aux)
+\openout1 = `"Kap 22.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
@@ -1029,9 +1029,9 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@posthook=\toks47
 )
 Package hyperref Info: Link coloring ON on input line 61.
-(Kap 21.out) (Kap 21.out)
+(Kap 22.out) (Kap 22.out)
 \@outlinefile=\write4
-\openout4 = `"Kap 21.out"'.
+\openout4 = `"Kap 22.out"'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -1075,178 +1075,119 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 LaTeX Warning: No \author given.
 
 
-LaTeX Warning: Command \ss invalid in math mode on input line 141.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
+
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 7
+5.
+(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 75.
 
 
-LaTeX Warning: Command \ss invalid in math mode on input line 145.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-LaTeX Warning: Command \ss invalid in math mode on input line 145.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-LaTeX Warning: Command \ss invalid in math mode on input line 145.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-LaTeX Warning: Command \ss invalid in math mode on input line 145.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-LaTeX Warning: Command \ss invalid in math mode on input line 145.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-Overfull \hbox (363.00798pt too wide) in paragraph at lines 63--189
-[]$ 
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 75.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 88.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 88.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 89.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
+Underfull \hbox (badness 10000) in paragraph at lines 63--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
+Underfull \hbox (badness 10000) in paragraph at lines 63--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
+Underfull \hbox (badness 10000) in paragraph at lines 63--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
+Underfull \hbox (badness 10000) in paragraph at lines 63--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
+Underfull \hbox (badness 10000) in paragraph at lines 63--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Overfull \hbox (140.42201pt too wide) in paragraph at lines 63--189
-\OT1/cmr/m/n/10.95 Da die r.S. der DGL $[]$ genau (Realteil)Re($\OML/cmm/m/it/1
-0.95 e[]$\OT1/cmr/m/n/10.95 ) ist, er-hal-ten wir eine []par[]-[]tikul^^?are[] 
-[][][]Lsg. durch []s=Re([])=[][]. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--189
-
+Overfull \hbox (13.2957pt too wide) in paragraph at lines 63--96
+\OT1/cmr/m/n/10.95 w^^?ahle bel. Fkt. $\OML/cmm/m/it/10.95 '[] \OMS/cmsy/m/n/10
+.95 2 \OML/cmm/m/it/10.95 K \OT1/cmr/m/n/10.95 := \OMS/cmsy/m/n/10.95 f\OML/cmm
+/m/it/10.95 u \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 '[]\OT1/cmr/m/n/10.95 (
+\OML/cmm/m/it/10.95 j\OT1/cmr/m/n/10.95 ); \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/1
+0.95 u\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m
+/n/10.95 ^^@ \OML/cmm/m/it/10.95 y[]\OMS/cmsy/m/n/10.95 j ^^T \OML/cmm/m/it/10.
+95 b[]x \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 j\OMS/cmsy/m/n/10.95 g$\OT1/c
+mr/m/n/10.95 , setze [][]dt
  []
 
 
@@ -1254,361 +1195,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--189
 [1
 
 
-{C:/Users/Phi-v/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+{C:/Users/Phi-v/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Phi-
+v/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-[2]
-
-[3]
-Overfull \hbox (58.90105pt too wide) in paragraph at lines 192--217
-\OT1/cmr/m/n/10.95 Zu $\OML/cmm/m/it/10.95 f \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/i
-t/10.95 ^^^\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 j; \U/msb/m/n/10.95 C\OT1/cm
-r/m/n/10.95 )\OML/cmm/m/it/10.95 ;$ [][][] [][][]\OT1/cmr/m/n/10.95 Ex.[] [][][
-]ein[]-[]deutig ein $\OML/cmm/m/it/10.95 y \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/
-10.95 ^^^[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 j; \U/msb/m/n/10.95 C\OT1/cm
-r/m/n/10.95 )$ [][](D)y=f, mit [][]. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--217
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--217
-
- []
-
-
-Overfull \hbox (92.04352pt too wide) in paragraph at lines 192--217
-\OT1/cmr/m/n/10.95 Die zugeh. []ho[]-[]mo[]-[]ge[]-[]nen[] [][][]Lsgn. sind nac
-h []21.23. dann von der Form [][],[] [][][][]. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--217
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--235
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--235
-
- []
-
-
-Overfull \hbox (78.4033pt too wide) in paragraph at lines 221--235
-\OT1/cmr/m/n/10.95 3. Fall [][]: [][] sind Kon-jugiert Kom-plexe Nst., und [][]
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--235
-
- []
-
-
-
-[4]
-
-LaTeX Warning: Command \textless invalid in math mode on input line 239.
-
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2
-39.
-(C:\Users\Phi-v\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
-File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 239.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 239.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 239.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 239.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 240.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 240.
-
-<bsp kap 21.31.1.png, id=81, 148.75575pt x 49.98676pt>
-File: bsp kap 21.31.1.png Graphic file (type png)
-<use bsp kap 21.31.1.png>
-Package pdftex.def Info: bsp kap 21.31.1.png  used on input line 242.
-(pdftex.def)             Requested size: 113.81364pt x 56.90767pt.
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 244.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 244.
-
-<bsp kap 21.31.2.png, id=83, 175.25475pt x 66.84975pt>
-File: bsp kap 21.31.2.png Graphic file (type png)
-<use bsp kap 21.31.2.png>
-Package pdftex.def Info: bsp kap 21.31.2.png  used on input line 246.
-(pdftex.def)             Requested size: 113.8126pt x 56.90617pt.
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 271.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 271.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 285.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 286.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 289.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 292.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 301.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--302
-
- []
-
-
-
-[5 <./bsp kap 21.31.1.png> <./bsp kap 21.31.2.png>]
-
-[6]
-
-[7] (Kap 21.aux)
+[2] (Kap 22.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
  ***********
-Package rerunfilecheck Info: File `"Kap 21".out' has not changed.
+Package rerunfilecheck Info: File `"Kap 22".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32159 strings out of 469921
- 655764 string characters out of 5468133
- 1260115 words of memory out of 5000000
- 58430 multiletter control sequences out of 15000+600000
- 642158 words of font info for 103 fonts, out of 8000000 for 9000
+ 32104 strings out of 469921
+ 654817 string characters out of 5468133
+ 1215115 words of memory out of 5000000
+ 58392 multiletter control sequences out of 15000+600000
+ 640805 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,16n,107p,10934b,746s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Phi-v\AppData\Local\MiKTeX\fonts/pk/ljfour/public/tipa/dpi657\tipa
-10.pk><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmex10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Phi-v/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Phi-v/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Phi-v/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users
-/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-6.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmssbx10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Phi-v/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Phi-v/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/Phi-v/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
-Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb>
-Output written on "Kap 21.pdf" (7 pages, 277970 bytes).
+ 108i,15n,107p,10934b,732s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Phi-v/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Phi-v/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Phi-v/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ph
+i-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
+C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/symbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Phi-v/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on "Kap 22.pdf" (2 pages, 173139 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

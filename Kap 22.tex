@@ -1,0 +1,112 @@
+\documentclass[]{scrartcl}
+\title{Vorlesung Analysis II}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{soul}
+\usepackage{ upgreek }
+\usepackage{hyperref}
+\usepackage{tipa}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Overleaf Example},
+	pdfpagemode=FullScreen,
+}
+\newcommand{\redcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=red, text=red, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\bluecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=blue, text=blue, thick, inner sep=1pt] (char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\blackcircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=black, text=black, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\orangecircle}[1]{%
+	\tikz[baseline=(char.base)]{
+		\node[shape=circle, draw=orange, text=orange, thick, inner sep=1pt] 
+		(char) 
+		{\textbf{#1}};
+	}%
+}
+\newcommand{\redul}[1]{\setulcolor{red}{\ul{#1}}}
+\newcommand{\blueul}[1]{\setulcolor{blue}{\ul{#1}}}
+\newcommand{\yelul}[1]{\setulcolor{yellow}{\ul{#1}}}
+\newcommand{\greenul}[1]{\setulcolor{green}{\ul{#1}}}
+\newcommand{\oraul}[1]{\setulcolor{orange}{\ul{#1}}}
+\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+
+\setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\maketitle
+	\textbf{\underline{Teil 3: Gewöhnliche Differentialgleichungen}}\\
+	\\
+	\textbf{\underline{an 22: Der satz von Picard Lindelöf}}\\
+	\\
+	\textbf{\underline{\underline{Stichworte:} Fixpunktsatz von Weissinger, Satz von Picard-Lindelöf}}\\
+	\\
+	\textbf{\underline{Literatur:}} \blueul{[Heuser], §12}\\
+	\\
+	\textbf{22.1. \underline{Einleitung:}} Mit dem Fixpuntksatz von weissinger zeigen wir den Satz von Picard-Lindelöf.\\
+	\\
+	\textbf{22.2. \underline{Motivation:}} Die DGL $y'=f(x,y)$ wird auf eindeutig Lösbarkeit hin untersucht.\\
+	\\
+	\underline{22.3. \redul{Fixpunktsatz von Weissinger:}} \underline{Vor.:} Sei \o$\neq U\subseteq V, \ (v,||\cdot||)$ ein \greenul{vollständiger normierter $\mathbb{R}-VR$}, ferner sei \greenul{U in V abg.} Weiter sei $\sum_{j=1}^{\infty}\alpha_j$ eine \greenul{Konvergente Reihe}, alle \greenul{$\alpha\textgreater0$},\\
+	und \greenul{A:U$\rightarrow$ U} eine Abb. so, dass \greenul{$\forall u,v\in U\ \forall n\in\mathbb{N}:\ ||A^nu-A^nv||\leq\alpha_n||u-v||$}.\\
+	\underline{Beh.:}\\
+	(a) Dann \greenul{ex. genau} ein \greenul{Fixpunkt $\tilde{u}$ von A}, d.h. es ex. genau ein $\tilde{u}$ mit A$\tilde{u}=\tilde{u}$.\\
+	(b) Dieser Fixpunkt \greenul{ist Grenzwert der Folge $(u_n)_{n\in\mathbb{N}}$}, wo \greenul{$u_0\in U$} und \greenul{$u_n:=A^nu_0$}.\\
+	(c) Es gilt die \greenul{Fehlerabschätzung $||\tilde{u}-u_n||\leq\sum_{j=u}^{\infty}\alpha_j||u_1-u_0||$}.\\
+	\underline{Bew.:} Haben \oraul{$||u_{n+1}-u_n||$}=$||A^nu_1-A^nu_0||\leq$\oraul{$\alpha_n||u_1-u_0||$} für alle $n\in \mathbb{N},$ also \oraul{$||u_{n+k}-u_n||$}$\leq||u_{n+k}-u_{n+k-1}||+||u{n+k-1}-u_{n+k-2}||+...+||u_{n+1}-u_n||\\
+	\leq\underbrace{(\alpha_{n+k-1}+\alpha_{n+k-2}+...+\alpha_n)}_{\rightarrow0 \text{für }n,k\rightarrow\infty}\cdot ||u_1-u_0||$, \blackcircle{*}\\
+	also ist $(u_n)_{n\in \mathbb{N}}$ ein \oraul{Cauchyfolge.} Da U als \oraul{abg. Teilmenge} des vollst. normierten Raumes V \oraul{selbst  vollständig} ist (wegen \blueul{12.6.}), \oraul{kgt. die FOlge in U}, und hat einen \oraul{$GW \tilde{u}\in U$}.\\
+	Wegen $||u_{n+1}-A\tilde{u}||=||Au_n-A\hat{u}||\leq\alpha_1||u_n-\tilde{u}||\rightarrow0$ folgt, dass \oraul{$u_n\rightarrow A\tilde{u}=\tilde{u}$}, also ist $\tilde{u}$ Fixpunkt von A. Wäre \oraul{v ein weiterer Fixpunkt}, gilt v=Av=$A^2v=...$ und mit $\tilde{u}=A\tilde{u}=A^2\tilde{u} =...$ folgt \oraul{$||\tilde{u}-v||=A^nu-A^nv||\leq \alpha_n||\tilde{u}-v||\xrightarrow{n\rightarrow\infty}0\cdot||\tilde{u}-v||=0$}, also ist \oraul{$v=\tilde{u}$ und $\tilde{u}$ eind.} Es folgt \blueul{(a),(b)}. Mit \oraul{$k\rightarrow\infty$ in $\blackcircle{*}$} folgt noch die \oraul{Fehlerabschätzung}\blueul{c}.\\
+	\strut\hfill$\square$\\
+	Wir erhalten nun den zentralen Satz:\\
+	\textbf{22.4. \redul{Existenz- und Eindeutigkeitssatz von Picard-Lindelöf:}}\\
+	\underline{Vor.:} Sei \greenul{$R:=\{(x,y);|x-x_0|\leq a, \ |y-y_0|\leq b\}$} für $a,b,x_0y_0 \ \in \mathbb{R},\ a,b\textgreater0$,\\
+	sei $f:R\rightarrow\mathbb{R}^n$, \greenul{f(x,$\cdot$) stetig diff'bar} (oder \greenul{schwächer: $\exists L \textgreater0: |f(x,y)-f(x\tilde{y})|\leq L\cdot|y-\tilde{y}|$} für alle (x,y), ($x,\tilde{y})\in R$.)\\
+	(a) Dann besitzt die AWA \greenul{$y'=f(x,y), y(x_0)=y_0$ genau eine auf $j:=[x_0-\alpha,x_0+\alpha]$ definierte Lsg. y(x)},\\
+	wobei \redul{$\alpha:=\min(a,\frac{b}{M}), M:=\max_{(x,y)\in R}|f(x,y)|$}.\\
+	(b)Dabei kann \greenul{y(x) iterative gewonnen werden:}\\
+	wähle bel. Fkt. $\varphi_0\in K:=\{u\in\varphi^0(j);|u(x)-y_0|\leq b \textbf{für alle } x\in j\}$, setze \redul{$\varphi(x):=y_0+\int_{x_0}^{x}f(t,\varphi_{n-1}(t))$dt} für n $\in \mathbb{N}$ , \redul{$x\in j$},\\
+	sp gilt \greenul{$\varphi_n \rightarrow$ y gl,. auf j}.\\
+	(c) Man hat die Fehlerabschätzung \greenul{$|y(x)-\varphi_n(x)|$} $\leq$ 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
