@@ -80,9 +80,10 @@
 	(c) Es gilt die \greenul{Fehlerabschätzung $||\tilde{u}-u_n||\leq\sum_{j=u}^{\infty}\alpha_j||u_1-u_0||$}.\\
 	\underline{Bew.:} Haben \oraul{$||u_{n+1}-u_n||$}=$||A^nu_1-A^nu_0||\leq$\oraul{$\alpha_n||u_1-u_0||$} für alle $n\in \mathbb{N},$ also \oraul{$||u_{n+k}-u_n||$}$\leq||u_{n+k}-u_{n+k-1}||+||u{n+k-1}-u_{n+k-2}||+...+||u_{n+1}-u_n||\\
 	\leq\underbrace{(\alpha_{n+k-1}+\alpha_{n+k-2}+...+\alpha_n)}_{\rightarrow0 \text{für }n,k\rightarrow\infty}\cdot ||u_1-u_0||$, \blackcircle{*}\\
-	also ist $(u_n)_{n\in \mathbb{N}}$ ein \oraul{Cauchyfolge.} Da U als \oraul{abg. Teilmenge} des vollst. normierten Raumes V \oraul{selbst  vollständig} ist (wegen \blueul{12.6.}), \oraul{kgt. die FOlge in U}, und hat einen \oraul{$GW \tilde{u}\in U$}.\\
+	also ist $(u_n)_{n\in \mathbb{N}}$ ein \oraul{Cauchyfolge.} Da U als \oraul{abg. Teilmenge} des vollst. normierten Raumes V \oraul{selbst  vollständig} ist (wegen \blueul{12.6.}), \oraul{kgt. die Folge in U}, und hat einen \oraul{$GW \tilde{u}\in U$}.\\
 	Wegen $||u_{n+1}-A\tilde{u}||=||Au_n-A\hat{u}||\leq\alpha_1||u_n-\tilde{u}||\rightarrow0$ folgt, dass \oraul{$u_n\rightarrow A\tilde{u}=\tilde{u}$}, also ist $\tilde{u}$ Fixpunkt von A. Wäre \oraul{v ein weiterer Fixpunkt}, gilt v=Av=$A^2v=...$ und mit $\tilde{u}=A\tilde{u}=A^2\tilde{u} =...$ folgt \oraul{$||\tilde{u}-v||=A^nu-A^nv||\leq \alpha_n||\tilde{u}-v||\xrightarrow{n\rightarrow\infty}0\cdot||\tilde{u}-v||=0$}, also ist \oraul{$v=\tilde{u}$ und $\tilde{u}$ eind.} Es folgt \blueul{(a),(b)}. Mit \oraul{$k\rightarrow\infty$ in $\blackcircle{*}$} folgt noch die \oraul{Fehlerabschätzung}\blueul{c}.\\
 	\strut\hfill$\square$\\
+	\newpage
 	Wir erhalten nun den zentralen Satz:\\
 	\textbf{22.4. \redul{Existenz- und Eindeutigkeitssatz von Picard-Lindelöf:}}\\
 	\underline{Vor.:} Sei \greenul{$R:=\{(x,y);|x-x_0|\leq a, \ |y-y_0|\leq b\}$} für $a,b,x_0y_0 \ \in \mathbb{R},\ a,b\textgreater0$,\\
@@ -90,23 +91,47 @@
 	(a) Dann besitzt die AWA \greenul{$y'=f(x,y), y(x_0)=y_0$ genau eine auf $j:=[x_0-\alpha,x_0+\alpha]$ definierte Lsg. y(x)},\\
 	wobei \redul{$\alpha:=\min(a,\frac{b}{M}), M:=\max_{(x,y)\in R}|f(x,y)|$}.\\
 	(b)Dabei kann \greenul{y(x) iterative gewonnen werden:}\\
-	wähle bel. Fkt. $\varphi_0\in K:=\{u\in\varphi^0(j);|u(x)-y_0|\leq b \textbf{für alle } x\in j\}$, setze \redul{$\varphi(x):=y_0+\int_{x_0}^{x}f(t,\varphi_{n-1}(t))$dt} für n $\in \mathbb{N}$ , \redul{$x\in j$},\\
+	wähle bel. Fkt. $\varphi_0\in K:=\{u\in\varphi^0(j);|u(x)-y_0|\leq b \text{für alle } x\in j\}$, setze \redul{$\varphi_n(x):=y_0+\int_{x_0}^{x}f(t,\varphi_{n-1}(t))$dt} für n $\in \mathbb{N}$ , \redul{$x\in j$},\\
 	sp gilt \greenul{$\varphi_n \rightarrow$ y gl,. auf j}.\\
-	(c) Man hat die Fehlerabschätzung \greenul{$|y(x)-\varphi_n(x)|$} $\leq$ 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	(c) Man hat die Fehlerabschätzung \greenul{$|y(x)-\varphi_n(x)|$} $\leq$ \greenul{$(\sum_{k=n}^{\infty}\frac{(\alpha L)^k}{k!})\cdot \max_{x\in j}|\varphi_1(x)-\varphi_0(x)|$},\\
+	oder etwa gröber:\\
+	\greenul{$|y(x)-\varphi_n(x)|$} $\leq$ \greenul{$\frac{(\alpha L)^n}{n!}\varphi^{\alpha L}\cdot\max_{x\in j}|\varphi_1(x)-\varphi_0(x)|$}.\\
+	\textopencorner denn $\sum_{k=n}^{\infty}\frac{x^k}{k!}\leq\frac{x^n}{n!}e^x$\textcorner\\
+	\\
+	\textbf{22.5. \underline{Bem.:}} Ohne weiteres können wir im \blueul{satz 22.4.} auch j durch irgendein Kompaktes IV \greenul{$[x,d]$} ersetzen, und K durch \greenul{$\varphi^0([c,d])$}. Dann ist \redul{$\alpha:=\max(x_0-c,d-x_0)$}.\\
+	\\
+	\textbf{22.6. \underline{Bew.:}} Nimm \oraul{V=$\varphi^0(j)$} mit der Norm $||\cdot||_\infty$, wo \oraul{$||y||_\infty:=\max_{x\in j}|y(x)|$}, sowie \oraul{U:=K} und A die Abb. \oraul{$(A_y)(x):=y_0+\int_{x_0}^{x}f(t,y(t))dt$} für jedes $x\in j$.\\
+		Dann gilt \oraul{A:U$\rightarrow$U}, denn\\
+		$|(Ay)(x)-y_0|\leq|x-x_0|M\leq\alpha M\leq b$ für alle $x\in j=[x_0-\alpha,x_0+\alpha].$\\
+		Haben \oraul{$|(A^n)(x)-(A^nv)(x)|\leq \frac{|x-x_0}{n!}L^n||u-v||_\infty$} für alle $nßin\mathbb{N}, x\in j$ (induktiv), also \oraul{$||A^nu-A^nv||_\infty\leq\frac{(aL)^n}{n!}||u-v||_\infty$}.\\
+		Der Rest folgt aus dem \blueul{Fixpunktsatz von Weissinger 22.3.}, samt der \oraul{glm. Kgz.} der $\varphi_n$ gegen den Fixpunkt y, für den $y'=f(x,y)$ gilt, und der Fehlerabsch.\\
+		\strut\hfill$\square$\\
+		\textbf{22.7. \underline{Bsp.:}} Lösen iterativ die AWA \greenul{y'=xy, y(0)=1 $\rightarrow x_0=0, y_0=1$}.\\
+	Nimm \greenul{$R=[-a,a]x[1-b,1+b]$}, $a,b\textgreater 0$.\\
+	Für f(x,y):=xy gilt die Lipschitzbedingung mit \greenul{L=a},\\
+	denn $|f(x,y)-f(x,\tilde{y})|=|xy-x\tilde{y}|=|x|\cdot|y-\tilde{y}|\leq a|y-\tilde{y}|$ für alle (x,y)$,(x,\tilde{y})\in R$.\\
+	haben weiter M$=\max\{|xy|;(x,y)\in R\}\leq$\greenul{$a(1+b)$}, $\alpha=\min(a,\frac{b}{u})=$\greenul{$\min(a,\frac{b}{a(1+b)})$}.\\
+	Wähle $\varphi_0$ als Konstante Fkt. \redul{$\varphi_0(x):=1$}($=y_0$) für alle $x \in j\in [-\alpha,\alpha]$.\\
+	Habern weiter \redul{$\varphi_n(x):=y_0+\int_{x_0}^{x}f(t,\varphi_{n-1}(t))dt$}=$1+\int_{0}^{x}t\varphi_{n-1}(t)dt, \ x\in j,$\\
+	also sukzessive $\varphi_1(x)=1+\int_{0}^{x}tdt=1+\frac{1}{2}x^2$\\
+	$\varphi_2(x)=1+\int_{0}^{x}t\cdot(1+ß\frac{1}{2}t^2)dt=1+\frac{1}{2}x^2+\frac{1}{2}x^2+\frac{1}{2\cdot4}x^4$\\
+	$\varphi_3(x)=1+\int_{0}^{x}t\cdot(1+\frac{1}{2}t^2+\frac{1}{2\cdot4}t^4+)dt=1+\frac{1}{2}x^2+\frac{1}{2\cdot4}x^4+\frac{1}{2\cdot4\cdot6}x^6,...$\\
+	also induktiv $\varphi_n(x)=1+\frac{1}{2}x^2+\frac{1}{2\cdot4}x^4+\frac{1}{2\cdot4\cdot6}x^6+...+\frac{1}{2^nn!}x^{2n}=\sum_{k=0}^{n}\frac{1}{k!}(|\frac{x^2}{2})^k$,\\
+	was auf R glm. gegen \greenul{y(x)$=e^{x^2/2}$} konvergiert, $x\in j$.\\
+	Dies ist genau die Lsg. der AWA: y(0)$=e^{0^2/2}$=1\checkmark und $y'(x)=e^{x^2/2}\cdot x=xy\checkmark$\\
+	Die Lsg. ist auch Lsg. für alle $x\in\mathbb{R}$\\
+	\\
+	\textbf{22.8. \underline{Bem.:}} 1. dass das Rechteck so gewählt ist, dass $(x_0, y_0)$ der Mittelpunkt ist, dient der äußerlichen Beweisvereinfacherung und ist nicht wesentlich, vlg. \blueul{Bem. 22.5.}.\\
+	2. Der Satz is ein "globaler" Satz,  er gilt i.a. nicht, wenn die Lipschitz bed. nur "lokal" gilt.\\
+	3. Die Iterationsfolge ($\varphi_n$) lässt sich auch ohne Lipschitzbedingung bliden, allerdings kann es sein, dass diese dann keine Lsg. der DGL/AWA liefert. (Bsp. \blueul{[ Heuser §12, Aufgabe 5]}).\\
+	4. Die DGL y'=f(x,y) kann als mehrdimensionales Problem betrachtet werden wenn man allgemeiner $y\in \mathbb{K}^n, \ x\in \mathbb{R}$, und $f:\mathbb{R} \times \mathbb{K}\rightarrow\mathbb{K}^m, \ f(x,y)=\begin{pmatrix}
+		f_1(x,y)\\
+		\vdots\\
+		f_n(x,y)
+	\end{pmatrix}$\\
+	zulässt, d.h. y'=f(x,y)$\Leftrightarrow\begin{pmatrix}
+		y_1'(x)&=f_1(x,y)\\
+		\vdots&\vdots\\
+		y_n(x)'&=f_n(x,y)
+	\end{pmatrix}$ ist ein \redul{DGL-system 1. Ordnung} \blueul{Satz 22.4.} gilt dann genau analog, der Beweis verläuft ebenso analog.	
 \end{document}
