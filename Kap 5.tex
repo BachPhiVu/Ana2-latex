@@ -38,13 +38,14 @@
 		{\textbf{#1}};
 	}%
 }
-\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+\setul{1pt}{1.5pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
 
 \setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
 \setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
 \setlength{\parindent}{0pt}
 
 \begin{document}
+	\maketitle
 	\textbf{\underline{Teil 1: Differentialrechnung im $\mathbb{R}^n$}}\\
 	\\
 	\textbf{\underline{an5: Partielle und totale Ableitungen}}\\
@@ -55,21 +56,21 @@
 	\textbf{\underline{Literatur:}}\setulcolor{blue}\ul{[Hoff], Kapitel 9.4}\\
 	\\
 	\textbf{5.1. \underline{Einleitung:}} Die totale Ableitung liefert einen 
-	einfachen Weg, Richtungsableitungen zu berechnen. Wirdefinieren für m=1 den 
-	Gradienten und beweisen die allgemeine Kettenregel.\\
+	einfachen Weg, Richtungsableitungen zu berechnen. Wir definieren für m=1 
+	den Gradienten und beweisen die allgemeine Kettenregel.\\
 	\\
 	\textbf{5.2. \underline{Konvention:}} Betrachten Funktionen 
 	$f:U\rightarrow\mathbb{R}^m$ mit $U\subseteq \mathbb{R}^n$.\\
 	Sei $a\in U$ ein innerer Punkt von U, d.h. $\exists s\textgreater0: 
 	U_a^s\subseteq U.$\\
-	Wir bezeichnen die Menge aller Richtungsvektoren $v\in \mathbb{R}^n$ mit 
+	Wir bezeichnen die Menge aller Richtungsvektoren $v\in \mathbb{R}^n$ mit \\
 	\setulcolor{yellow}\ul{$S^{n-1}$}:=$\{v\in \mathbb{R}^n; ||v||_2=1\}$, die 
 	(n-1)-dimensionale \setulcolor{red}\ul{Sphäre im $\mathbb{R}^n$}.\\
 	$\bullet$ Für einen inneren Punkt $a\in U$ und ein $v\in S^{n-1}$ haben wir 
 	in \setulcolor{blue}\ul{an4.8}\\
-	$D_vf(a):=\lim\limits_{0\neq t\rightarrow0}\frac{1}{t}(f(a+tv)-t(a))$\\
+	$D_vf(a):=\lim\limits_{0\neq t\rightarrow0}\frac{1}{t}(f(a+tv)-f(a))$\\
 	als Richtungsableitung von f in a in Richtung v definiert.\\
-	(Diese Def. benutzt, dass $a+t v\in U$ ist aööe $t\in\mathbb{R}$ mit 
+	(Diese Def. benutzt, dass $a+t v\in U$ ist alle $t\in\mathbb{R}$ mit 
 	hinreichend kleinen $|t|$)\\
 	$\bullet$\underline{Speziell:} Ist $v=e_i$ der i-te Einheitsvektor, so ist\\
 	$D_if(a)=\frac{\delta f}{\delta \xi_i}(a)=f_{\xi_i}(a):=(D_{e_i}f)(a)$ die 
@@ -82,8 +83,7 @@
 	\underbrace{v}_{\in\mathbb{R}^n}$}=$\underbrace{f'(a)(v)}_{\text{mit} 
 	f'(a)\in Hom(\mathbb{R}^n,\mathbb{R}^m)\text{ausgedrückt, dh als lineare 
 	Abb.}}$.\\
-	\underline{Bew.:}$\frac{1}{t}(f(a+tv)-f(a))=\frac{1}{t}(f'(a)(tv)+o(||tv||_2)
-	=\underline{Bew.:}\frac{1}{t}(f(a+tv)-f(a))=\frac{1}{t}(f'(a)(tv)+o(||tv||_2))=
+	\underline{Bew.:}$\frac{1}{t}(f(a+tv)-f(a))=\frac{1}{t}(f'(a)(tv)+o(||tv||_2))=
 	 f'(a)(v)+\underbrace{\underbrace{\frac{|t|\cdot||v||_2}{t}}_{\text{beschränkt}}
 	  \cdot 
 	 \underbrace{\frac{o(||tv||_2)}{||tv||_2}}_{\xrightarrow{t\rightarrow0}0}}_{\xrightarrow{t\rightarrow0}0}
@@ -103,6 +103,7 @@
 	\end{pmatrix}$ und sei $v=\frac{1}{5}\begin{pmatrix}
 		3\\4
 	\end{pmatrix}\in\mathbb{R}^2$, haben $||v||_2=\frac{1}{5}\cdot \sqrt{3^2+4^2}=1.$\\
+	Die Ableitung von f in a in Richtung v berechnet\\
 	sich dann als $f'\begin{pmatrix}
 		1\\\pi/4
 	\end{pmatrix}\cdot \frac{1}{5}(\begin{pmatrix}
@@ -132,7 +133,7 @@
 	Also sind die Spalten von f' genau die Pariellen Ableitungen von f.\\
 	(c) Es ist $f'(a)=Df(a)=\begin{pmatrix}
 		(D_1f_1)(a)& \cdots & (D_nf_1)(a)\\
-		(d_1f_2)(a)& \cdots & (D_nf_2)(a)\\
+		(D_1f_2)(a)& \cdots & (D_nf_2)(a)\\
 		\vdots& & \vdots\\
 		(D_1f_m)(a)&\cdots & (D_nf_m)(a)
 	\end{pmatrix}$\\
@@ -143,14 +144,17 @@
 	\end{pmatrix}$ und $d_jf(a)=\begin{pmatrix}
 		D_jf_1(a)\\D_jf_2(a)\\\vdots\\D_jf_m(a)
 	\end{pmatrix},$\\
-	also $pr_j(D_jf_i(a))_{1\leq i\leq m|1\leq j\leq n}\in\mathbb{R}^{m x n}$\\
+	also $pr_j(D_jf(a))=D_jf_i(a)$.\\
+	\strut\hfill$\square$\\
+	\textbf{5.6. \underline{Def.:}} Man nennt $f'(a)=Df(a)=(D_jf_i(a))_{1\leq 
+	i\leq m|1\leq j\leq n}\in\mathbb{R}^{m x n}$\\
 	die \setulcolor{red}\ul{Jacobimatrix/Funktionalmatrix} von f in a.\\
 	\underline{Bem.:} "$\Leftarrow$" Kann is \setulcolor{blue}\ul{5.5} nicht gelten, die Existenz der Partiellen Ableitungen reicht nicht zum Nachweis der Differenzierbarkeit! (vgl. \ul{4.15, 4.16})\\
 	\\
 	\textbf{5.7 \underline{Fall:}} sei \underline{\underline{m=1}}, also f ein \underline{Skalarfeld}.\\
 	\setulcolor{red}
 	Dann: \begin{align}
-		f'(a)=(d_1f(a),...,D_nf(a))&=:(grad f(a))^T &"\ul{\textbf{Gradient}}"\\
+		f'(a)=(D_1f(a),...,D_nf(a))&=:(grad f(a))^T &"\ul{\textbf{Gradient}}"\\
 		&=:(\triangledown f(a))^T &"\ul{\textbf{Nabla}}"
 	\end{align}\\
 	Wir nennen den Spaltenvektor \setulcolor{yellow} \ul{grad f(a)}=$\begin{pmatrix}
@@ -166,16 +170,19 @@
 	\end{align}\\
 	Sei grad f(a)$\neq o$, und betrachte alle $v\in S^{n-1}$.\\
 	Dann gilt: \setulcolor{green}\ul{$|D_vf(a)|$}=$|f'(a)(v)|=|(grad f(a))^T\cdot v|\\
-	=|\textless grad f(a),v\textgreater|\leq ||grad f(a)||\cdot ||v||_2$ (cauchyscchwarzungleichung Anhang 7 in an1)\\
+	=|\textless grad f(a),v\textgreater|\leq ||grad f(a)||\cdot ||v||_2$ 
+	(Cauchy-Schwarz-Ungleichung Anhang 7 in an1)\\
 	Wobei "=" genau dann gilt, wenn v parallel zu grard f(a), d.h. ex. $t\in\mathbb{R}\backslash\{0\}: grad f(a)=tv,$\\
-	in diesem Fall wird für $D_cf(a)$ der maximale Wert angenommen.\\
+	in diesem Fall wird für $D_vf(a)$ der maximale Wert angenommen.\\
 	Für $\tilde{v}:=\frac{1}{||grad f(a)||_2} grad f(a)$ gilt demnach:\\
 	$|D_{\tilde{v}}f(a)|=||grad f(a)||_2.$\\
 	\\
-	\textbf{5.8. \underline{FAZIT:}} \setulcolor{green}\ul{grad f(a) ist die RIchtung maximaler Steigung von f in a}\\
+	\textbf{5.8. \underline{FAZIT:}} \setulcolor{green}\ul{grad f(a) ist die 
+	Richtung maximaler Steigung von f in a}\\
 	(welche dann $||grad f(a)||_2$ beträgt).\\
 	\\
-	\textbf{5.9. \underline{Veranschaulichung:}} Der Graph von f, nähmlich G(f):$\{\begin{pmatrix}
+	\textbf{5.9. \underline{Veranschaulichung:}} Der Graph von f, nämlich 
+	G(f):$\{\begin{pmatrix}
 		x\\f(x)
 	\end{pmatrix}\in\mathbb{R}^{n+1}\}$ (falls $U=\mathbb{R}^n$),\\
 	wird in $\begin{pmatrix}
@@ -203,19 +210,27 @@
 	Eine wichtige Rechenregel für das Ableiten verketteter Funktionen im Mehrdimensionalen ist die (allgemeine)\\
 	\textbf{5.12. \ul{Kettenregel:}} \underline{Vor.:} $ U \subseteq\mathbb{R}^n; U_1\subseteq\mathbb{R}^m; a\in U\xrightarrow{f} U_1\xrightarrow{g}\mathbb{R}^k$, \setulcolor{green}\ul{f in a diff'bar, g in f(a) diff'bar}\\
 	(insb. a innerer Punkt von U, f(A) innerer Punkt von $U_1$).\\
-	\underline{Beh.:}\ul{$g\circ f$ in a diffbar},  $\underbrace{D(f\circ f) (a)}_{\in\mathbb{R}^{k x n}}=\underbrace{(Dg)(f(a))}_{\in\mathbb{R}^{k x m}}\cdot \underbrace{(Df)(a)}_{\in\mathbb{R}}^{m x n}$.\\
-	\underline{Bew.:} Setze B:= f(a).\\
+	\underline{Beh.:}\ul{$g\circ f$ in a diffbar},  
+	\fcolorbox{red}{white}{$\underbrace{D(f\circ f) (a)}_{\in\mathbb{R}^{k x 
+	n}}=\underbrace{(Dg)(f(a))}_{\in\mathbb{R}^{k x m}}\cdot 
+	\underbrace{(Df)(a)}_{\in\mathbb{R}}^{m x n}$}.\\
+	\underline{Bew.:} Setze b:= f(a).\\
 	dann gilt für $r_1(x)=o(||x-a||),$ dass $ f(x)=f(a)+f'(a)(x-a)+r_1(x), \blackcircle{*}$\\
 	und für $r_2(y)=o(||y-b||),$ dass $ g(y)=g(b)+g'(b)(y-b)+r_2(y).$\\
 	$\xRightarrow{y=f(x)|b=f(a)} g(f(x))=g(f(a))+g'(f(a))(f(x)-f(a))+r_2(f(x))\\
-	\xRightarrow{\blackcircle{*}}g \circ f (a)+\underbrace{(Df)(f(a))\cdot (Df)(a\cdot(x-a))}_{=D(g\circ f)(a)\rightarrow\text{Beh.}}+g'(f(a))(r_1(x))+r_2(f(x))$\\
+	\xRightarrow{\blackcircle{*}} g\circ f(x)=g\circ 
+	f(a)+g'(f(a))\cdot(f'(a)(x-a))+g'(f(a))(r_1(x))+r_2(f(x))\\
+	\Rightarrow f\circ f(x)=g \circ f (a)+\underbrace{(Df)(f(a))\cdot 
+	(Dg)(a\cdot(x-a))}_{=D(g\circ 
+	f)(a)\rightarrow\text{Beh.}}+g'(f(a))(r_1(x))+r_2(f(x))$\\
 	\\
 	Noch z.z.: $g'(f(a))(r_1(x))+r_2(f(x))=o(||x-a||).$\\
 	(Def. für eine Matrix $A\in \mathbb{R}^{m x n}$ den wert 
 	$||A||_\infty:\max_{i,j}|a_{ij}|$, wenn $A=(a_{ij})_{i,j}.)$\\
 	$\bullet$ Es gilt:\\
 	$||\underbrace{g'(f(a))}_{\in\mathbb{R}^{k x m}}\cdot 
-	\underbrace{r_1(x)}_{\in \mathbb{R}^m}||_\infty \leq\redcircle{Ü} 
+	\underbrace{r_1(x)}_{\in \mathbb{R}^m}||_\infty 
+	\overset{\redcircle{Ü}}{\leq}
 	m\underbrace{||g'(f(a))||_\infty}_{\text{maximaler Eintrag der Matrix 
 	g'(f(a)) im Betrag, unabhängig von x}}\cdot ||r_1(x)||_\infty=o(||x-a||)$ 
 	nach Vor. an $r_1$.\\
