@@ -52,7 +52,7 @@
 \newcommand{\yelul}[1]{\setulcolor{yellow}{\ul{#1}}}
 \newcommand{\greenul}[1]{\setulcolor{green}{\ul{#1}}}
 \newcommand{\oraul}[1]{\setulcolor{orange}{\ul{#1}}}
-\setul{1pt}{3pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
+\setul{1pt}{1.5pt} % Linienhöhe und Abstand zum Text (optional anpassbar)
 
 \setlength{\topmargin}{-.5in} \setlength{\textheight}{9.25in}
 \setlength{\oddsidemargin}{0in} \setlength{\textwidth}{6.8in}
@@ -130,24 +130,36 @@
 	Nun zeigen wir folgende \redul{Existenz-und Eindeutigkeitssatz:}\\
 	\textbf{23.10. \underline{Satz:}} Die Abbildung \greenul{$\varphi: \ ker D\rightarrow\mathbb{C}^n, \ y \rightarrowtail y(0)$}, ist \greenul{auch surjektiv} und \greenul{damit bijektiv}, d.h. \greenul{zu jeden $y_0\in\mathbb{C}^n,$ gibt es genau eine Lösung} der homogenen Anfangswertaufgabe \greenul{$Dy=y'-Ay=0, \ y(0)=y_0$}.\\
 	\\
-	Mit Folgerung \blueul{23.8.} ist dies äquivaltent dazu, dass Dy=0 genau n Linear unabhängige Lösungen besitzt. Wir führen den Beweis schrittweise durch.\\
-	\textbf{23.11. \underline{Reduktion:}} 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	Mit Folgerung \blueul{23.8.} ist dies äquivalent dazu, dass Dy=0 genau n Linear unabhängige Lösungen besitzt. Wir führen den Beweis schrittweise durch.\\
+	\textbf{23.11. \underline{Reduktion:}} \greenul{Es genügt, die Aussage im Fall zu beweisen}, wenn \greenul{A in JNF}$\leftarrow$\redul{Jordan-Normalform} vorliegt!\\
+	\underline{Bew.:} Ist y'=Ay und G eine (konstante) invertierbare Matrix ($\in\mathbb{C}^{n\times n}$), so ist für die Funktion \oraul{$z:=G^{-1}y$}, also $z(t)=G^{-1}\cdot y(t)$, die Ableitung dann $z'=G^{-1}y'$, und damit \oraul{z'}=$G^{-1}y'=G^{-1}AGG^{-1}y$=\oraul{$G^{-1}AGz$}, folglich z Lösung von \oraul{z'$=(G^{-1}AG)z$}, wobei man den AW \oraul{z(0)=$G^{-1}y(0)$} hat. Es genügt also, die Beh. für das transformierte System zu beweisen, und dabei kann man durch Wahl von G die Matrix $G^{-1}AG$ in \underline{JNF} erreichen laut \blueul{Satz der Linearen Algebra II zur Jordan-Normalform}.\\
+	\strut\hfill$\square$\\
+	\textbf{23.12. \underline{Spezialfall:}} Die Matrix A habe JNF mit genau einem \greenul{Jordan-Kasten}\\
+	\begin{figure}[h]
+		\includegraphics[width=10 cm,height=7cm]{bsp kap 23.12}
+	\end{figure}\\ 
+	\greenul{eine Basis von ker D}, d-h- der \greenul{Lösung} von \greenul{z'=Az}.\\
+	\underline{Bew.:} Zu betrachten ist z'(x)=Az(x)=($\lambda I_n+E_n$)z(t).\\
+	Mit einem noch zu bestimmenden Vektor \redul{$c(x)=\begin{pmatrix}
+			c_1(x)\\
+			\vdots\\
+			c_n(x)
+	\end{pmatrix}$} setzen wir an: \redul{z(x):=$e^{\lambda x}\cdot c(x)$}.\\
+	Dies ergibt für alle x die zu erfüllende Gleichung \oraul{z'(x)}$=e^{\lambda x}\underbrace{(\lambda c(x)+c'(x))}_{\text{laut Produktregel}}\overset{!}{=}(\lambda I_n+E_n)e^{\lambda x}c(x)=e^{\lambda x}(\lambda c(x)+U_nc(x))\Leftrightarrow$ \oraul{$c'(x)=E_n c(x)$}.\\
+	In Komponenten aufgeschrieben lautet die letzte Gleichung: \oraul{$c_i'(x)$}$\begin{cases}
+		c_{i+1}(x);&1\textless n,\\
+		0;&i=n
+	\end{cases}$ \\
+	und die \oraul{Spalten} der oben notierten Matrix C \oraul{sind offenbar Lösungen} dieser Gleichung. Da \oraul{C invertierbar} ist, sind sie \oraul{Linear unabhängig} und it Folgerung 23.8 also eine Basis.\\
+	\\
+	\textbf{23.13. \underline{Allgemeiner Fall:}} Sei A in (beliebiger) JNF gegeben, also als A=\begin{figure}[h]
+		\includegraphics[width=2 cm,height=2cm]{bsp kap 23.13.1}
+	\end{figure}\\ 
+	mit \oraul{Jordan-Kästen $J_1,...,J_k$}. Zu jedem Jordan-Kasten $J_i$ bilde man entsprechend den Spezialfall \blueul{23.12} die \oraul{zugehörige Matrix $C_i(x)$} und ordne all diese Matrix an zur neuen Matrix\\
+	\oraul{C(x)}=\begin{figure}[h]
+		\includegraphics[width=2 cm,height=2cm]{bsp kap 23.13.2}
+	\end{figure}.\\ 
+	Dann sind die Spalten von C linear unabhängig und Lösungen von z'=Az, womit auch Satz \blueul{23.10.} gezeigt ist.\\
+	\\
+	\textbf{23.14. \underline{Bem.:}} Die DGL $u^{(n)} +a_{n-1}u^{(n-1)}+...+a_1u'+a_0u=f$ aus \blueul{an21} kann mir der Substitution $y_1=0,y_2=u'=y_1',y_3=u''=y_2',...,y_n=u^{n-1}=y_{n-1}'$ auf das System 1. Ordnung 
 \end{document}

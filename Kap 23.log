@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  15 JUL 2025 13:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.15)  18 JUL 2025 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,54 +1118,75 @@ LaTeX Warning: Command \textless invalid in math mode on input line 117.
 
 LaTeX Warning: Command \textless invalid in math mode on input line 117.
 
+<bsp kap 23.12.png, id=42, 469.755pt x 219.82124pt>
+File: bsp kap 23.12.png Graphic file (type png)
+<use bsp kap 23.12.png>
+Package pdftex.def Info: bsp kap 23.12.png  used on input line 139.
+(pdftex.def)             Requested size: 284.5288pt x 199.1756pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
-
- []
+LaTeX Warning: Command \textless invalid in math mode on input line 150.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
+LaTeX Warning: Command \textless invalid in math mode on input line 150.
 
- []
+<bsp kap 23.13.1.png, id=44, 72.27pt x 46.9755pt>
+File: bsp kap 23.13.1.png Graphic file (type png)
+<use bsp kap 23.13.1.png>
+Package pdftex.def Info: bsp kap 23.13.1.png  used on input line 156.
+(pdftex.def)             Requested size: 56.90518pt x 56.9086pt.
+<bsp kap 23.13.2.png, id=45, 105.996pt x 54.80475pt>
+File: bsp kap 23.13.2.png Graphic file (type png)
+<use bsp kap 23.13.2.png>
+Package pdftex.def Info: bsp kap 23.13.2.png  used on input line 160.
+(pdftex.def)             Requested size: 56.90703pt x 56.90944pt.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
 
  []
 
 
-Overfull \hbox (29.09102pt too wide) in paragraph at lines 63--135
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
+
+ []
+
+
+Overfull \hbox (29.09102pt too wide) in paragraph at lines 63--165
 \OT1/cmr/m/n/10.95 hei^^Yt [][][], d.h. [][][] ein []Lin[]-[]eares[] [][][]Dif[
 ]-[]fer[]-[]en[]-[]tial[]-[]gle[]-[]ichungssys[]-[]tem[] [][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
 
  []
 
 
-Overfull \hbox (4.85353pt too wide) in paragraph at lines 63--135
+Overfull \hbox (4.85353pt too wide) in paragraph at lines 63--165
 \OT1/cmr/bx/n/10.95 23.5. $[]$ \OT1/cmr/m/n/10.95 Haben $\OML/cmm/m/it/10.95 D 
 \OMS/cmsy/m/n/10.95 2  \OML/cmm/m/it/10.95 Hom\OT1/cmr/m/n/10.95 (\OML/cmm/m/it
 /10.95 '[]\OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 R\OML/cmm/m/it/10.95 ; \U/msb/m/
@@ -1175,24 +1196,41 @@ msb/m/n/10.95 R\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 C[]\OT1/cmr/m/n/10.95 ))$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
 
  []
 
 
-Overfull \hbox (15.07097pt too wide) in paragraph at lines 63--135
+Overfull \hbox (15.07097pt too wide) in paragraph at lines 63--165
 [][][]\OT1/cmr/m/n/10.95 je[]-[]den[] [][][][][] [][][]gibt[] [][][]es[] [][][]
 genau[] [][][]eine[] [][][]L^^?osung der ho-mo-ge-nen An-fangswer-tauf-gabe [][
 ]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--135
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
+
+ []
+
+
+Overfull \hbox (0.8767pt too wide) in paragraph at lines 63--165
+[]$ \OT1/cmr/m/n/10.95 Ist y'=Ay und G eine (kon-stante) in-vertier-bare Ma-tri
+x ($\OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 C[]$\OT1/cmr/m/n/10.95 ), so ist f^^
+?ur die Funk-tion [][],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--165
 
  []
 
@@ -1205,7 +1243,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--135
 
 [2]
 
-[3] (Kap 23.aux)
+[3 <./bsp kap 23.12.png> <./bsp kap 23.13.1.png>]
+
+[4 <./bsp kap 23.13.2.png>] (Kap 23.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
@@ -1214,10 +1254,10 @@ Package rerunfilecheck Info: File `"Kap 23".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32057 strings out of 469921
- 653695 string characters out of 5468133
- 1213115 words of memory out of 5000000
- 58346 multiletter control sequences out of 15000+600000
+ 32095 strings out of 469921
+ 654608 string characters out of 5468133
+ 1225117 words of memory out of 5000000
+ 58383 multiletter control sequences out of 15000+600000
  640464 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,14n,107p,10934b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1237,9 +1277,9 @@ s/cm/cmsy10.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><C:/Users/Phi-v/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb><C:/Users/Phi-v/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Kap 23.pdf" (3 pages, 191741 bytes).
+Output written on "Kap 23.pdf" (4 pages, 247489 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 

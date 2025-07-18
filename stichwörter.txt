@@ -1,0 +1,45 @@
+Kap 1: Rn mit Normen || · ||∞,|| · ||2, (Folgen)Konvergenz , GWSätze, Projektionen
+
+Kap 2:Affine Räume, Parameter- und Normalendarstellung, Funktionen Rn → Rm
+
+Kap 3:Funktionsgrenzwerte, Stetigkeit ( Komponentenweise und partiell)
+
+Kap 4: Richtungsableitung, partielle Ableitung, totale Ableitung, Klein-o
+
+Kap 5: Funktionalmatrix, Gradient, Kettenregel, Richtungsableitungen
+
+Kap 6: MWS, stetig diff’bar, mehrfache partielle Ableitung, Satz von Schwarz
+
+Kap 7: SatzvonTaylor, Extrema, Kritische Stellen, Kriterien,Hessematrix
+
+Kap 8: Kontraktion, Banachscher Fixpunktsatz, Lokale Umkehrbarkeit
+
+Kap 9: Extrma mit NBen, Lagrange-Multiplikationen, implizierter Funktionensatz
+
+Kap 10:  Normierter R−VR, B-W, Äquivalenz aller Normen im Rn,  metrischer Raum, Kgz im metrischen Raum
+
+Kap 11:Umgebungsbasis, haisdorffsch, offen/abgeschlossen,Topologie
+
+Kap 12: Vollständigkeit, allg.Banach-Fixpunktsatz, Kompaktheit, Heine-Borel
+
+Kap 13: Stetigkeit, Bilder Kompakter mengen sind Kompakt, gleichm¨ aßig stetig
+
+Kap 14: Supremumsnorm auf Kompakter Menge, WAS mit Polynom
+
+Kap 15:zusammenhängend(zush)⇔wegszush.⇔polygonslzush.
+
+Kap 16:  DGL, gewöhnliche DGL, Lösungsfunktion, Fragestellungen, Richtungsfelder
+
+Kap 17: DGL mit getrennten Variablen, AWA, Beispiele
+
+Kap 18: Variation der Konstanten, zugeh. homogeneDGL, partikuläre Lsg.
+
+Kap 19: BernoullischeDGL, (Euler-)homogeneDGL
+
+Kap 20: explizite DGL 2. Ordnung ohne y und ohne x
+
+Kap 21: Linearität der Lösungsmenge, ϕ=charakteristisches Polynom, Operatormethode, D=Differntialoperator, r.S.=rechteSeite, l.S.=linkeSeite
+
+Kap 22: Fixpunktsatz von Weissinger, Satz von Picard-Lindelöf
+
+Kap 23: DGL systeme(Linear1. ordnung,KonstanteKoeff.), Jordan-Normalform
